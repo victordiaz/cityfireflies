@@ -1,0 +1,2869 @@
+TopencvExample
+v7
+r0
+t317949644.406594
+cCheck dependencies
+cProcessInfoPlistFile "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin//opencvExampleDebug.app/Contents/Info.plist" openFrameworks-Info.plist
+cProcessPCH++ /var/folders/DC/DCZa75rhEn4Epc9cmt1s7E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-fkyuaatvfunjmvdpwqvrzirctjpa/Carbon.h.gch /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/main.o "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/src/main.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/testApp.o "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/src/testApp.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvColorImage.o "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvColorImage.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvContourFinder.o "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvContourFinder.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvFloatImage.o "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvFloatImage.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvGrayscaleImage.o "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvGrayscaleImage.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvImage.o "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvImage.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvShortImage.o "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvShortImage.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxOscBundle.o "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/src/ofxOscBundle.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxOscMessage.o "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/src/ofxOscMessage.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxOscReceiver.o "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/src/ofxOscReceiver.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+cCompileC build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxOscSender.o "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/src/ofxOscSender.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+cLd "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin//opencvExampleDebug.app/Contents/MacOS/opencvExampleDebug" normal i386
+cPhaseScriptExecution "Run Script" "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh"
+cPBXCp bin/opencvExampleDebug.app/Contents/Frameworks/GLUT.framework ../../../libs/glut/lib/osx/GLUT.framework
+cPBXCp bin/opencvExampleDebug.app/Contents/Resources/openFrameworks-Info.plist openFrameworks-Info.plist
+cTouch "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin//opencvExampleDebug.app"
+
+N/Developer/SDKs/MacOSX10.6.sdk
+c000000004CAA740B00000000000000EE
+t1286239243
+s238
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/ApplicationServices.framework/Headers/ApplicationServices.h
+c000000004A12050C0000000000000475
+t1242694924
+s1141
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h
+c000000004C23BF2D00000000000005FF
+t1277411117
+s1535
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/CoreServices.framework/Headers/CoreServices.h
+c000000004A11F0980000000000000400
+t1242689688
+s1024
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/OpenGL.framework/Headers/gl.h
+c000000004BD2501F0000000000025B59
+t1272074271
+s154457
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/OpenGL.framework/Headers/glu.h
+c000000004BD2501F0000000000003F84
+t1272074271
+s16260
+
+N/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/QuickTime.framework/Headers/QuickTime.h
+c000000004C23C4D00000000000000659
+t1277412560
+s1625
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/AvailabilityMacros.h
+c000000004A11A9B30000000000006724
+t1242671539
+s26404
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/TargetConditionals.h
+c000000004A11A9B300000000000031E9
+t1242671539
+s12777
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/assert.h
+c000000004BBD2CE90000000000000DCB
+t1270689001
+s3531
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/ctype.h
+c000000004BBD2CE90000000000002C18
+t1270689001
+s11288
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/dirent.h
+c000000004BBD2CE900000000000016D3
+t1270689001
+s5843
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/errno.h
+c000000004BBD2CE900000000000003EB
+t1270689001
+s1003
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/fcntl.h
+c000000004BBD2CE900000000000003EA
+t1270689001
+s1002
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/getopt.h
+c000000004BBD2CE90000000000000CBC
+t1270689001
+s3260
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/inttypes.h
+c000000004BBD2CE900000000000027D1
+t1270689001
+s10193
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/math.h
+c000000004A5C14A000000000000004F1
+t1247548576
+s1265
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/pthread.h
+c000000004BBD2CE900000000000038F0
+t1270689001
+s14576
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/setjmp.h
+c000000004BBD2CE90000000000000438
+t1270689001
+s1080
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/stdio.h
+c000000004BBD2CE90000000000004174
+t1270689001
+s16756
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/stdlib.h
+c000000004BBD2CE90000000000002DF5
+t1270689001
+s11765
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/string.h
+c000000004BBD2CE90000000000001731
+t1270689001
+s5937
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/sys/ioctl.h
+c000000004C239946000000000000116C
+t1277401414
+s4460
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/sys/select.h
+c000000004C23994700000000000016A2
+t1277401415
+s5794
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/termios.h
+c000000004BBD2CE900000000000004D4
+t1270689001
+s1236
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/time.h
+c000000004BBD2CE9000000000000178E
+t1270689001
+s6030
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/unistd.h
+c000000004BBD2CE9000000000000563E
+t1270689001
+s22078
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/include/wchar.h
+c000000004BBD2CE900000000000025DA
+t1270689001
+s9690
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/emmintrin.h
+c000000004A11EB24000000000000EA8F
+t1242688292
+s60047
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/float.h
+c000000004A11EB240000000000001538
+t1242688292
+s5432
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stdarg.h
+c000000004A11EB2400000000000010DD
+t1242688292
+s4317
+
+N/Developer/SDKs/MacOSX10.6.sdk/usr/lib/gcc/i686-apple-darwin10/4.2.1/include/stddef.h
+c000000004A11EB240000000000003197
+t1242688292
+s12695
+
+N/System/Library/Frameworks/AGL.framework/AGL
+c000000004CD4F88D0000000000043820
+t1289025677
+s276512
+
+N/System/Library/Frameworks/AppKit.framework/AppKit
+c000000004C623FBF0000000002B48610
+t1281507263
+s45385232
+
+N/System/Library/Frameworks/ApplicationServices.framework/ApplicationServices
+c000000004A12050E0000000000022140
+t1242694926
+s139584
+
+N/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c000000004C91794F00000000004D2720
+t1284602191
+s5056288
+
+N/System/Library/Frameworks/Carbon.framework/Carbon
+c000000004CD5D645000000000000A5F0
+t1289082437
+s42480
+
+N/System/Library/Frameworks/Cocoa.framework/Cocoa
+c000000004A1F2D63000000000000A5E0
+t1243557219
+s42464
+
+N/System/Library/Frameworks/CoreAudio.framework/CoreAudio
+c000000004CD4F57800000000002181A0
+t1289024888
+s2195872
+
+N/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
+c000000004C971DAF0000000000781330
+t1284971951
+s7869232
+
+N/System/Library/Frameworks/CoreServices.framework/CoreServices
+c000000004C23F49F0000000000021710
+t1277424799
+s136976
+
+N/System/Library/Frameworks/IOKit.framework/IOKit
+c000000004C8AD97D000000000017B260
+t1284168061
+s1552992
+
+N/System/Library/Frameworks/OpenGL.framework/OpenGL
+c000000004D22BC490000000000043330
+t1294122057
+s275248
+
+N/System/Library/Frameworks/QuickTime.framework/QuickTime
+c000000004CC7AED00000000000783950
+t1288154832
+s7878992
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/addons/ofxOpenCv/libs/opencv/include/cv.hpp
+c000000004B6D8AD800000000000041C8
+t1265470168
+s16840
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/addons/ofxOpenCv/libs/opencv/include/cvcompat.h
+c000000004B6D8AD80000000000009ED1
+t1265470168
+s40657
+i<string.h>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/addons/ofxOpenCv/libs/opencv/include/cvtypes.h
+c000000004B6D8AD800000000000030D7
+t1265470168
+s12503
+i<assert.h>
+i<stdlib.h>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/addons/ofxOpenCv/libs/opencv/include/cvver.h
+c000000004B6D8AD80000000000000942
+t1265470168
+s2370
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/addons/ofxOpenCv/libs/opencv/include/cxcore.h
+c000000004B6D8AD80000000000012377
+t1265470168
+s74615
+i"ipl.h"
+i"ipl/ipl.h"
+i"cxtypes.h"
+i"cxerror.h"
+i"cvver.h"
+i"cxcore.hpp"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/addons/ofxOpenCv/libs/opencv/include/cxcore.hpp
+c000000004B6D8AD80000000000002EA6
+t1265470168
+s11942
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/addons/ofxOpenCv/libs/opencv/include/cxerror.h
+c000000004B6D8AD800000000000021F4
+t1265470168
+s8692
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/addons/ofxOpenCv/libs/opencv/include/cxtypes.h
+c000000004B6D8AD8000000000000CCF0
+t1265470168
+s52464
+i<assert.h>
+i<stdlib.h>
+i<string.h>
+i<float.h>
+i<emmintrin.h>
+i<fastmath.h>
+i<mathimf.h>
+i<math.h>
+i<ipl.h>
+i<ipl/ipl.h>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/addons/ofxOpenCv/src/ofxCvBlob.h
+c000000004B6D8ADA0000000000000544
+t1265470170
+s1348
+i"ofxCvConstants.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/addons/ofxOpenCv/src/ofxCvColorImage.h
+c000000004B6D8ADA000000000000196D
+t1265470170
+s6509
+i"ofxCvImage.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/addons/ofxOpenCv/src/ofxCvConstants.h
+c000000004B6D8ADA00000000000000CE
+t1265470170
+s206
+i"cv.h"
+i<vector>
+i"ofMain.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/addons/ofxOpenCv/src/ofxCvContourFinder.h
+c000000004B6D8ADA00000000000007DB
+t1265470170
+s2011
+i"ofxCvConstants.h"
+i"ofxCvBlob.h"
+i"ofxCvGrayscaleImage.h"
+i<algorithm>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/addons/ofxOpenCv/src/ofxCvFloatImage.h
+c000000004B6D8ADA0000000000001D2E
+t1265470170
+s7470
+i"ofxCvImage.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/addons/ofxOpenCv/src/ofxCvGrayscaleImage.h
+c000000004B6D8ADA0000000000001B95
+t1265470170
+s7061
+i"ofxCvImage.h"
+i"ofxCvBlob.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/addons/ofxOpenCv/src/ofxCvImage.h
+c000000004B6D8ADA00000000000018AE
+t1265470170
+s6318
+i"ofxCvConstants.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/addons/ofxOpenCv/src/ofxCvShortImage.h
+c000000004B6D8ADA00000000000016F1
+t1265470170
+s5873
+i"ofxCvImage.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/addons/ofxOsc/libs/oscpack/include/ip/IpEndpointName.h
+c000000004B6D8ADA0000000000000AF5
+t1265470170
+s2805
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/addons/ofxOsc/libs/oscpack/include/ip/NetworkingUtils.h
+c000000004B6D8ADA00000000000007AA
+t1265470170
+s1962
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/addons/ofxOsc/libs/oscpack/include/ip/PacketListener.h
+c000000004B6D8ADA00000000000006AD
+t1265470170
+s1709
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/addons/ofxOsc/libs/oscpack/include/osc/OscException.h
+c000000004B6D8ADA00000000000007E0
+t1265470170
+s2016
+i<exception>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/addons/ofxOsc/libs/oscpack/include/osc/OscReceivedElements.h
+c000000004B6D8ADA0000000000003301
+t1265470170
+s13057
+i"OscTypes.h"
+i"OscException.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/addons/ofxOsc/libs/oscpack/include/osc/OscTypes.h
+c000000004B6D8ADA0000000000001062
+t1265470170
+s4194
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/addons/ofxOsc/src/ofxOscArg.h
+c000000004B6D8ADA0000000000000D5D
+t1265470170
+s3421
+i"ofConstants.h"
+i<string>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/addons/ofxOsc/src/ofxOscBundle.h
+c000000004B6D8ADA00000000000009AE
+t1265470170
+s2478
+i<vector>
+i"ofxOscMessage.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/addons/ofxOsc/src/ofxOscMessage.h
+c000000004B6D8ADA0000000000000CC8
+t1265470170
+s3272
+i"ofxOscArg.h"
+i<vector>
+i<string>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/addons/ofxOsc/src/ofxOscReceiver.h
+c000000004B6D8ADA0000000000000C8A
+t1265470170
+s3210
+i<deque>
+i"ofMain.h"
+i<windows.h>
+i<pthread.h>
+i"OscTypes.h"
+i"OscPacketListener.h"
+i"UdpSocket.h"
+i"ofxOscMessage.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/addons/ofxOsc/src/ofxOscSender.h
+c000000004B6D8ADA000000000000090B
+t1265470170
+s2315
+i<string>
+i"OscTypes.h"
+i"OscOutboundPacketStream.h"
+i"ofxOscBundle.h"
+i"ofxOscMessage.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../addons/ofxOpenCv/libs/opencv/include/cv.h
+c000000004B6D8AD8000000000000FF43
+t1265470168
+s65347
+i<chdl.h>
+i"cxcore.h"
+i"cvtypes.h"
+i"cv.hpp"
+i"cvcompat.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../addons/ofxOpenCv/libs/opencv/lib/osx/openCV.a
+c000000004B6D8AD9000000000163A260
+t1265470169
+s23306848
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../addons/ofxOpenCv/src/ofxCvColorImage.cpp
+c000000004B6D8ADA00000000000038B6
+t1265470170
+s14518
+i"ofxCvGrayscaleImage.h"
+i"ofxCvColorImage.h"
+i"ofxCvFloatImage.h"
+i"ofxCvShortImage.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../addons/ofxOpenCv/src/ofxCvContourFinder.cpp
+c000000004B6D8ADA00000000000019AF
+t1265470170
+s6575
+i"ofxCvContourFinder.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../addons/ofxOpenCv/src/ofxCvFloatImage.cpp
+c000000004B6D8ADA0000000000004AD8
+t1265470170
+s19160
+i"ofxCvGrayscaleImage.h"
+i"ofxCvColorImage.h"
+i"ofxCvFloatImage.h"
+i"ofxCvShortImage.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../addons/ofxOpenCv/src/ofxCvGrayscaleImage.cpp
+c000000004B6D8ADA00000000000034EA
+t1265470170
+s13546
+i"ofxCvGrayscaleImage.h"
+i"ofxCvColorImage.h"
+i"ofxCvFloatImage.h"
+i"ofxCvShortImage.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../addons/ofxOpenCv/src/ofxCvImage.cpp
+c000000004B6D8ADA00000000000053F4
+t1265470170
+s21492
+i"ofxCvImage.h"
+i"ofxCvGrayscaleImage.h"
+i"ofxCvColorImage.h"
+i"ofxCvFloatImage.h"
+i"ofxCvBlob.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../addons/ofxOpenCv/src/ofxCvShortImage.cpp
+c000000004B6D8ADA00000000000030A9
+t1265470170
+s12457
+i"ofxCvGrayscaleImage.h"
+i"ofxCvColorImage.h"
+i"ofxCvFloatImage.h"
+i"ofxCvShortImage.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../addons/ofxOpenCv/src/ofxOpenCv.h
+c000000004B6D8ADA000000000000017F
+t1265470170
+s383
+i"ofxCvConstants.h"
+i"ofxCvImage.h"
+i"ofxCvGrayscaleImage.h"
+i"ofxCvColorImage.h"
+i"ofxCvFloatImage.h"
+i"ofxCvShortImage.h"
+i"ofxCvContourFinder.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../addons/ofxOsc/libs/oscpack/include/ip/UdpSocket.h
+c000000004B6D8ADA000000000000151A
+t1265470170
+s5402
+i"NetworkingUtils.h"
+i"IpEndpointName.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../addons/ofxOsc/libs/oscpack/include/osc/OscOutboundPacketStream.h
+c000000004B6D8ADA00000000000013B2
+t1265470170
+s5042
+i"OscTypes.h"
+i"OscException.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../addons/ofxOsc/libs/oscpack/include/osc/OscPacketListener.h
+c000000004B6D8ADA0000000000000A2C
+t1265470170
+s2604
+i"OscReceivedElements.h"
+i"../ip/PacketListener.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../addons/ofxOsc/libs/oscpack/include/osc/OscTypes.h
+c000000004B6D8ADA0000000000001062
+t1265470170
+s4194
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../addons/ofxOsc/libs/oscpack/lib/osx/osc.a
+c000000004B6D8ADA000000000004BDD8
+t1265470170
+s310744
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../addons/ofxOsc/src/ofxOsc.h
+c000000004B6D8ADA0000000000000650
+t1265470170
+s1616
+i"ofxOscArg.h"
+i"ofxOscMessage.h"
+i"ofxOscSender.h"
+i"ofxOscReceiver.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../addons/ofxOsc/src/ofxOscBundle.cpp
+c000000004B6D8ADA00000000000007EE
+t1265470170
+s2030
+i"ofxOscBundle.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../addons/ofxOsc/src/ofxOscMessage.cpp
+c000000004B6D8ADA000000000000162A
+t1265470170
+s5674
+i"ofxOscMessage.h"
+i<iostream>
+i<assert.h>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../addons/ofxOsc/src/ofxOscReceiver.cpp
+c000000004B6D8ADA00000000000017F5
+t1265470170
+s6133
+i"ofxOscReceiver.h"
+i<pthread.h>
+i<iostream>
+i<assert.h>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../addons/ofxOsc/src/ofxOscSender.cpp
+c000000004B6D8ADA0000000000000DBE
+t1265470170
+s3518
+i"ofxOscSender.h"
+i"UdpSocket.h"
+i<assert.h>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../libs/FreeImage/lib/osx/freeimage.a
+c000000004B6D8ADD0000000000AA64B0
+t1265470173
+s11166896
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../libs/GLee/include/GLee.h
+c000000004B6D8ADD0000000000090A87
+t1265470173
+s592519
+i<windows.h>
+i<GL/gl.h>
+i<OpenGL/gl.h>
+i<GL/gl.h>
+i<GL/glx.h>
+i<stddef.h>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../libs/GLee/lib/osx/GLee.a
+c000000004B6D8ADD00000000000C88C8
+t1265470173
+s821448
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../libs/fmodex/include/fmod.h
+c000000004B6D8ADD0000000000028E68
+t1265470173
+s167528
+i"fmod_codec.h"
+i"fmod_dsp.h"
+i"fmod_memoryinfo.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../libs/fmodex/include/fmod_errors.h
+c000000004B6D8ADD0000000000003408
+t1265470173
+s13320
+i"fmod.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../libs/fmodex/lib/osx/libfmodex.dylib
+c000000004B6D8ADD00000000001DD8CC
+t1265470173
+s1956044
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../libs/freeimage/include/FreeImage.h
+c000000004B6D8ADC000000000000CC1B
+t1265470172
+s52251
+i<wchar.h>
+i<inttypes.h>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../libs/freetype/lib/osx/freetype.a
+c000000004B6D8ADD00000000004D82C8
+t1265470173
+s5079752
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../libs/glut/lib/osx/GLUT.framework
+c000000004B6D8ADD0000000000000132
+t1265470173
+s306
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../libs/glut/lib/osx/GLUT.framework/GLUT
+c000000004B6D8ADD000000000011A218
+t1265470173
+s1155608
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../libs/poco/lib/osx/CppUnit.a
+c000000004B6D8ADE000000000003ABB0
+t1265470174
+s240560
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../libs/poco/lib/osx/PocoFoundation.a
+c000000004B6D8ADE00000000005A62E8
+t1265470174
+s5923560
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../libs/poco/lib/osx/PocoNet.a
+c000000004B6D8ADE0000000000378278
+t1265470174
+s3637880
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../libs/poco/lib/osx/PocoUtil.a
+c000000004B6D8ADE00000000000FFB80
+t1265470174
+s1047424
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../libs/poco/lib/osx/PocoXML.a
+c000000004B6D8ADE0000000000239BC0
+t1265470174
+s2333632
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../libs/rtAudio/lib/osx/rtAudio.a
+c000000004B6D8AE100000000000BC8E8
+t1265470177
+s772328
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/bin//opencvExampleDebug.app
+t1282820638
+s102
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/bin//opencvExampleDebug.app/Contents/Info.plist
+t1271099737
+s622
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/bin//opencvExampleDebug.app/Contents/MacOS/opencvExampleDebug
+t1282820638
+s2086180
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/bin//opencvExampleDebug.app/Contents/PkgInfo
+t1271099737
+s8
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/bin/opencvExampleDebug.app/Contents/Frameworks/GLUT.framework
+t1271099753
+s306
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/bin/opencvExampleDebug.app/Contents/Resources/openFrameworks-Info.plist
+t1271099755
+s631
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/main.o
+t1277129101
+s59816
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvColorImage.o
+t1275823686
+s57008
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvContourFinder.o
+t1275823687
+s238360
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvFloatImage.o
+t1275823688
+s63948
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvGrayscaleImage.o
+t1275823689
+s54820
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvImage.o
+t1275823690
+s109056
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvShortImage.o
+t1275823691
+s50948
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxOscBundle.o
+t1277129040
+s149520
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxOscMessage.o
+t1277129040
+s109540
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxOscReceiver.o
+t1277129042
+s141676
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxOscSender.o
+t1277129041
+s89664
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/opencvExampleDebug.LinkFileList
+c000000004C1F714E0000000000000886
+t1277129038
+s2182
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/testApp.o
+t1282820631
+s88496
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/build/opencvExample.build/Debug/opencvExample.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh
+c000000004BC371590000000000000113
+t1271099737
+s275
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/openFrameworks-Info.plist
+c000000004B6D8ADB0000000000000277
+t1265470171
+s631
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/src/main.cpp
+c000000004B6D8ADB000000000000019E
+t1265470171
+s414
+i"ofMain.h"
+i"testApp.h"
+i"ofAppGlutWindow.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/src/testApp.cpp
+c000000004C1F74840000000000001548
+t1277129860
+s5448
+i"testApp.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/src/testApp.h
+c000000004C1F718900000000000004C4
+t1277129097
+s1220
+i"ofMain.h"
+i"ofTrueTypeFont.h"
+i"ofxOpenCv.h"
+i"ofxOsc.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/fmodex/include/fmod.h
+c000000004B6D8ADD0000000000028E68
+t1265470173
+s167528
+i"fmod_codec.h"
+i"fmod_dsp.h"
+i"fmod_memoryinfo.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/fmodex/include/fmod_codec.h
+c000000004B6D8ADD000000000000334A
+t1265470173
+s13130
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/fmodex/include/fmod_dsp.h
+c000000004B6D8ADD000000000000892F
+t1265470173
+s35119
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/fmodex/include/fmod_memoryinfo.h
+c000000004B6D8ADD0000000000003C95
+t1265470173
+s15509
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/glut/lib/osx/GLUT.framework/Headers/glut.h
+c000000004B6D8ADE000000000000578C
+t1265470174
+s22412
+i<windows.h>
+i<AvailabilityMacros.h>
+i<OpenGL/gl.h>
+i<OpenGL/glu.h>
+i<GL/gl.h>
+i<GL/glu.h>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/openFrameworks/app/ofAppBaseWindow.h
+c000000004B6D8ADE0000000000000446
+t1265470174
+s1094
+i"ofTypes.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/openFrameworks/app/ofAppGlutWindow.h
+c000000004B6D8ADE000000000000066C
+t1265470174
+s1644
+i"ofConstants.h"
+i"ofAppBaseWindow.h"
+i"glut.h"
+i<GLUT/glut.h>
+i<GL/glut.h>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/openFrameworks/app/ofAppRunner.h
+c000000004B6D8ADE000000000000050D
+t1265470174
+s1293
+i"ofMain.h"
+i"ofBaseApp.h"
+i"ofAppBaseWindow.h"
+i"ofAppGlutWindow.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/openFrameworks/app/ofBaseApp.h
+c000000004B6D8ADE0000000000000375
+t1265470174
+s885
+i"ofTypes.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/openFrameworks/communication/ofArduino.h
+c000000004B6D8ADE0000000000003D3C
+t1265470174
+s15676
+i<list>
+i<vector>
+i<string>
+i<iostream>
+i"ofEvents.h"
+i"ofSerial.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/openFrameworks/communication/ofSerial.h
+c000000004B6D8ADE0000000000000D2E
+t1265470174
+s3374
+i"ofConstants.h"
+i<termios.h>
+i<sys/ioctl.h>
+i<getopt.h>
+i<dirent.h>
+i<winbase.h>
+i<tchar.h>
+i<iostream>
+i<string.h>
+i<setupapi.h>
+i<regstr.h>
+i<winioctl.h>
+i<initguid.h>
+i<stdio.h>
+i<stdlib.h>
+i<string.h>
+i<fcntl.h>
+i<errno.h>
+i<ctype.h>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/openFrameworks/events/ofEventUtils.h
+c000000004B6D8ADE0000000000000A8A
+t1265470174
+s2698
+i"ofConstants.h"
+i"Poco/FIFOEvent.h"
+i"Poco/Delegate.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/openFrameworks/events/ofEvents.h
+c000000004B6D8ADE00000000000007AF
+t1265470174
+s1967
+i"ofConstants.h"
+i"ofEventUtils.h"
+i"ofxEventUtils.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/openFrameworks/graphics/ofGraphics.h
+c000000004B6D8ADE0000000000000B73
+t1265470174
+s2931
+i"ofConstants.h"
+i"ofTypes.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/openFrameworks/graphics/ofImage.h
+c000000004B6D8ADE0000000000000C9F
+t1265470174
+s3231
+i"ofConstants.h"
+i"ofTexture.h"
+i"ofGraphics.h"
+i"ofAppRunner.h"
+i"FreeImage.h"
+i"ofUtils.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/openFrameworks/graphics/ofTexture.h
+c000000004B6D8ADE0000000000000B5A
+t1265470174
+s2906
+i"ofConstants.h"
+i"ofGraphics.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/openFrameworks/graphics/ofTrueTypeFont.h
+c000000004B6D8ADE000000000000087A
+t1265470174
+s2170
+i"ofConstants.h"
+i"ofGraphics.h"
+i"ofUtils.h"
+i"ofTypes.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/openFrameworks/ofMain.h
+c000000004B6D8ADE0000000000000347
+t1265470174
+s839
+i"ofConstants.h"
+i"ofMath.h"
+i"ofUtils.h"
+i"ofTypes.h"
+i"ofSerial.h"
+i"ofArduino.h"
+i"ofTexture.h"
+i"ofTrueTypeFont.h"
+i"ofGraphics.h"
+i"ofImage.h"
+i"ofBaseApp.h"
+i"ofAppRunner.h"
+i"ofSoundStream.h"
+i"ofSoundPlayer.h"
+i"ofVideoGrabber.h"
+i"ofVideoPlayer.h"
+i"ofEvents.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/openFrameworks/sound/ofSoundPlayer.h
+c000000004B6D8ADE00000000000006C3
+t1265470174
+s1731
+i"ofConstants.h"
+i"fmod.h"
+i"fmod_errors.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/openFrameworks/sound/ofSoundStream.h
+c000000004B6D8ADE0000000000000254
+t1265470174
+s596
+i"ofConstants.h"
+i"ofBaseApp.h"
+i"ofEvents.h"
+i"ofMath.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/openFrameworks/utils/ofConstants.h
+c000000004B6D8ADE0000000000002AA0
+t1265470174
+s10912
+i<TargetConditionals.h>
+i<windows.h>
+i"GLee.h"
+i"glu.h"
+i<unistd.h>
+i"GLee.h"
+i<OpenGL/glu.h>
+i<ApplicationServices/ApplicationServices.h>
+i<unistd.h>
+i"GLee.h"
+i<GL/glu.h>
+i<OpenGLES/ES1/gl.h>
+i<OpenGLES/ES1/glext.h>
+i<stdio.h>
+i<stdarg.h>
+i<math.h>
+i<time.h>
+i<stdlib.h>
+i<string.h>
+i<iostream>
+i<vector>
+i<string>
+i<sstream>
+i<iomanip>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/openFrameworks/utils/ofMath.h
+c000000004B6D8ADE00000000000006DB
+t1265470174
+s1755
+i"ofConstants.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/openFrameworks/utils/ofTypes.h
+c000000004B6D8ADE0000000000001991
+t1265470174
+s6545
+i"ofConstants.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/openFrameworks/utils/ofUtils.h
+c000000004B6D8ADE00000000000005A4
+t1265470174
+s1444
+i"ofConstants.h"
+i<shellapi.h>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/openFrameworks/video/ofGstUtils.h
+c000000004B6D8ADE0000000000000B42
+t1265470174
+s2882
+i<gst/gst.h>
+i<pthread.h>
+i"ofConstants.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/openFrameworks/video/ofQtUtils.h
+c000000004B6D8ADE00000000000006CF
+t1265470174
+s1743
+i"ofConstants.h"
+i"ofGraphics.h"
+i<QuickTime/QuickTime.h>
+i<CoreServices/CoreServices.h>
+i<ApplicationServices/ApplicationServices.h>
+i<QTML.h>
+i<FixMath.h>
+i<QuickTimeComponents.h>
+i<TextUtils.h>
+i<MediaHandlers.h>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/openFrameworks/video/ofUCUtils.h
+c000000004B6D8ADE00000000000004A7
+t1265470174
+s1191
+i"ofConstants.h"
+i<stdio.h>
+i<stdlib.h>
+i<unistd.h>
+i<unicap.h>
+i<unistd.h>
+i<string.h>
+i<pthread.h>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/openFrameworks/video/ofVideoGrabber.h
+c000000004B6D8ADE0000000000000C9C
+t1265470174
+s3228
+i"ofConstants.h"
+i"ofTexture.h"
+i"ofGraphics.h"
+i"ofTypes.h"
+i"ofQtUtils.h"
+i"videoInput.h"
+i"ofUCUtils.h"
+i"ofGstUtils.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/openFrameworks/video/ofVideoPlayer.h
+c000000004B6D8ADE0000000000000BD3
+t1265470174
+s3027
+i"ofConstants.h"
+i"ofTexture.h"
+i"ofGstUtils.h"
+i"ofQtUtils.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/openFrameworksCompiled/lib/osx/openFrameworksDebug.a
+c000000004C4DA4D500000000003FA43C
+t1280156885
+s4170812
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/AbstractDelegate.h
+c000000004B6D8ADE0000000000000B2E
+t1265470174
+s2862
+i"Poco/Foundation.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/AbstractEvent.h
+c000000004B6D8ADE0000000000002C6A
+t1265470174
+s11370
+i"Poco/Foundation.h"
+i"Poco/SingletonHolder.h"
+i"Poco/SharedPtr.h"
+i"Poco/ActiveResult.h"
+i"Poco/ActiveMethod.h"
+i"Poco/Mutex.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/ActiveMethod.h
+c000000004B6D8ADE0000000000001C64
+t1265470174
+s7268
+i"Poco/Foundation.h"
+i"Poco/ActiveResult.h"
+i"Poco/ActiveRunnable.h"
+i"Poco/ActiveStarter.h"
+i"Poco/AutoPtr.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/ActiveResult.h
+c000000004B6D8ADE0000000000002E66
+t1265470174
+s11878
+i"Poco/Foundation.h"
+i"Poco/Mutex.h"
+i"Poco/Event.h"
+i"Poco/RefCountedObject.h"
+i"Poco/Exception.h"
+i<algorithm>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/ActiveRunnable.h
+c000000004B6D8ADE0000000000001785
+t1265470174
+s6021
+i"Poco/Foundation.h"
+i"Poco/ActiveResult.h"
+i"Poco/Runnable.h"
+i"Poco/RefCountedObject.h"
+i"Poco/AutoPtr.h"
+i"Poco/Exception.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/ActiveStarter.h
+c000000004B6D8ADE0000000000000927
+t1265470174
+s2343
+i"Poco/Foundation.h"
+i"Poco/ThreadPool.h"
+i"Poco/ActiveRunnable.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/AutoPtr.h
+c000000004B6D8ADE0000000000001E0C
+t1265470174
+s7692
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i<algorithm>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/Bugcheck.h
+c000000004B6D8ADE00000000000012FE
+t1265470174
+s4862
+i"Poco/Foundation.h"
+i<string>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/CompareFunctions.h
+c000000004B6D8ADE00000000000007EC
+t1265470174
+s2028
+i"Poco/Foundation.h"
+i<functional>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/Config.h
+c000000004B6D8ADE00000000000008B5
+t1265470174
+s2229
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/Delegate.h
+c000000004B6D8ADE0000000000001802
+t1265470174
+s6146
+i"Poco/Foundation.h"
+i"Poco/AbstractDelegate.h"
+i"Poco/FunctionDelegate.h"
+i"Poco/Expire.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/Event.h
+c000000004B6D8ADE0000000000000E21
+t1265470174
+s3617
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i"Poco/Event_WIN32.h"
+i"Poco/Event_POSIX.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/Event_POSIX.h
+c000000004B6D8ADE0000000000000A91
+t1265470174
+s2705
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i<pthread.h>
+i<errno.h>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/Event_WIN32.h
+c000000004B6D8ADE0000000000000947
+t1265470174
+s2375
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i"Poco/UnWindows.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/Exception.h
+c000000004B6D8ADE00000000000026AC
+t1265470174
+s9900
+i"Poco/Foundation.h"
+i<stdexcept>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/Expire.h
+c000000004B6D8ADE0000000000000CF1
+t1265470174
+s3313
+i"Poco/Foundation.h"
+i"Poco/AbstractDelegate.h"
+i"Poco/Timestamp.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/FIFOEvent.h
+c000000004B6D8ADE0000000000000AD4
+t1265470174
+s2772
+i"Poco/AbstractEvent.h"
+i"Poco/FIFOStrategy.h"
+i"Poco/AbstractDelegate.h"
+i"Poco/CompareFunctions.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/FIFOStrategy.h
+c000000004B6D8ADE00000000000010F3
+t1265470174
+s4339
+i"Poco/NotificationStrategy.h"
+i<map>
+i<list>
+i<memory>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/Foundation.h
+c000000004B6D8ADE0000000000001023
+t1265470174
+s4131
+i"Poco/Config.h"
+i"Poco/Platform.h"
+i"Poco/Platform_WIN32.h"
+i"Poco/Platform_VMS.h"
+i"Poco/Platform_POSIX.h"
+i"Poco/Bugcheck.h"
+i"Poco/Types.h"
+i<string>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/FunctionDelegate.h
+c000000004B6D8ADE00000000000013CA
+t1265470174
+s5066
+i"Poco/Foundation.h"
+i"Poco/AbstractDelegate.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/Mutex.h
+c000000004B6D8ADE0000000000001A61
+t1265470174
+s6753
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i"Poco/ScopedLock.h"
+i"Poco/Mutex_WIN32.h"
+i"Poco/Mutex_POSIX.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/Mutex_POSIX.h
+c000000004B6D8ADE0000000000000AC3
+t1265470174
+s2755
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i<pthread.h>
+i<errno.h>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/Mutex_WIN32.h
+c000000004B6D8ADE0000000000000A07
+t1265470174
+s2567
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i"Poco/UnWindows.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/NotificationStrategy.h
+c000000004B6D8ADE0000000000000A37
+t1265470174
+s2615
+i"Poco/Foundation.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/Platform.h
+c000000004B6D8ADE0000000000001A3A
+t1265470174
+s6714
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/Platform_POSIX.h
+c000000004B6D8ADE0000000000000843
+t1265470174
+s2115
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/Platform_VMS.h
+c000000004B6D8ADE0000000000000BAA
+t1265470174
+s2986
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/Platform_WIN32.h
+c000000004B6D8ADE0000000000000D4D
+t1265470174
+s3405
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/RefCountedObject.h
+c000000004B6D8ADE0000000000000B10
+t1265470174
+s2832
+i"Poco/Foundation.h"
+i"Poco/Mutex.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/Runnable.h
+c000000004B6D8ADE0000000000000861
+t1265470174
+s2145
+i"Poco/Foundation.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/ScopedLock.h
+c000000004B6D8ADE00000000000008EB
+t1265470174
+s2283
+i"Poco/Foundation.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/SharedPtr.h
+c000000004B6D8ADE00000000000021DE
+t1265470174
+s8670
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i"Poco/Mutex.h"
+i<algorithm>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/SignalHandler.h
+c000000004B6D8ADE00000000000011EB
+t1265470174
+s4587
+i"Poco/Foundation.h"
+i<vector>
+i<setjmp.h>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/SingletonHolder.h
+c000000004B6D8ADE0000000000000A64
+t1265470174
+s2660
+i"Poco/Foundation.h"
+i"Poco/Mutex.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/Thread.h
+c000000004B6D8ADE0000000000001C3A
+t1265470174
+s7226
+i"Poco/Foundation.h"
+i"Poco/Mutex.h"
+i"Poco/Thread_WIN32.h"
+i"Poco/Thread_POSIX.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/ThreadPool.h
+c000000004B6D8ADE0000000000001849
+t1265470174
+s6217
+i"Poco/Foundation.h"
+i"Poco/Thread.h"
+i"Poco/Mutex.h"
+i<vector>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/Thread_POSIX.h
+c000000004B6D8ADE00000000000012A8
+t1265470174
+s4776
+i"Poco/Foundation.h"
+i"Poco/Runnable.h"
+i"Poco/SignalHandler.h"
+i"Poco/Event.h"
+i"Poco/RefCountedObject.h"
+i"Poco/AutoPtr.h"
+i<pthread.h>
+i<sys/select.h>
+i<errno.h>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/Thread_WIN32.h
+c000000004B6D8ADE000000000000106C
+t1265470174
+s4204
+i"Poco/Foundation.h"
+i"Poco/Runnable.h"
+i"Poco/UnWindows.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/Timestamp.h
+c000000004B6D8ADE00000000000019A7
+t1265470174
+s6567
+i"Poco/Foundation.h"
+i<ctime>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/Types.h
+c000000004B6D8ADE0000000000001910
+t1265470174
+s6416
+i"Poco/Foundation.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/libs/poco/include/Poco/UnWindows.h
+c000000004B6D8ADE0000000000000FD1
+t1265470174
+s4049
+i<windows.h>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/addons/ofxOpenCv/libs/opencv/include/cv.hpp
+c000000004CE3AF7200000000000041C8
+t1289990002
+s16840
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/addons/ofxOpenCv/libs/opencv/include/cvcompat.h
+c000000004CE3AF720000000000009ED1
+t1289990002
+s40657
+i<string.h>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/addons/ofxOpenCv/libs/opencv/include/cvtypes.h
+c000000004CE3AF7200000000000030D7
+t1289990002
+s12503
+i<assert.h>
+i<stdlib.h>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/addons/ofxOpenCv/libs/opencv/include/cvver.h
+c000000004CE3AF720000000000000942
+t1289990002
+s2370
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/addons/ofxOpenCv/libs/opencv/include/cxcore.h
+c000000004CE3AF720000000000012377
+t1289990002
+s74615
+i"ipl.h"
+i"ipl/ipl.h"
+i"cxtypes.h"
+i"cxerror.h"
+i"cvver.h"
+i"cxcore.hpp"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/addons/ofxOpenCv/libs/opencv/include/cxcore.hpp
+c000000004CE3AF720000000000002EA6
+t1289990002
+s11942
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/addons/ofxOpenCv/libs/opencv/include/cxerror.h
+c000000004CE3AF7200000000000021F4
+t1289990002
+s8692
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/addons/ofxOpenCv/libs/opencv/include/cxtypes.h
+c000000004CE3AF72000000000000CCF0
+t1289990002
+s52464
+i<assert.h>
+i<stdlib.h>
+i<string.h>
+i<float.h>
+i<emmintrin.h>
+i<fastmath.h>
+i<mathimf.h>
+i<math.h>
+i<ipl.h>
+i<ipl/ipl.h>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/addons/ofxOpenCv/src/ofxCvBlob.h
+c000000004CE3AF760000000000000544
+t1289990006
+s1348
+i"ofxCvConstants.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/addons/ofxOpenCv/src/ofxCvColorImage.h
+c000000004CE3AF76000000000000196D
+t1289990006
+s6509
+i"ofxCvImage.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/addons/ofxOpenCv/src/ofxCvConstants.h
+c000000004CE3AF7600000000000000CE
+t1289990006
+s206
+i"cv.h"
+i<vector>
+i"ofMain.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/addons/ofxOpenCv/src/ofxCvContourFinder.h
+c000000004CE3AF7600000000000007DB
+t1289990006
+s2011
+i"ofxCvConstants.h"
+i"ofxCvBlob.h"
+i"ofxCvGrayscaleImage.h"
+i<algorithm>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/addons/ofxOpenCv/src/ofxCvFloatImage.h
+c000000004CE3AF760000000000001D2E
+t1289990006
+s7470
+i"ofxCvImage.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/addons/ofxOpenCv/src/ofxCvGrayscaleImage.h
+c000000004CE3AF760000000000001B79
+t1289990006
+s7033
+i"ofxCvImage.h"
+i"ofxCvBlob.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/addons/ofxOpenCv/src/ofxCvImage.h
+c000000004CE3AF7600000000000018CC
+t1289990006
+s6348
+i"ofxCvConstants.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/addons/ofxOpenCv/src/ofxCvShortImage.h
+c000000004CE3AF7600000000000016F1
+t1289990006
+s5873
+i"ofxCvImage.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/addons/ofxOsc/libs/oscpack/include/ip/IpEndpointName.h
+c000000004CE3AF760000000000000AF5
+t1289990006
+s2805
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/addons/ofxOsc/libs/oscpack/include/ip/NetworkingUtils.h
+c000000004CE3AF7600000000000007AA
+t1289990006
+s1962
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/addons/ofxOsc/libs/oscpack/include/ip/PacketListener.h
+c000000004CE3AF7600000000000006AD
+t1289990006
+s1709
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/addons/ofxOsc/libs/oscpack/include/osc/OscException.h
+c000000004CE3AF7600000000000007E0
+t1289990006
+s2016
+i<exception>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/addons/ofxOsc/libs/oscpack/include/osc/OscReceivedElements.h
+c000000004CE3AF760000000000003301
+t1289990006
+s13057
+i"OscTypes.h"
+i"OscException.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/addons/ofxOsc/libs/oscpack/include/osc/OscTypes.h
+c000000004CE3AF760000000000001062
+t1289990006
+s4194
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/addons/ofxOsc/src/ofxOscArg.h
+c000000004CE3AF760000000000000D5D
+t1289990006
+s3421
+i"ofConstants.h"
+i<string>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/addons/ofxOsc/src/ofxOscBundle.h
+c000000004CE3AF7600000000000009AE
+t1289990006
+s2478
+i<vector>
+i"ofxOscMessage.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/addons/ofxOsc/src/ofxOscMessage.h
+c000000004CE3AF760000000000000CC8
+t1289990006
+s3272
+i"ofxOscArg.h"
+i<vector>
+i<string>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/addons/ofxOsc/src/ofxOscReceiver.h
+c000000004CE3AF760000000000000C8A
+t1289990006
+s3210
+i<deque>
+i"ofMain.h"
+i<windows.h>
+i<pthread.h>
+i"OscTypes.h"
+i"OscPacketListener.h"
+i"UdpSocket.h"
+i"ofxOscMessage.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/addons/ofxOsc/src/ofxOscSender.h
+c000000004CE3AF76000000000000090B
+t1289990006
+s2315
+i<string>
+i"OscTypes.h"
+i"OscOutboundPacketStream.h"
+i"ofxOscBundle.h"
+i"ofxOscMessage.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/libs/opencv/include/cv.h
+c000000004CE3AF72000000000000FF43
+t1289990002
+s65347
+i<chdl.h>
+i"cxcore.h"
+i"cvtypes.h"
+i"cv.hpp"
+i"cvcompat.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/libs/opencv/lib/osx/openCV.a
+c000000004CE3AF74000000000163A260
+t1289990004
+s23306848
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvColorImage.cpp
+c000000004CE3AF7600000000000038B6
+t1289990006
+s14518
+i"ofxCvGrayscaleImage.h"
+i"ofxCvColorImage.h"
+i"ofxCvFloatImage.h"
+i"ofxCvShortImage.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvContourFinder.cpp
+c000000004CE3AF760000000000001A17
+t1289990006
+s6679
+i"ofxCvContourFinder.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvFloatImage.cpp
+c000000004CE3AF760000000000004B0D
+t1289990006
+s19213
+i"ofxCvGrayscaleImage.h"
+i"ofxCvColorImage.h"
+i"ofxCvFloatImage.h"
+i"ofxCvShortImage.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvGrayscaleImage.cpp
+c000000004CE3AF760000000000003491
+t1289990006
+s13457
+i"ofxCvGrayscaleImage.h"
+i"ofxCvColorImage.h"
+i"ofxCvFloatImage.h"
+i"ofxCvShortImage.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvImage.cpp
+c000000004CE3AF760000000000005438
+t1289990006
+s21560
+i"ofxCvImage.h"
+i"ofxCvGrayscaleImage.h"
+i"ofxCvColorImage.h"
+i"ofxCvFloatImage.h"
+i"ofxCvBlob.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvShortImage.cpp
+c000000004CE3AF7600000000000030A9
+t1289990006
+s12457
+i"ofxCvGrayscaleImage.h"
+i"ofxCvColorImage.h"
+i"ofxCvFloatImage.h"
+i"ofxCvShortImage.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxOpenCv.h
+c000000004CE3AF76000000000000017F
+t1289990006
+s383
+i"ofxCvConstants.h"
+i"ofxCvImage.h"
+i"ofxCvGrayscaleImage.h"
+i"ofxCvColorImage.h"
+i"ofxCvFloatImage.h"
+i"ofxCvShortImage.h"
+i"ofxCvContourFinder.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/libs/oscpack/include/ip/UdpSocket.h
+c000000004CE3AF76000000000000151A
+t1289990006
+s5402
+i"NetworkingUtils.h"
+i"IpEndpointName.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/libs/oscpack/include/osc/OscOutboundPacketStream.h
+c000000004CE3AF7600000000000013B2
+t1289990006
+s5042
+i"OscTypes.h"
+i"OscException.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/libs/oscpack/include/osc/OscPacketListener.h
+c000000004CE3AF760000000000000A2C
+t1289990006
+s2604
+i"OscReceivedElements.h"
+i"../ip/PacketListener.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/libs/oscpack/include/osc/OscTypes.h
+c000000004CE3AF760000000000001062
+t1289990006
+s4194
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/libs/oscpack/lib/osx/osc.a
+c000000004CE3AF76000000000004BDD8
+t1289990006
+s310744
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/src/ofxOsc.h
+c000000004CE3AF760000000000000650
+t1289990006
+s1616
+i"ofxOscArg.h"
+i"ofxOscMessage.h"
+i"ofxOscSender.h"
+i"ofxOscReceiver.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/src/ofxOscBundle.cpp
+c000000004CE3AF7600000000000007EE
+t1289990006
+s2030
+i"ofxOscBundle.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/src/ofxOscMessage.cpp
+c000000004CE3AF76000000000000162A
+t1289990006
+s5674
+i"ofxOscMessage.h"
+i<iostream>
+i<assert.h>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/src/ofxOscReceiver.cpp
+c000000004CE3AF7600000000000017F5
+t1289990006
+s6133
+i"ofxOscReceiver.h"
+i<pthread.h>
+i<iostream>
+i<assert.h>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/src/ofxOscSender.cpp
+c000000004CE3AF760000000000000DBE
+t1289990006
+s3518
+i"ofxOscSender.h"
+i"UdpSocket.h"
+i<assert.h>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/FreeImage/lib/osx/freeimage.a
+c000000004CE3AF780000000000AA64B0
+t1289990008
+s11166896
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/GLee/include/GLee.h
+c000000004CE3AF780000000000090A87
+t1289990008
+s592519
+i<windows.h>
+i<GL/gl.h>
+i<OpenGL/gl.h>
+i<GL/gl.h>
+i<GL/glx.h>
+i<stddef.h>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/GLee/lib/osx/GLee.a
+c000000004CE3AF7800000000000C88C8
+t1289990008
+s821448
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/fmodex/include/fmod.h
+c000000004CE3AF780000000000028E68
+t1289990008
+s167528
+i"fmod_codec.h"
+i"fmod_dsp.h"
+i"fmod_memoryinfo.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/fmodex/include/fmod_errors.h
+c000000004CE3AF780000000000003408
+t1289990008
+s13320
+i"fmod.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/fmodex/lib/osx/libfmodex.dylib
+c000000004CE3AF7800000000001DD8CC
+t1289990008
+s1956044
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/freeimage/include/FreeImage.h
+c000000004CE3AF78000000000000CC1B
+t1289990008
+s52251
+i<wchar.h>
+i<inttypes.h>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/freetype/lib/osx/freetype.a
+c000000004CE3AF7800000000004D82C8
+t1289990008
+s5079752
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/glut/lib/osx/GLUT.framework
+c000000004CE3AF7800000000000000CC
+t1289990008
+s204
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/glut/lib/osx/GLUT.framework/GLUT
+c000000004CE3AF78000000000011A218
+t1289990008
+s1155608
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/poco/lib/osx/CppUnit.a
+c000000004CE3AF7A000000000003ABB0
+t1289990010
+s240560
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/poco/lib/osx/PocoFoundation.a
+c000000004CE3AF7A00000000005A62E8
+t1289990010
+s5923560
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/poco/lib/osx/PocoNet.a
+c000000004CE3AF7A0000000000378278
+t1289990010
+s3637880
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/poco/lib/osx/PocoUtil.a
+c000000004CE3AF7A00000000000FFB80
+t1289990010
+s1047424
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/poco/lib/osx/PocoXML.a
+c000000004CE3AF7A0000000000239BC0
+t1289990010
+s2333632
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/rtAudio/lib/osx/rtAudio.a
+c000000004CE3AF7E00000000000BC8E8
+t1289990014
+s772328
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin//opencvExampleDebug.app
+t1296256844
+s102
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin//opencvExampleDebug.app/Contents/Info.plist
+t1271099737
+s622
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin//opencvExampleDebug.app/Contents/MacOS/opencvExampleDebug
+t1296256844
+s2131968
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin//opencvExampleDebug.app/Contents/PkgInfo
+t1271099737
+s8
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin/opencvExampleDebug.app/Contents/Frameworks/GLUT.framework
+t1296237877
+s204
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin/opencvExampleDebug.app/Contents/Resources/openFrameworks-Info.plist
+t1271099755
+s631
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/main.o
+t1296256126
+s446664
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvColorImage.o
+t1296237866
+s400860
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvContourFinder.o
+t1296237867
+s552972
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvFloatImage.o
+t1296237868
+s406428
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvGrayscaleImage.o
+t1296237869
+s398652
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvImage.o
+t1296237870
+s430472
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvShortImage.o
+t1296237871
+s396004
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxOscBundle.o
+t1296237871
+s145580
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxOscMessage.o
+t1296237871
+s115044
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxOscReceiver.o
+t1296237873
+s453264
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxOscSender.o
+t1296237872
+s91804
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/opencvExampleDebug.LinkFileList
+c000000004D43051B00000000000008C2
+t1296237851
+s2242
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/testApp.o
+t1296256843
+s467284
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh
+c000000004BC371590000000000000113
+t1271099737
+s275
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/openFrameworks-Info.plist
+c000000004B6D8ADB0000000000000277
+t1265470171
+s631
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/src/main.cpp
+c000000004B6D8ADB000000000000019E
+t1265470171
+s414
+i"ofMain.h"
+i"testApp.h"
+i"ofAppGlutWindow.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/src/testApp.cpp
+c000000004D434F4500000000000014A4
+t1296256837
+s5284
+i"testApp.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/src/testApp.h
+c000000004D434BC00000000000000560
+t1296255936
+s1376
+i"ofMain.h"
+i"ofTrueTypeFont.h"
+i"ofxOpenCv.h"
+i"ofxOsc.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/fmodex/include/fmod.h
+c000000004CE3AF780000000000028E68
+t1289990008
+s167528
+i"fmod_codec.h"
+i"fmod_dsp.h"
+i"fmod_memoryinfo.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/fmodex/include/fmod_codec.h
+c000000004CE3AF78000000000000334A
+t1289990008
+s13130
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/fmodex/include/fmod_dsp.h
+c000000004CE3AF78000000000000892F
+t1289990008
+s35119
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/fmodex/include/fmod_memoryinfo.h
+c000000004CE3AF780000000000003C95
+t1289990008
+s15509
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/glut/lib/osx/GLUT.framework/Headers/glut.h
+c000000004CE3AF78000000000000578C
+t1289990008
+s22412
+i<windows.h>
+i<AvailabilityMacros.h>
+i<OpenGL/gl.h>
+i<OpenGL/glu.h>
+i<GL/gl.h>
+i<GL/glu.h>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/openFrameworks/app/ofAppBaseWindow.h
+c000000004CE3AF780000000000000446
+t1289990008
+s1094
+i"ofTypes.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/openFrameworks/app/ofAppGlutWindow.h
+c000000004CE3AF78000000000000066B
+t1289990008
+s1643
+i"ofConstants.h"
+i"ofAppBaseWindow.h"
+i"glut.h"
+i<GLUT/glut.h>
+i<GL/glut.h>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/openFrameworks/app/ofAppRunner.h
+c000000004CE3AF78000000000000050D
+t1289990008
+s1293
+i"ofMain.h"
+i"ofBaseApp.h"
+i"ofAppBaseWindow.h"
+i"ofAppGlutWindow.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/openFrameworks/app/ofBaseApp.h
+c000000004CE3AF780000000000000376
+t1289990008
+s886
+i"ofTypes.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/openFrameworks/communication/ofArduino.h
+c000000004CE3AF780000000000003D3C
+t1289990008
+s15676
+i<list>
+i<vector>
+i<string>
+i<iostream>
+i"ofEvents.h"
+i"ofSerial.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/openFrameworks/communication/ofSerial.h
+c000000004CE3AF780000000000000D2E
+t1289990008
+s3374
+i"ofConstants.h"
+i<termios.h>
+i<sys/ioctl.h>
+i<getopt.h>
+i<dirent.h>
+i<winbase.h>
+i<tchar.h>
+i<iostream>
+i<string.h>
+i<setupapi.h>
+i<regstr.h>
+i<winioctl.h>
+i<initguid.h>
+i<stdio.h>
+i<stdlib.h>
+i<string.h>
+i<fcntl.h>
+i<errno.h>
+i<ctype.h>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/openFrameworks/events/ofEventUtils.h
+c000000004CE3AF780000000000000AFA
+t1289990008
+s2810
+i"ofConstants.h"
+i"Poco/FIFOEvent.h"
+i"Poco/Delegate.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/openFrameworks/events/ofEvents.h
+c000000004CE3AF78000000000000126C
+t1289990008
+s4716
+i"ofConstants.h"
+i"ofUtils.h"
+i"ofEventUtils.h"
+i"ofxEventUtils.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/openFrameworks/graphics/ofGraphics.h
+c000000004CE3AF780000000000000D63
+t1289990008
+s3427
+i"ofConstants.h"
+i"ofTypes.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/openFrameworks/graphics/ofImage.h
+c000000004CE3AF780000000000000D09
+t1289990008
+s3337
+i"ofConstants.h"
+i"ofTexture.h"
+i"ofGraphics.h"
+i"ofAppRunner.h"
+i"FreeImage.h"
+i"ofUtils.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/openFrameworks/graphics/ofTexture.h
+c000000004CE3AF780000000000000C4B
+t1289990008
+s3147
+i"ofConstants.h"
+i"ofGraphics.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/openFrameworks/graphics/ofTrueTypeFont.h
+c000000004CE3AF78000000000000087A
+t1289990008
+s2170
+i"ofConstants.h"
+i"ofGraphics.h"
+i"ofUtils.h"
+i"ofTypes.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/openFrameworks/ofMain.h
+c000000004CE3AF780000000000000347
+t1289990008
+s839
+i"ofConstants.h"
+i"ofMath.h"
+i"ofUtils.h"
+i"ofTypes.h"
+i"ofSerial.h"
+i"ofArduino.h"
+i"ofTexture.h"
+i"ofTrueTypeFont.h"
+i"ofGraphics.h"
+i"ofImage.h"
+i"ofBaseApp.h"
+i"ofAppRunner.h"
+i"ofSoundStream.h"
+i"ofSoundPlayer.h"
+i"ofVideoGrabber.h"
+i"ofVideoPlayer.h"
+i"ofEvents.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/openFrameworks/sound/ofSoundPlayer.h
+c000000004CE3AF7800000000000006C3
+t1289990008
+s1731
+i"ofConstants.h"
+i"fmod.h"
+i"fmod_errors.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/openFrameworks/sound/ofSoundStream.h
+c000000004CE3AF780000000000000254
+t1289990008
+s596
+i"ofConstants.h"
+i"ofBaseApp.h"
+i"ofEvents.h"
+i"ofMath.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/openFrameworks/utils/ofConstants.h
+c000000004CE3AF780000000000002ACC
+t1289990008
+s10956
+i<TargetConditionals.h>
+i<windows.h>
+i"GLee.h"
+i"glu.h"
+i<unistd.h>
+i"GLee.h"
+i<OpenGL/glu.h>
+i<ApplicationServices/ApplicationServices.h>
+i<unistd.h>
+i"GLee.h"
+i<GL/glu.h>
+i<OpenGLES/ES1/gl.h>
+i<OpenGLES/ES1/glext.h>
+i<cstdlib>
+i<cstdio>
+i<cstdarg>
+i<cmath>
+i<ctime>
+i<cstdlib>
+i<string>
+i<iostream>
+i<vector>
+i<cstring>
+i<sstream>
+i<iomanip>
+i<fstream>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/openFrameworks/utils/ofMath.h
+c000000004CE3AF780000000000000A66
+t1289990008
+s2662
+i"ofConstants.h"
+i"ofTypes.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/openFrameworks/utils/ofTypes.h
+c000000004CE3AF780000000000001D5F
+t1289990008
+s7519
+i"ofConstants.h"
+i"ofUtils.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/openFrameworks/utils/ofUtils.h
+c000000004CE3AF7800000000000005A4
+t1289990008
+s1444
+i"ofConstants.h"
+i<shellapi.h>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/openFrameworks/video/ofGstUtils.h
+c000000004CE3AF780000000000000B55
+t1289990008
+s2901
+i<gst/gst.h>
+i<pthread.h>
+i"ofConstants.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/openFrameworks/video/ofQtUtils.h
+c000000004CE3AF7800000000000006CF
+t1289990008
+s1743
+i"ofConstants.h"
+i"ofGraphics.h"
+i<QuickTime/QuickTime.h>
+i<CoreServices/CoreServices.h>
+i<ApplicationServices/ApplicationServices.h>
+i<QTML.h>
+i<FixMath.h>
+i<QuickTimeComponents.h>
+i<TextUtils.h>
+i<MediaHandlers.h>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/openFrameworks/video/ofVideoGrabber.h
+c000000004CE3AF780000000000000C9C
+t1289990008
+s3228
+i"ofConstants.h"
+i"ofTexture.h"
+i"ofGraphics.h"
+i"ofTypes.h"
+i"ofQtUtils.h"
+i"videoInput.h"
+i"ofUCUtils.h"
+i"ofGstUtils.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/openFrameworks/video/ofVideoPlayer.h
+c000000004CE3AF780000000000000C33
+t1289990008
+s3123
+i"ofConstants.h"
+i"ofTexture.h"
+i"ofGstUtils.h"
+i"ofQtUtils.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/openFrameworksCompiled/lib/osx/openFrameworksDebug.a
+c000000004D2AC89B0000000000611048
+t1294649499
+s6361160
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/AbstractDelegate.h
+c000000004CE3AF780000000000000B2E
+t1289990008
+s2862
+i"Poco/Foundation.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/AbstractEvent.h
+c000000004CE3AF780000000000002C6A
+t1289990008
+s11370
+i"Poco/Foundation.h"
+i"Poco/SingletonHolder.h"
+i"Poco/SharedPtr.h"
+i"Poco/ActiveResult.h"
+i"Poco/ActiveMethod.h"
+i"Poco/Mutex.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/ActiveMethod.h
+c000000004CE3AF780000000000001C64
+t1289990008
+s7268
+i"Poco/Foundation.h"
+i"Poco/ActiveResult.h"
+i"Poco/ActiveRunnable.h"
+i"Poco/ActiveStarter.h"
+i"Poco/AutoPtr.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/ActiveResult.h
+c000000004CE3AF780000000000002E66
+t1289990008
+s11878
+i"Poco/Foundation.h"
+i"Poco/Mutex.h"
+i"Poco/Event.h"
+i"Poco/RefCountedObject.h"
+i"Poco/Exception.h"
+i<algorithm>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/ActiveRunnable.h
+c000000004CE3AF780000000000001785
+t1289990008
+s6021
+i"Poco/Foundation.h"
+i"Poco/ActiveResult.h"
+i"Poco/Runnable.h"
+i"Poco/RefCountedObject.h"
+i"Poco/AutoPtr.h"
+i"Poco/Exception.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/ActiveStarter.h
+c000000004CE3AF780000000000000927
+t1289990008
+s2343
+i"Poco/Foundation.h"
+i"Poco/ThreadPool.h"
+i"Poco/ActiveRunnable.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/AutoPtr.h
+c000000004CE3AF780000000000001E0C
+t1289990008
+s7692
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i<algorithm>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/Bugcheck.h
+c000000004CE3AF7800000000000012FE
+t1289990008
+s4862
+i"Poco/Foundation.h"
+i<string>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/CompareFunctions.h
+c000000004CE3AF7800000000000007EC
+t1289990008
+s2028
+i"Poco/Foundation.h"
+i<functional>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/Config.h
+c000000004CE3AF7800000000000008B5
+t1289990008
+s2229
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/Delegate.h
+c000000004CE3AF780000000000001802
+t1289990008
+s6146
+i"Poco/Foundation.h"
+i"Poco/AbstractDelegate.h"
+i"Poco/FunctionDelegate.h"
+i"Poco/Expire.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/Event.h
+c000000004CE3AF780000000000000E21
+t1289990008
+s3617
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i"Poco/Event_WIN32.h"
+i"Poco/Event_POSIX.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/Event_POSIX.h
+c000000004CE3AF780000000000000A91
+t1289990008
+s2705
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i<pthread.h>
+i<errno.h>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/Event_WIN32.h
+c000000004CE3AF780000000000000947
+t1289990008
+s2375
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i"Poco/UnWindows.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/Exception.h
+c000000004CE3AF7800000000000026AC
+t1289990008
+s9900
+i"Poco/Foundation.h"
+i<stdexcept>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/Expire.h
+c000000004CE3AF780000000000000CF1
+t1289990008
+s3313
+i"Poco/Foundation.h"
+i"Poco/AbstractDelegate.h"
+i"Poco/Timestamp.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/FIFOEvent.h
+c000000004CE3AF780000000000000AD4
+t1289990008
+s2772
+i"Poco/AbstractEvent.h"
+i"Poco/FIFOStrategy.h"
+i"Poco/AbstractDelegate.h"
+i"Poco/CompareFunctions.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/FIFOStrategy.h
+c000000004CE3AF7800000000000010F3
+t1289990008
+s4339
+i"Poco/NotificationStrategy.h"
+i<map>
+i<list>
+i<memory>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/Foundation.h
+c000000004CE3AF780000000000001023
+t1289990008
+s4131
+i"Poco/Config.h"
+i"Poco/Platform.h"
+i"Poco/Platform_WIN32.h"
+i"Poco/Platform_VMS.h"
+i"Poco/Platform_POSIX.h"
+i"Poco/Bugcheck.h"
+i"Poco/Types.h"
+i<string>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/FunctionDelegate.h
+c000000004CE3AF7800000000000013CA
+t1289990008
+s5066
+i"Poco/Foundation.h"
+i"Poco/AbstractDelegate.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/Mutex.h
+c000000004CE3AF780000000000001A61
+t1289990008
+s6753
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i"Poco/ScopedLock.h"
+i"Poco/Mutex_WIN32.h"
+i"Poco/Mutex_POSIX.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/Mutex_POSIX.h
+c000000004CE3AF780000000000000AC3
+t1289990008
+s2755
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i<pthread.h>
+i<errno.h>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/Mutex_WIN32.h
+c000000004CE3AF780000000000000A07
+t1289990008
+s2567
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i"Poco/UnWindows.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/NotificationStrategy.h
+c000000004CE3AF780000000000000A37
+t1289990008
+s2615
+i"Poco/Foundation.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/Platform.h
+c000000004CE3AF780000000000001A3A
+t1289990008
+s6714
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/Platform_POSIX.h
+c000000004CE3AF780000000000000843
+t1289990008
+s2115
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/Platform_VMS.h
+c000000004CE3AF780000000000000BAA
+t1289990008
+s2986
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/Platform_WIN32.h
+c000000004CE3AF780000000000000D4D
+t1289990008
+s3405
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/RefCountedObject.h
+c000000004CE3AF780000000000000B10
+t1289990008
+s2832
+i"Poco/Foundation.h"
+i"Poco/Mutex.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/Runnable.h
+c000000004CE3AF780000000000000861
+t1289990008
+s2145
+i"Poco/Foundation.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/ScopedLock.h
+c000000004CE3AF7800000000000008EB
+t1289990008
+s2283
+i"Poco/Foundation.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/SharedPtr.h
+c000000004CE3AF7800000000000021DE
+t1289990008
+s8670
+i"Poco/Foundation.h"
+i"Poco/Exception.h"
+i"Poco/Mutex.h"
+i<algorithm>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/SignalHandler.h
+c000000004CE3AF7800000000000011EB
+t1289990008
+s4587
+i"Poco/Foundation.h"
+i<vector>
+i<setjmp.h>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/SingletonHolder.h
+c000000004CE3AF780000000000000A64
+t1289990008
+s2660
+i"Poco/Foundation.h"
+i"Poco/Mutex.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/Thread.h
+c000000004CE3AF780000000000001C3A
+t1289990008
+s7226
+i"Poco/Foundation.h"
+i"Poco/Mutex.h"
+i"Poco/Thread_WIN32.h"
+i"Poco/Thread_POSIX.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/ThreadPool.h
+c000000004CE3AF780000000000001849
+t1289990008
+s6217
+i"Poco/Foundation.h"
+i"Poco/Thread.h"
+i"Poco/Mutex.h"
+i<vector>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/Thread_POSIX.h
+c000000004CE3AF7800000000000012A8
+t1289990008
+s4776
+i"Poco/Foundation.h"
+i"Poco/Runnable.h"
+i"Poco/SignalHandler.h"
+i"Poco/Event.h"
+i"Poco/RefCountedObject.h"
+i"Poco/AutoPtr.h"
+i<pthread.h>
+i<sys/select.h>
+i<errno.h>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/Thread_WIN32.h
+c000000004CE3AF78000000000000106C
+t1289990008
+s4204
+i"Poco/Foundation.h"
+i"Poco/Runnable.h"
+i"Poco/UnWindows.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/Timestamp.h
+c000000004CE3AF7A00000000000019A7
+t1289990010
+s6567
+i"Poco/Foundation.h"
+i<ctime>
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/Types.h
+c000000004CE3AF7A0000000000001910
+t1289990010
+s6416
+i"Poco/Foundation.h"
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/poco/include/Poco/UnWindows.h
+c000000004CE3AF7A0000000000000FD1
+t1289990010
+s4049
+i<windows.h>
+
+N/var/folders/DC/DCZa75rhEn4Epc9cmt1s7E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-auvexvbjxntgisdonqinudebaihd/Carbon.h.gch
+t2
+s0
+
+N/var/folders/DC/DCZa75rhEn4Epc9cmt1s7E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-fkyuaatvfunjmvdpwqvrzirctjpa/Carbon.h.gch
+t1296237856
+s53757680
+
+NopenFrameworks-Info.plist
+c000000004B6D8ADB0000000000000277
+t1265470171
+s631
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies317949639#317949639#0(110"[WARN]Warning: The Copy Files build phase contains this target's Info.plist file 'openFrameworks-Info.plist'.1(22@103"Warning: The Copy Files build phase contains this target's Info.plist file 'openFrameworks-Info.plist'.317949639#18446744073709551615#0#0(1@0"0(0#1#0"8632023616#0"0#
+
+CCompileC build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/main.o "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/src/main.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+s317948919.619715
+e317948926.106383
+r1
+xCompileC
+xbuild/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/main.o
+x/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/src/main.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@119"Compile /Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/src/main.cpp317948919#317948926#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#111"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/src/main.cpp8615071168#2220"    cd "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -gdwarf-2 "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/opencvExampleDebug.hmap" "-F/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin" "-F/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/glut/lib/osx" "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin/include" -I../../../libs/openFrameworks -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/DerivedSources/i386" "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/DerivedSources" -D__MACOSX_CORE__ -lpthread -include /var/folders/DC/DCZa75rhEn4Epc9cmt1s7E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-fkyuaatvfunjmvdpwqvrzirctjpa/Carbon.h -c "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/src/main.cpp" -o "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/main.o"0#
+
+CCompileC build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/main.o /Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/src/main.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvColorImage.o "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvColorImage.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+s317930664.473950
+e317930666.756189
+r1
+xCompileC
+xbuild/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvColorImage.o
+x/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvColorImage.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@156"Compile /Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvColorImage.cpp317930664#317930666#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#148"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvColorImage.cpp8613588832#2268"    cd "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -gdwarf-2 "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/opencvExampleDebug.hmap" "-F/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin" "-F/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/glut/lib/osx" "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin/include" -I../../../libs/openFrameworks -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/DerivedSources/i386" "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/DerivedSources" -D__MACOSX_CORE__ -lpthread -include /var/folders/DC/DCZa75rhEn4Epc9cmt1s7E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-fkyuaatvfunjmvdpwqvrzirctjpa/Carbon.h -c "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvColorImage.cpp" -o "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvColorImage.o"0#
+
+CCompileC build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvColorImage.o /Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../addons/ofxOpenCv/src/ofxCvColorImage.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvContourFinder.o "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvContourFinder.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+s317930664.479059
+e317930667.157642
+r1
+xCompileC
+xbuild/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvContourFinder.o
+x/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvContourFinder.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@159"Compile /Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvContourFinder.cpp317930664#317930667#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#151"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvContourFinder.cpp8611652416#2274"    cd "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -gdwarf-2 "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/opencvExampleDebug.hmap" "-F/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin" "-F/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/glut/lib/osx" "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin/include" -I../../../libs/openFrameworks -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/DerivedSources/i386" "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/DerivedSources" -D__MACOSX_CORE__ -lpthread -include /var/folders/DC/DCZa75rhEn4Epc9cmt1s7E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-fkyuaatvfunjmvdpwqvrzirctjpa/Carbon.h -c "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvContourFinder.cpp" -o "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvContourFinder.o"0#
+
+CCompileC build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvContourFinder.o /Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../addons/ofxOpenCv/src/ofxCvContourFinder.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvFloatImage.o "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvFloatImage.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+s317930666.756407
+e317930668.807978
+r1
+xCompileC
+xbuild/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvFloatImage.o
+x/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvFloatImage.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@156"Compile /Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvFloatImage.cpp317930666#317930668#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#148"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvFloatImage.cpp8611687680#2268"    cd "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -gdwarf-2 "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/opencvExampleDebug.hmap" "-F/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin" "-F/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/glut/lib/osx" "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin/include" -I../../../libs/openFrameworks -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/DerivedSources/i386" "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/DerivedSources" -D__MACOSX_CORE__ -lpthread -include /var/folders/DC/DCZa75rhEn4Epc9cmt1s7E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-fkyuaatvfunjmvdpwqvrzirctjpa/Carbon.h -c "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvFloatImage.cpp" -o "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvFloatImage.o"0#
+
+CCompileC build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvFloatImage.o /Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../addons/ofxOpenCv/src/ofxCvFloatImage.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvGrayscaleImage.o "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvGrayscaleImage.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+s317930667.157749
+e317930669.251151
+r1
+xCompileC
+xbuild/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvGrayscaleImage.o
+x/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvGrayscaleImage.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@160"Compile /Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvGrayscaleImage.cpp317930667#317930669#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#152"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvGrayscaleImage.cpp8602894496#2276"    cd "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -gdwarf-2 "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/opencvExampleDebug.hmap" "-F/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin" "-F/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/glut/lib/osx" "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin/include" -I../../../libs/openFrameworks -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/DerivedSources/i386" "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/DerivedSources" -D__MACOSX_CORE__ -lpthread -include /var/folders/DC/DCZa75rhEn4Epc9cmt1s7E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-fkyuaatvfunjmvdpwqvrzirctjpa/Carbon.h -c "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvGrayscaleImage.cpp" -o "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvGrayscaleImage.o"0#
+
+CCompileC build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvGrayscaleImage.o /Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../addons/ofxOpenCv/src/ofxCvGrayscaleImage.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvImage.o "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvImage.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+s317930668.808193
+e317930670.921118
+r1
+xCompileC
+xbuild/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvImage.o
+x/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvImage.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@151"Compile /Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvImage.cpp317930668#317930670#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#143"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvImage.cpp8611248672#2258"    cd "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -gdwarf-2 "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/opencvExampleDebug.hmap" "-F/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin" "-F/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/glut/lib/osx" "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin/include" -I../../../libs/openFrameworks -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/DerivedSources/i386" "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/DerivedSources" -D__MACOSX_CORE__ -lpthread -include /var/folders/DC/DCZa75rhEn4Epc9cmt1s7E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-fkyuaatvfunjmvdpwqvrzirctjpa/Carbon.h -c "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvImage.cpp" -o "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvImage.o"0#
+
+CCompileC build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvImage.o /Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../addons/ofxOpenCv/src/ofxCvImage.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvShortImage.o "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvShortImage.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+s317930669.251319
+e317930671.107072
+r1
+xCompileC
+xbuild/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvShortImage.o
+x/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvShortImage.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@156"Compile /Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvShortImage.cpp317930669#317930671#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#148"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvShortImage.cpp8610357568#2268"    cd "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -gdwarf-2 "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/opencvExampleDebug.hmap" "-F/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin" "-F/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/glut/lib/osx" "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin/include" -I../../../libs/openFrameworks -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/DerivedSources/i386" "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/DerivedSources" -D__MACOSX_CORE__ -lpthread -include /var/folders/DC/DCZa75rhEn4Epc9cmt1s7E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-fkyuaatvfunjmvdpwqvrzirctjpa/Carbon.h -c "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/src/ofxCvShortImage.cpp" -o "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvShortImage.o"0#
+
+CCompileC build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxCvShortImage.o /Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../addons/ofxOpenCv/src/ofxCvShortImage.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxOscBundle.o "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/src/ofxOscBundle.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+s317930670.921332
+e317930671.875440
+r1
+xCompileC
+xbuild/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxOscBundle.o
+x/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/src/ofxOscBundle.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@150"Compile /Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/src/ofxOscBundle.cpp317930670#317930671#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#142"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/src/ofxOscBundle.cpp8609480896#2259"    cd "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -gdwarf-2 "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/opencvExampleDebug.hmap" "-F/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin" "-F/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/glut/lib/osx" "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin/include" -I../../../libs/openFrameworks -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/DerivedSources/i386" "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/DerivedSources" -D__MACOSX_CORE__ -lpthread -include /var/folders/DC/DCZa75rhEn4Epc9cmt1s7E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-fkyuaatvfunjmvdpwqvrzirctjpa/Carbon.h -c "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/src/ofxOscBundle.cpp" -o "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxOscBundle.o"0#
+
+CCompileC build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxOscBundle.o /Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../addons/ofxOsc/src/ofxOscBundle.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxOscMessage.o "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/src/ofxOscMessage.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+s317930671.107181
+e317930671.975372
+r1
+xCompileC
+xbuild/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxOscMessage.o
+x/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/src/ofxOscMessage.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@151"Compile /Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/src/ofxOscMessage.cpp317930671#317930671#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#143"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/src/ofxOscMessage.cpp8609154944#2261"    cd "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -gdwarf-2 "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/opencvExampleDebug.hmap" "-F/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin" "-F/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/glut/lib/osx" "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin/include" -I../../../libs/openFrameworks -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/DerivedSources/i386" "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/DerivedSources" -D__MACOSX_CORE__ -lpthread -include /var/folders/DC/DCZa75rhEn4Epc9cmt1s7E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-fkyuaatvfunjmvdpwqvrzirctjpa/Carbon.h -c "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/src/ofxOscMessage.cpp" -o "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxOscMessage.o"0#
+
+CCompileC build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxOscMessage.o /Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../addons/ofxOsc/src/ofxOscMessage.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxOscReceiver.o "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/src/ofxOscReceiver.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+s317930671.875541
+e317930673.612573
+r1
+xCompileC
+xbuild/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxOscReceiver.o
+x/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/src/ofxOscReceiver.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@152"Compile /Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/src/ofxOscReceiver.cpp317930671#317930673#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#144"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/src/ofxOscReceiver.cpp8613301376#2263"    cd "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -gdwarf-2 "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/opencvExampleDebug.hmap" "-F/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin" "-F/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/glut/lib/osx" "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin/include" -I../../../libs/openFrameworks -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/DerivedSources/i386" "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/DerivedSources" -D__MACOSX_CORE__ -lpthread -include /var/folders/DC/DCZa75rhEn4Epc9cmt1s7E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-fkyuaatvfunjmvdpwqvrzirctjpa/Carbon.h -c "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/src/ofxOscReceiver.cpp" -o "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxOscReceiver.o"0#
+
+CCompileC build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxOscReceiver.o /Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../addons/ofxOsc/src/ofxOscReceiver.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxOscSender.o "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/src/ofxOscSender.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+s317930671.975497
+e317930672.771990
+r1
+xCompileC
+xbuild/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxOscSender.o
+x/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/src/ofxOscSender.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@150"Compile /Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/src/ofxOscSender.cpp317930671#317930672#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#142"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/src/ofxOscSender.cpp8611193376#2259"    cd "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -gdwarf-2 "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/opencvExampleDebug.hmap" "-F/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin" "-F/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/glut/lib/osx" "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin/include" -I../../../libs/openFrameworks -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/DerivedSources/i386" "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/DerivedSources" -D__MACOSX_CORE__ -lpthread -include /var/folders/DC/DCZa75rhEn4Epc9cmt1s7E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-fkyuaatvfunjmvdpwqvrzirctjpa/Carbon.h -c "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/src/ofxOscSender.cpp" -o "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxOscSender.o"0#
+
+CCompileC build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/ofxOscSender.o /Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../addons/ofxOsc/src/ofxOscSender.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/testApp.o "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/src/testApp.cpp" normal i386 c++ com.apple.compilers.gcc.4_2
+s317949639.741825
+e317949643.835896
+r1
+xCompileC
+xbuild/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/testApp.o
+x/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/src/testApp.cpp
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@122"Compile /Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/src/testApp.cpp317949639#317949643#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#114"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/src/testApp.cpp8621569024#2226"    cd "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++ -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -gdwarf-2 "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/opencvExampleDebug.hmap" "-F/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin" "-F/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/glut/lib/osx" "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin/include" -I../../../libs/openFrameworks -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/DerivedSources/i386" "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/DerivedSources" -D__MACOSX_CORE__ -lpthread -include /var/folders/DC/DCZa75rhEn4Epc9cmt1s7E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-fkyuaatvfunjmvdpwqvrzirctjpa/Carbon.h -c "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/src/testApp.cpp" -o "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/testApp.o"0#
+
+CCompileC build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/testApp.o /Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/src/testApp.cpp normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CLd "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin//opencvExampleDebug.app/Contents/MacOS/opencvExampleDebug" normal i386
+s317949643.836145
+e317949644.353121
+r1
+xLd
+x/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin//opencvExampleDebug.app/Contents/MacOS/opencvExampleDebug
+xnormal
+xi386
+lSLF07#2@165"Link /Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin//opencvExampleDebug.app/Contents/MacOS/opencvExampleDebug317949643#317949644#0(0"0(0#0#0"8614837536#4624"    cd "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza"    setenv MACOSX_DEPLOYMENT_TARGET 10.6    /Developer/usr/bin/g++-4.2 -arch i386 -isysroot /Developer/SDKs/MacOSX10.6.sdk "-L/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin" "-L/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/freeimage/lib/osx" "-L/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/fmodex/lib/osx" "-L/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/FreeImage/lib/osx" "-L/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/GLee/lib/osx" "-L/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/poco/lib/osx" "-L/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/rtAudio/lib/osx" "-L/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/libs/oscpack/lib/osx" "-L/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/libs/opencv/lib/osx" "-L/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/libs/oscpack/lib/osx" "-L/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/freetype/lib/osx" "-L/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/FreeImage/lib/osx" "-L/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/libs/oscpack/lib/osx" "-F/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin" "-F/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/glut/lib/osx" -filelist "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/opencvExampleDebug.LinkFileList" -mmacosx-version-min=10.6 -dead_strip /Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/libs/openFrameworksCompiled/lib/osx/openFrameworksDebug.a "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/GLee/lib/osx/GLee.a" "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/rtAudio/lib/osx/rtAudio.a" -framework AGL -framework ApplicationServices -framework AudioToolbox -framework Carbon -framework CoreAudio -framework CoreFoundation -framework CoreServices -framework OpenGL -framework QuickTime -framework AppKit -framework Cocoa -framework IOKit -framework GLUT "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/poco/lib/osx/CppUnit.a" "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/poco/lib/osx/PocoFoundation.a" "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/poco/lib/osx/PocoNet.a" "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/poco/lib/osx/PocoUtil.a" "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/poco/lib/osx/PocoXML.a" "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/libs/opencv/lib/osx/openCV.a" "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/freetype/lib/osx/freetype.a" -lfmodex "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/FreeImage/lib/osx/freeimage.a" "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/libs/oscpack/lib/osx/osc.a" -o "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin//opencvExampleDebug.app/Contents/MacOS/opencvExampleDebug"0#
+
+CLd /Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/bin//opencvExampleDebug.app/Contents/MacOS/opencvExampleDebug normal i386
+r0
+
+CPBXCp bin/opencvExampleDebug.app/Contents/Frameworks/GLUT.framework ../../../libs/glut/lib/osx/GLUT.framework
+s317930677.145194
+e317930678.264171
+r1
+xPBXCp
+xbin/opencvExampleDebug.app/Contents/Frameworks/GLUT.framework
+x../../../libs/glut/lib/osx/GLUT.framework
+lSLF07#2@46"Copy ../../../libs/glut/lib/osx/GLUT.framework317930677#317930678#0(0"0(0#0#140"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/glut/lib/osx/GLUT.framework8609627616#561"    cd "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/glut/lib/osx/GLUT.framework" "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin/opencvExampleDebug.app/Contents/Frameworks"0#
+
+CPBXCp bin/opencvExampleDebug.app/Contents/Resources/openFrameworks-Info.plist openFrameworks-Info.plist
+r0
+
+CPhaseScriptExecution "Run Script" "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh"
+s317949644.353233
+e317949644.403120
+r1
+xPhaseScriptExecution
+xRun Script
+x/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh
+lSLF07#2@36"Run custom shell script 'Run Script'317949644#317949644#0(0"0(0#0#0"8608177472#24035"    cd "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza"    setenv ACTION build    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER victormanueldiazbarrales    setenv ALWAYS_SEARCH_USER_PATHS YES    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD_32_64_BIT "x86_64 i386 ppc"    setenv ARCHS_STANDARD_32_BIT "i386 ppc"    setenv ARCHS_STANDARD_64_BIT x86_64    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build"    setenv BUILD_ROOT "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build"    setenv BUILD_STYLE Debug    setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin/"    setenv CACHE_ROOT /var/folders/DC/DCZa75rhEn4Epc9cmt1s7E+++TI/-Caches-/com.apple.Xcode.501    setenv CCHROOT /var/folders/DC/DCZa75rhEn4Epc9cmt1s7E+++TI/-Caches-/com.apple.Xcode.501    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLASS_FILE_DIR "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/JavaClasses"    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin//opencvExampleDebug.app"    setenv CODE_SIGNING_ALLOWED YES    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/DC/DCZa75rhEn4Epc9cmt1s7E+++TI/-Caches-/com.apple.Xcode.501/CompositeSDKs    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin/"    setenv CONFIGURATION_TEMP_DIR "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug"    setenv CONTENTS_FOLDER_PATH opencvExampleDebug.app/Contents    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING YES    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/DerivedSources"    setenv DERIVED_FILE_DIR "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/DerivedSources"    setenv DERIVED_SOURCES_DIR "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/DerivedSources"    setenv DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv DEVELOPER_BIN_DIR /Developer/usr/bin    setenv DEVELOPER_DIR /Developer    setenv DEVELOPER_FRAMEWORKS_DIR /Developer/Library/Frameworks    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "\"/Developer/Library/Frameworks\""    setenv DEVELOPER_LIBRARY_DIR /Developer/Library    setenv DEVELOPER_SDK_DIR /Developer/SDKs    setenv DEVELOPER_TOOLS_DIR /Developer/Tools    setenv DEVELOPER_USR_DIR /Developer/usr    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH opencvExampleDebug.app/Contents/Resources/English.lproj/Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/opencvExample.dst    setenv DWARF_DSYM_FILE_NAME opencvExampleDebug.app.dSYM    setenv DWARF_DSYM_FOLDER_PATH "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin/"    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv ENABLE_OPENMP_SUPPORT NO    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".svn .git CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) CVS .svn .git *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH opencvExampleDebug.app/Contents/Executables    setenv EXECUTABLE_FOLDER_PATH opencvExampleDebug.app/Contents/MacOS    setenv EXECUTABLE_NAME opencvExampleDebug    setenv EXECUTABLE_PATH opencvExampleDebug.app/Contents/MacOS/opencvExampleDebug    setenv FILE_LIST "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects/LinkFileList"    setenv FIXED_FILES_DIR "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/FixedFiles"    setenv FRAMEWORKS_FOLDER_PATH opencvExampleDebug.app/Contents/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "\"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin/\"  \"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/glut/lib/osx\""    setenv FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1 "\"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/glut/lib/osx\""    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME opencvExampleDebug.app    setenv GCC3_VERSION 3.3    setenv GCC_AUTO_VECTORIZATION YES    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_ENABLE_FIX_AND_CONTINUE YES    setenv GCC_ENABLE_SSE3_EXTENSIONS YES    setenv GCC_ENABLE_SUPPLEMENTAL_SSE3_INSTRUCTIONS YES    setenv GCC_GENERATE_DEBUGGING_SYMBOLS YES    setenv GCC_INLINES_ARE_PRIVATE_EXTERN NO    setenv GCC_MODEL_TUNING G4    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h    setenv GCC_SYMBOLS_PRIVATE_EXTERN NO    setenv GCC_TREAT_WARNINGS_AS_ERRORS NO    setenv GCC_VERSION 4.2    setenv GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS NO    setenv GCC_WARN_ABOUT_INVALID_OFFSETOF_MACRO NO    setenv GCC_WARN_ALLOW_INCOMPLETE_PROTOCOL NO    setenv GCC_WARN_UNINITIALIZED_AUTOS NO    setenv GCC_WARN_UNUSED_VALUE NO    setenv GCC_WARN_UNUSED_VARIABLE NO    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "\"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin//include\" ../../../libs/openFrameworks/** ../../../libs/freetype/include/ ../../../libs/freetype/include/freetype2 ../../../libs/poco/include ../../../addons/"    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE openFrameworks-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT same-as-input    setenv INFOPLIST_PATH opencvExampleDebug.app/Contents/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH opencvExampleDebug.app/Contents/Resources/English.lproj/InfoPlist.strings    setenv INSTALL_DIR /tmp/opencvExample.dst/Users/victormanueldiazbarrales/Applications    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER victormanueldiazbarrales    setenv INSTALL_PATH /Users/victormanueldiazbarrales/Applications    setenv INSTALL_ROOT /tmp/opencvExample.dst    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH opencvExampleDebug.app/Contents/Resources/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/opencvExampleDebug-LinkMap-normal-i386.txt"    setenv LD_OPENMP_FLAGS -fopenmp    setenv LEX /Developer/usr/bin/lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_SEARCH_PATHS "\"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin/\"  \"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/freeimage/lib/osx\" \"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/fmodex/lib/osx\" \"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/FreeImage/lib/osx\" \"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/GLee/lib/osx\" \"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/poco/lib/osx\" \"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/rtAudio/lib/osx\" \"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/libs/oscpack/lib/osx\"     \"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/libs/opencv/lib/osx\" \"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/libs/oscpack/lib/osx\"  \"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/freetype/lib/osx\" \"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/FreeImage/lib/osx\" \"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/libs/oscpack/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_1 "\"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/freeimage/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_12 "\"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOpenCv/libs/opencv/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_13 "\"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/libs/oscpack/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_15 "\"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/freetype/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_2 "\"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/fmodex/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_3 "\"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/FreeImage/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_4 "\"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/GLee/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_5 "\"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/poco/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_6 "\"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/rtAudio/lib/osx\""    setenv LIBRARY_SEARCH_PATHS_QUOTED_FOR_TARGET_7 "\"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../addons/ofxOsc/libs/oscpack/lib/osx\""    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal/i386/opencvExampleDebug.LinkFileList"    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH opencvExampleDebug.app/Contents/Resources/English.lproj    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv MAC_OS_X_VERSION_ACTUAL 1066    setenv MAC_OS_X_VERSION_MAJOR 1060    setenv MAC_OS_X_VERSION_MINOR 0606    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJECT_FILE_DIR "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects"    setenv OBJECT_FILE_DIR_normal "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/Objects-normal"    setenv OBJROOT "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build"    setenv ONLY_ACTIVE_ARCH NO    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_CPLUSPLUSFLAGS "-D__MACOSX_CORE__ -lpthread"    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Developer/Headers /Developer/SDKs /Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH opencvExampleDebug.app/Contents/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS c++    setenv PKGINFO_FILE_PATH "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/PkgInfo"    setenv PKGINFO_PATH opencvExampleDebug.app/Contents/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR /Developer/Applications    setenv PLATFORM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv PLATFORM_DEVELOPER_LIBRARY_DIR /Developer/Library    setenv PLATFORM_DEVELOPER_SDK_DIR /Developer/SDKs    setenv PLATFORM_DEVELOPER_TOOLS_DIR /Developer/Tools    setenv PLATFORM_DEVELOPER_USR_DIR /Developer/usr    setenv PLATFORM_NAME macosx    setenv PLATFORM_PRODUCT_BUILD_VERSION 10M2423    setenv PLIST_FILE_OUTPUT_FORMAT same-as-input    setenv PLUGINS_FOLDER_PATH opencvExampleDebug.app/Contents/PlugIns    setenv PREBINDING NO    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/PrefixHeaders"    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH opencvExampleDebug.app/Contents/PrivateHeaders    setenv PRODUCT_NAME opencvExampleDebug    setenv PRODUCT_SETTINGS_PATH "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/openFrameworks-Info.plist"    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT opencvExample    setenv PROJECT_DERIVED_FILE_DIR "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/DerivedSources"    setenv PROJECT_DIR "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza"    setenv PROJECT_FILE_PATH "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/opencvExample.xcodeproj"    setenv PROJECT_NAME opencvExample    setenv PROJECT_TEMP_DIR "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build"    setenv PUBLIC_HEADERS_FOLDER_PATH opencvExampleDebug.app/Contents/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_GIT_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/ResourceManagerResources"    setenv REZ_OBJECTS_DIR "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/ResourceManagerResources/Objects"    setenv REZ_SEARCH_PATHS "\"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin/\" "    setenv RUN_CLANG_STATIC_ANALYZER NO    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH opencvExampleDebug.app/Contents/Resources/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT /Developer/SDKs/MacOSX10.6.sdk    setenv SDK_DIR /Developer/SDKs/MacOSX10.6.sdk    setenv SDK_NAME macosx10.6    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHARED_DERIVED_FILE_DIR "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin//DerivedSources"    setenv SHARED_FRAMEWORKS_FOLDER_PATH opencvExampleDebug.app/Contents/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /var/folders/DC/DCZa75rhEn4Epc9cmt1s7E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH opencvExampleDebug.app/Contents/SharedSupport    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza"    setenv SRCROOT "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza"    setenv STANDARD_C_PLUS_PLUS_LIBRARY_TYPE dynamic    setenv STRINGS_FILE_OUTPUT_ENCODING UTF-16    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SYMBOL_REPOSITORY_DIR "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/SymbolRepositories"    setenv SYMROOT "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build"    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR /Developer/Applications    setenv SYSTEM_DEVELOPER_BIN_DIR /Developer/usr/bin    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR /Developer    setenv SYSTEM_DEVELOPER_DOC_DIR "/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS /Developer/Tools    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR /Developer/usr    setenv SYSTEM_DEVELOPER_UTILITIES_DIR /Developer/Applications/Utilities    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETNAME opencvExample    setenv TARGET_BUILD_DIR "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin/"    setenv TARGET_NAME opencvExample    setenv TARGET_TEMP_DIR "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build"    setenv TEMP_DIR "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build"    setenv TEMP_FILES_DIR "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build"    setenv TEMP_FILE_DIR "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build"    setenv TEMP_ROOT "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build"    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH opencvExampleDebug.app/Contents/Resources    setenv UNSTRIPPED_PRODUCT NO    setenv USER victormanueldiazbarrales    setenv USER_APPS_DIR /Users/victormanueldiazbarrales/Applications    setenv USER_LIBRARY_DIR /Users/victormanueldiazbarrales/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS "i386 ppc ppc64 ppc7400 ppc970 x86_64"    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH opencvExampleDebug.app/Contents/version.plist    setenv VERSION_INFO_BUILDER victormanueldiazbarrales    setenv VERSION_INFO_FILE opencvExampleDebug_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:opencvExampleDebug  PROJECT:opencvExample-\""    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME opencvExampleDebug.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR /Developer/Library/Xcode    setenv XCODE_PRODUCT_BUILD_VERSION 10M2423    setenv XCODE_VERSION_ACTUAL 0325    setenv XCODE_VERSION_MAJOR 0300    setenv XCODE_VERSION_MINOR 0320    setenv YACC /Developer/usr/bin/yacc    setenv ZERO_LINK NO    setenv _REAL_SDKROOT macosx    /bin/sh -c "\"/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh\""0#
+
+CPhaseScriptExecution "Run Script" /Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/build/opencvExample.build/Debug/opencvExample.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh
+r0
+
+CProcessInfoPlistFile "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin//opencvExampleDebug.app/Contents/Info.plist" openFrameworks-Info.plist
+r0
+
+CProcessInfoPlistFile /Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/bin//opencvExampleDebug.app/Contents/Info.plist openFrameworks-Info.plist
+r0
+
+CProcessPCH++ /var/folders/DC/DCZa75rhEn4Epc9cmt1s7E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-auvexvbjxntgisdonqinudebaihd/Carbon.h.gch /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h normal i386 c++ com.apple.compilers.gcc.4_2
+r0
+
+CProcessPCH++ /var/folders/DC/DCZa75rhEn4Epc9cmt1s7E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-fkyuaatvfunjmvdpwqvrzirctjpa/Carbon.h.gch /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h normal i386 c++ com.apple.compilers.gcc.4_2
+s317930651.735427
+e317930656.299480
+r1
+xProcessPCH++
+x/var/folders/DC/DCZa75rhEn4Epc9cmt1s7E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-fkyuaatvfunjmvdpwqvrzirctjpa/Carbon.h.gch
+x/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h
+xnormal
+xi386
+xc++
+xcom.apple.compilers.gcc.4_2
+oi686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done
+lSLF07#2@101"Precompile /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h317930651#317930656#0(92"i686-apple-darwin10-gcc-4.2.1: -lpthread: linker input file unused because linking not done0(0#0#90"/Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h5489726753300772864#2019"    cd "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza"    setenv LANG en_US.US-ASCII    /Developer/usr/bin/gcc-4.2 -x c++-header -arch i386 -fmessage-length=0 -pipe -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -isysroot /Developer/SDKs/MacOSX10.6.sdk -mfix-and-continue -ftree-vectorize -msse3 -mssse3 -Wno-deprecated-declarations -Wno-invalid-offsetof -mmacosx-version-min=10.6 -gdwarf-2 "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/opencvExampleDebug.hmap" "-F/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin" "-F/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/../../../libs/glut/lib/osx" "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin/include" -I../../../libs/openFrameworks -I../../../libs/openFrameworks/app -I../../../libs/openFrameworks/communication -I../../../libs/openFrameworks/events -I../../../libs/openFrameworks/graphics -I../../../libs/openFrameworks/sound -I../../../libs/openFrameworks/utils -I../../../libs/openFrameworks/video -I../../../libs/freetype/include -I../../../libs/freetype/include/freetype2 -I../../../libs/poco/include -I../../../addons "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/DerivedSources/i386" "-I/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/build/opencvExample.build/Debug/opencvExample.build/DerivedSources" -D__MACOSX_CORE__ -lpthread -c /Developer/SDKs/MacOSX10.6.sdk/System/Library/Frameworks/Carbon.framework/Headers/Carbon.h -o /var/folders/DC/DCZa75rhEn4Epc9cmt1s7E+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/Carbon-fkyuaatvfunjmvdpwqvrzirctjpa/Carbon.h.gch0#
+
+CTouch "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin//opencvExampleDebug.app"
+s317949644.403333
+e317949644.406547
+r1
+xTouch
+x/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin//opencvExampleDebug.app
+lSLF07#2@132"Touch /Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin//opencvExampleDebug.app317949644#317949644#0(0"0(0#0#0"8610061184#259"    cd "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza"    /usr/bin/touch -c "/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0062_osxSL_FAT/apps/globalgame jam/plaza/bin//opencvExampleDebug.app"0#
+
+CTouch /Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/bin//opencvExampleDebug.app
+r0
+

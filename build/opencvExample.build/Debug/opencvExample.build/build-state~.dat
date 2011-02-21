@@ -1,0 +1,59 @@
+TopencvExample
+v7
+r1
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/../../../libs/glut/lib/osx/GLUT.framework
+c000000004B6D8ADD0000000000000132
+t1265470173
+s306
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/bin//opencvExampleDebug.app
+t1282820638
+s102
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/bin//opencvExampleDebug.app/Contents/Info.plist
+t1271099737
+s622
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/bin//opencvExampleDebug.app/Contents/PkgInfo
+t1271099737
+s8
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/bin/opencvExampleDebug.app/Contents/Frameworks/GLUT.framework
+t1271099753
+s306
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/bin/opencvExampleDebug.app/Contents/Resources/openFrameworks-Info.plist
+t1271099755
+s631
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/build/opencvExample.build/Debug/opencvExample.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh
+c000000004BC371590000000000000113
+t1271099737
+s275
+
+N/Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/openFrameworks-Info.plist
+c000000004B6D8ADB0000000000000277
+t1265470171
+s631
+
+NopenFrameworks-Info.plist
+c000000004B6D8ADB0000000000000277
+t1265470171
+s631
+
+CPBXCp bin/opencvExampleDebug.app/Contents/Frameworks/GLUT.framework ../../../libs/glut/lib/osx/GLUT.framework
+r0
+
+CPBXCp bin/opencvExampleDebug.app/Contents/Resources/openFrameworks-Info.plist openFrameworks-Info.plist
+r0
+
+CPhaseScriptExecution "Run Script" /Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/build/opencvExample.build/Debug/opencvExample.build/Script-E4B6FFFD0C3F9AB9008CF71C.sh
+r0
+
+CProcessInfoPlistFile /Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/bin//opencvExampleDebug.app/Contents/Info.plist openFrameworks-Info.plist
+r0
+
+CTouch /Users/victormanueldiazbarrales/Desarrollo/of_preRelease_v0061_osx_FAT/apps/aprendiendo/plaza/bin//opencvExampleDebug.app
+r0
+
