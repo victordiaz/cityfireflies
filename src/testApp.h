@@ -5,10 +5,9 @@
 #include "ofMain.h"
 #include "ofTrueTypeFont.h"
 
-#include "ofxOpenCv.h"
-#include "boxAlign.h"
 #include "enemies.h"
-#include "constants.h"
+#include "constants.h" 
+#include "imageproc.h" 
 #include "msgs.h"
 #include "ofxXmlSettings.h"
 //#define _USE_LIVE_VIDEO		// uncomment this to use a live camera
@@ -36,94 +35,36 @@ class testApp : public ofBaseApp{
 	void loadSettings(); 
 	void saveSettings(); 
 
-        #ifdef _USE_LIVE_VIDEO
-		  ofVideoGrabber 		vidGrabber;
-		#else
-		  ofVideoPlayer 		vidPlayer;
-		#endif
-
-
-		int camWidth;
-		int camHeight;
-
-		int imgWidth;
-		int imgHeight;
-
-
-        ofxCvColorImage		sourceImg;
-
-        ofxCvGrayscaleImage 	grayImg;
-		ofxCvGrayscaleImage 	grayImgBg;
-		ofxCvGrayscaleImage 	grayImgDiff;
-
-		ofxCvGrayscaleImage 	grayImgT;
-		ofxCvGrayscaleImage 	grayImgW;
-
-		//ofxCvGrayscaleImage 	grayBg;
-		//ofxCvGrayscaleImage 	grayDiff;
-
-        ofxCvContourFinder 	contourFinder;
-
 		ofxXmlSettings XML;
 	
 	
-		ofPoint dstPts[4]; 
-
-
-		CBoxAligner         boxInputMatrix;
-		CBoxAligner         boxInputReference;
-		CBoxAligner         boxOutput;
-
-
-
-
-		int numCols;
-		int numRows;
+	
 		int tileWidth;
 		int tileHeight;
 
-
+	
 		ofTrueTypeFont myfont;
 		ofTrueTypeFont backCountFont;
-		float matrix[15][15];
 		char tileval[255];
 		float amountActivity;
 		float lastTimeMeasure;
 		float lastTimeMeasureFade;
 
-	ofImage fondoImg; 
+		ofImage fondoImg; 
 
 
 
-		//mask
-		int leftOffset;
-		int topOffset;
-
-		int screenWidth;
-		int halfWidth;
-		int screenHeight;
-		int bHeight;
-		int bWidth;
-		int aWidth;
+	
+	
 
 		int tileWidthScreen;
 		int tileHeightScreen;
 
 		int fadeN;
 
-		int blobMin;
-		int blobMax;
-
-
-		int 				threshold;
-		int 				thresholdDiff;
-
-		bool				bLearnBg;
-
-
-
-		vector<ofPoint> lights;
-
+	
+		imageproc mImageproc; 
+	
 
 	//GAME PARAMETERS
 	bool status_update;
@@ -139,7 +80,8 @@ class testApp : public ofBaseApp{
 	int loser_counter;	
 	int status_time_init;
 	int timmer_pause;
-	msgs myMsgs;
+	msgs myMsgs; 
+	
 };
 
 #endif
