@@ -11,7 +11,7 @@ class CBoxAligner {
 	public:
 
 		CBoxAligner();
-		~CBoxAligner();
+		~CBoxAligner(); 
 
 		void           setup();
 		void           setup( int x, int y, float w, float h);

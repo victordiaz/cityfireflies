@@ -13,94 +13,24 @@ void testApp::setup(){
 
 	loadSettings(); 
 	
-	camWidth = 320;
-	camHeight = 240;
 
-	imgWidth = 320;
-	imgHeight = 240;
-
-
-	#ifdef _USE_LIVE_VIDEO
-        vidGrabber.setVerbose(true);
-        vidGrabber.initGrabber(320,240);
-	#else
-        vidPlayer.loadMovie("output.mov");
-        vidPlayer.play();
-	#endif
-
-    sourceImg.allocate(320,240);
-	grayImg.allocate(320,240);
-	grayImgBg.allocate(320,240);
-	grayImgDiff.allocate(320,240);
-	grayImgW.allocate(320,240);
-	grayImgT.allocate(320,240);
-
-
-	//320, 240
-	//matrix
-	numCols = 16;
-	numRows = 10;
-	tileWidth = (int)(grayImg.width / numCols);
-	tileHeight = (int)(grayImg.height / numRows);
+	
 	lastTimeMeasure = ofGetElapsedTimef();
 	//cout << tileWidth << " " << tileHeight << endl;
 
 
-	//box para el warping
-	boxInputMatrix.setup( 360, 20, imgWidth, imgHeight);
-
-	//bg remove
-	bLearnBg = false;
-	lastTimeMeasure = ofGetElapsedTimef();
-	lastTimeMeasureFade = ofGetElapsedTimef();
-
-
-	threshold = 202;
-	thresholdDiff = 102;
-
-
-	blobMin = 1;
-	blobMax = 22;
+	
 
 	fadeN = 0;
 
-	//mask
-	leftOffset = 40;
-	topOffset = 40;
-	screenWidth = 192;
-	halfWidth = ofGetWidth()/2;
-	screenHeight = 157;
-	bHeight = 16;
-	bWidth = 12;
-	aWidth = bWidth;
-
-
-
-	//lights
-	lights.resize(20);
-
-
-	//320, 240
-	numCols = 16;
-	numRows = 10;
-	tileWidth = (int)(grayImg.width / numCols);
-	tileHeight = (int)(grayImg.height / numRows);
-
-	tileWidthScreen = (int)(screenWidth / numCols);
-	tileHeightScreen = (int)(screenHeight / numRows);
-
-	//cout << tileWidth << " " << tileHeight << endl;
-
-
-	resetMatrix();
-
+	
 	start_img.loadImage("images/login.png");
 	loser_img.loadImage("images/loser.png");
 	win_img.loadImage("images/win.png");
 
 	// game status
 
-	status_game=2;
+	status_game=0;
 	loser_counter=0;
 	status_level=0;
 	last_updated=0;
@@ -115,87 +45,21 @@ void testApp::setup(){
 void testApp::update(){
 	ofBackground(0, 0, 0); 
 
-    bool bNewFrame = false;
-
-	#ifdef _USE_LIVE_VIDEO
-       vidGrabber.grabFrame();
-	   bNewFrame = vidGrabber.isFrameNew();
-    #else
-        vidPlayer.idleMovie();
-        bNewFrame = vidPlayer.isFrameNew();
-	#endif
-
-	if (bNewFrame){
-
-		#ifdef _USE_LIVE_VIDEO
-            sourceImg.setFromPixels(vidGrabber.getPixels(), 320,240);
-	    #else
-            sourceImg.setFromPixels(vidPlayer.getPixels(), 320,240);
-        #endif
-
-		
-		//handlers
-        ofPoint dstPts[4] = {
-            ofPoint(0, imgHeight, 0),
-            ofPoint(imgWidth, imgHeight, 0),
-            ofPoint(imgWidth, 0, 0),
-            ofPoint(0, 0, 0)
-        };
-
-
-		//warp
-        grayImg = sourceImg;
-        grayImgW.warpIntoMe(grayImg, boxInputMatrix.fHandles, dstPts );
-		grayImgW.mirror(false, true);
-
-
-		if (bLearnBg == true){
-			grayImgBg = grayImgW;		// the = sign copys the pixels from grayImage into grayBg (operator overloading)
-			bLearnBg = false;
-		}
-
-
-		// take the abs value of the difference between background and incoming and then threshold:
-		grayImgDiff.absDiff(grayImgBg, grayImgW);
-		grayImgDiff.threshold(thresholdDiff);
-
-
-
-		//thresholding
-		grayImgT = grayImgW;
-		grayImgT.threshold(threshold);
-
-		contourFinder.findContours(grayImgT, blobMin, blobMax, 100, false);	// find holes
-
-
-		//matriz de luz automenta
-		for (int i = 0; i < numCols; i++) {
-			for (int j = 0; j < numRows; j++) {
-				amountActivity = grayImgT.countNonZeroInRegion(i * tileWidth, j * tileHeight, tileWidth, tileHeight);
-
-				if (amountActivity > 1) {
-					matrix[i][j] += 1; //amountActivity;
-
-				}
-
-
-				//cout << i << " " << j << " :" << matrix[i][j] << endl;
-			}
-		}
-
-
+	
+	mImageproc.update(); 
+	
 		//si pasa un rato se restan los valores de la matriz
 		if (lastTimeMeasure + 0.1 < ofGetElapsedTimef()) {
 
 			//matriz de luz
-			for (int i = 0; i < numCols; i++) {
-				for (int j = 0; j < numRows; j++) {
+			for (int i = 0; i < columnas; i++) { 
+				for (int j = 0; j < filas; j++) { 
 
-					if (matrix[i][j] > 0) {
+					if (mImageproc.matrix[i][j] > 0) { 
 ///////////////////MI CODIGO AQUI
-						my_enemy.cleanRegion(i,j);
+						my_enemy.cleanRegion(i,j); 
 
-						matrix[i][j] -= 1; //amountActivity;
+						mImageproc.matrix[i][j] -= 1; //amountActivity; 
 
 					}
 
@@ -214,25 +78,7 @@ void testApp::update(){
 			lastTimeMeasure = ofGetElapsedTimef();
 		}
 
-	//
-//		//si pasa un rato se restan los valores de la matriz
-//		if (lastTimeMeasureFade + 0.001 < ofGetElapsedTimef()) {
-//
-//
-//			if (fadeN > screenHeight) {
-//				fadeN = 0;
-//			} else {
-//				fadeN += 1;
-//			}
-//
-//			lastTimeMeasureFade = ofGetElapsedTimef();
-//		}
-//
-//
-
-
-
-	}
+	
 	
 	if (ofGetElapsedTimeMillis()-last_updated >= BORN_TIME[status_level]) {
 		status_update=true;
@@ -257,28 +103,28 @@ void testApp::update(){
 
 //--------------------------------------------------------------
 void testApp::draw() { 
-	// draw the incoming, the grayscale, the bg and the thresholded difference
-	ofSetColor(0xffffff);
 	
+	ofSetColor(0xffffff); //fondo 
+	fondoImg.draw(0, 0); //fondo bonito 
 	
+	//mask
+	ofPushMatrix();
+	ofTranslate(topOffset, leftOffset, 0); 
 	
-	fondoImg.draw(0, 0); 
+	//la camara que sale en el juego 
+	mImageproc.drawGameCamera(); 
+	ofPopMatrix(); 
+	
+		
+	
+	//muestra las imagenes procesadas  
+	mImageproc.drawFeedback(); 
 
 	//mask
 	ofPushMatrix();
-	ofTranslate(topOffset, leftOffset, 0);
-
-
-	//background
-	ofFill();
-	ofSetColor(0x000000);
-	ofRect(0, 0, screenWidth, screenHeight);
-
-
-	ofSetColor(0xFFFFFF);
-	grayImgW.draw(0, 0, screenWidth, screenHeight);
-
-
+	ofTranslate(topOffset, leftOffset, 0); 
+	
+	//JUEGO 
 	ofPushMatrix();
 	ofTranslate(0,32);
 	switch (status_game) {
@@ -303,7 +149,7 @@ void testApp::draw() {
 
 			if(status_draw_msg1){
 				if(myMsgs.drawMsgIntro1() ){
-					time_intro_msgs=ofGetElapsedTimef()+5;
+					time_intro_msgs=ofGetElapsedTimef()+30;
 					status_draw_msg1=false;
 				}
 			}
@@ -390,7 +236,9 @@ void testApp::draw() {
 	ofSetColor(0x000000);
 	ofRect(0, 16, screenWidth, 16);
 	ofSetColor(0xFFFFFF);
-	myfont.drawString("CITY FIREFLIES", 52, 25);
+	myfont.drawString("CITY FIREFLIES", 52, 25); 
+	//ofPopMatrix(); 
+
 
 	if(status_game==1){
 		char fpsStr[40]; // an array of chars			
@@ -413,110 +261,11 @@ void testApp::draw() {
 	ofRect(screenWidth-bWidth*3, 0, bWidth*3, bHeight*2);
 	ofPopMatrix();
 
-	//
-	ofSetColor(0xFFFFFF);
-	grayImg.draw(360,20);
-	grayImgW.draw(700,20);
-	contourFinder.draw(700,20);
-
-	//grayImgT.draw(360,280);
-	grayImgDiff.draw(700, 375); 
-
-	//contourFinder.draw(360,280);
-
-	//grayDiff.draw(360,280);
-
-
-	//blobs
-	ofPushMatrix();
-	glTranslated(700, 20, 0);
-
-	for (int i = 0; i < contourFinder.nBlobs; i++) {
-        contourFinder.blobs[i].draw(0,0);
-		ofCircle(contourFinder.blobs[i].centroid.x, contourFinder.blobs[i].centroid.y, 20);
-
-
-
-		//printf("%f ", contourFinder.blobs[i].area);
-    }
-
-
-
-	ofPopMatrix();
-
-
-
-	ofNoFill();
-	//ofSetColor(200, 200, 200);
-
-
-	//matriz de luz
-	ofPushMatrix();
-	//ofTranslate(700, 20);
-	for (int i = 0; i < numCols; i++) {
-		for (int j = 0; j < numRows; j++) {
-			//ofSetColor(200, 200, 200, 255);
-			ofFill();
-			ofSetColor(100, 100, ofMap(matrix[i][j], 100, 800, 100, 255, false), 200);
-			ofEnableAlphaBlending();
-			ofRect(700 + i * tileWidth,  20 + j * tileHeight, tileWidth, tileHeight);
-			sprintf(tileval, "%d", (int)matrix[i][j]);
-			ofSetColor(0, 0, 255, 255);
-			myfont.drawString(tileval, 710 + i * tileWidth, 30 + j * tileHeight);
-
-
-
-			if(matrix[i][j] > 1) {
-				int qi = i;
-				int qj = j;
-
-
-				ofSetColor(200, 200, 200);
-				ofFill();
-				ofPushMatrix();
-				glTranslated(leftOffset, topOffset + 32, 0);
-				ofRect(i * square_size, j * square_size, square_size, square_size);
-				ofPopMatrix();
-
-
-			}
-			//cout << j * tileHeight << endl;
-		}
-	}
-	ofPopMatrix();
-
-	ofNoFill();
-
-
-
-
-	//warp handles
-    ofFill();
-    boxInputMatrix.draw(360, 20);
 
 	
-	// report:
-	ofSetColor(0x222222); 
-	char reportStr[1024];
-	sprintf(reportStr, "bg subtraction and blob detection\npress ' ' to capture bg\nthreshold %i (press: +/-)\nnum blobs found %i, fps: %f \nnum blob min size %i max size %i", threshold, contourFinder.nBlobs, ofGetFrameRate(), blobMin, blobMax);
-	ofDrawBitmapString(reportStr, 370, 570); 
 	
-
-}
-
-void testApp::resetMatrix() {
-
-
-	//matriz de luz reset
-	for (int i = 0; i < numCols; i++) {
-		for (int j = 0; j < numRows; j++) {
-			matrix[i][j] = 0; //amountActivity;
-
-
-		}
-	}
-
-
+	
+	
 
 
 } 
@@ -530,7 +279,7 @@ void testApp::loadSettings() {
 		//message = "unable to load mySettings.xml check data/ folder";
 	}
 	
-	
+	/* 
 	boxInputMatrix.setTopLeftX(XML.getValue("CAPTUREREGION:11:X", 0)); 
 	boxInputMatrix.setTopLeftY(XML.getValue("CAPTUREREGION:11:Y", 0)); 
 	
@@ -542,7 +291,7 @@ void testApp::loadSettings() {
 	
 	boxInputMatrix.setBottomRightX(XML.getValue("CAPTUREREGION:22:X", imgWidth)); 
 	boxInputMatrix.setBottomRightY(XML.getValue("CAPTUREREGION:22:Y", imgHeight)); 
-	
+	*/ 
 	
 	
 	
@@ -550,6 +299,7 @@ void testApp::loadSettings() {
 
 void testApp::saveSettings() { 
 	
+	/*
 	XML.setValue("CAPTUREREGION:11:X", boxInputMatrix.getTopLeftX()); 
 	XML.setValue("CAPTUREREGION:11:Y", boxInputMatrix.getTopLeftY()); 
 	
@@ -562,6 +312,7 @@ void testApp::saveSettings() {
 	XML.setValue("CAPTUREREGION:22:X", boxInputMatrix.getBottomRightX()); 
 	XML.setValue("CAPTUREREGION:22:Y", boxInputMatrix.getBottomRightY()); 
 	XML.saveFile("mySettings.xml"); 
+	*/ 
 	
 } 
 
@@ -570,29 +321,10 @@ void testApp::saveSettings() {
 //--------------------------------------------------------------
 void testApp::keyPressed  (int key){
 
-	switch (key){
-		case ' ':
-			bLearnBg = true;
-
-
-			#ifdef _USE_LIVE_VIDEO
-
-			#else
-				resetMatrix();
-				vidPlayer.setPosition(0);
-			#endif
-
-
-			break;
-		case '+':
-			thresholdDiff++;
-			if (threshold > 255) threshold = 255;
-			break;
-		case '-':
-			thresholdDiff--;
-			if (threshold < 0) threshold = 0;
-			break;
-
+	mImageproc.keyPressed(key); //le paso a image proc lo que se ha pulsado 
+	
+	switch (key) { 
+	
 		case 'c':
 			//my_enemy.cleanRegion(ofRandom(0,columnas),ofRandom(0,filas),20,0);
 			break;
@@ -640,11 +372,9 @@ void testApp::mouseMoved(int x, int y ) {
 //--------------------------------------------------------------
 void testApp::mouseDragged(int x, int y, int button) {
 
-
-    boxInputMatrix.adjustHandle(x, y);
-        //boxInputMatrix.adjustHandle(x, y);
-
-
+	mImageproc.mouseDragged(x, y, button); 
+  
+	
 }
 
 //--------------------------------------------------------------

@@ -17,5 +17,17 @@ const int square_size=12;
 const int filas=9;
 const int columnas=16;
 const int BORN_TIME[3]={1500,1000,500};
-const int SCREEN_CHANGE_TIME=5;
+const int SCREEN_CHANGE_TIME=5; 
+
+
+//mask
+const int leftOffset = 40;
+const int topOffset = 40;
+const int screenWidth = 192;
+//const int halfWidth = ofGetWidth()/2; 
+const int screenHeight = 157;
+const int bHeight = 16;
+const int bWidth = 12;
+const int aWidth = bWidth; 
+
 #endif
