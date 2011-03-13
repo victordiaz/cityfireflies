@@ -100,12 +100,14 @@ void testApp::setup(){
 
 	// game status
 
-	status_game=0;
+	status_game=2;
 	loser_counter=0;
 	status_level=0;
 	last_updated=0;
 	timmer_pause=0;
 	myMsgs.setup();
+	time_intro_msgs=0;
+	status_draw_msg1=true;
 
 }
 
@@ -197,7 +199,7 @@ void testApp::update(){
 
 					}
 
-					cout << ofGetElapsedTimef() << endl;
+				//	cout << ofGetElapsedTimef() << endl;
 
 				//cout << i << " " << j << " :" << matrix[i][j] << endl;
 				}
@@ -245,13 +247,16 @@ void testApp::update(){
 		
 	}
 	
+	if(ofGetElapsedTimef()>time_intro_msgs){
+		status_draw_msg1=true;
+		cout << "status_draw_msg1=true;";
+	}
+	myMsgs.update();
+	
 }
 
 //--------------------------------------------------------------
 void testApp::draw() { 
-	
-	
-	
 	// draw the incoming, the grayscale, the bg and the thresholded difference
 	ofSetColor(0xffffff);
 	
@@ -274,8 +279,6 @@ void testApp::draw() {
 	grayImgW.draw(0, 0, screenWidth, screenHeight);
 
 
-
-
 	ofPushMatrix();
 	ofTranslate(0,32);
 	switch (status_game) {
@@ -283,7 +286,7 @@ void testApp::draw() {
 			ofSetColor(0xFFFFFF);
 			//start_img.draw(0,0);
 			if(status_update==true){ 
-				cout << "update";
+				//cout << "update";
 				if(my_enemy.countEnemies()<10){
 					if (ofRandom(0,10)>6) 
 						my_enemy.removeRandomOne();
@@ -297,61 +300,83 @@ void testApp::draw() {
 				}
 			}
 			my_enemy.draw();
-			myMsgs.drawMsgIntro1();
+
+			if(status_draw_msg1){
+				if(myMsgs.drawMsgIntro1() ){
+					time_intro_msgs=ofGetElapsedTimef()+5;
+					status_draw_msg1=false;
+				}
+			}
 			
 			break;
 		case 1: //running		
 			if(status_update==true){ 
 				status_update=false;
-				while(!my_enemy.newEnemy(ofRandom(0,columnas),ofRandom(0,filas),0)); //be carefull with this line; if the screen is full can fall into an infinite loop
+				while(!my_enemy.newEnemy(ofRandom(0,columnas),ofRandom(0,filas),0) ); 
 				int contador=my_enemy.countEnemies();
-				printf("contador %i \n", contador);
+				//printf("contador %i \n", contador);
 				if(contador>ENEMIES_WIN[0]){
 					status_game=2;
 					break;
 				}
 			}
-			if(status_time<=0){
+			if(status_time<=0){ //Cuando termina el tiempo gana;
 				status_game=3;
 				break;
+			}					
+
+			if (!draw_text_finish && status_level==0) {
+				//draw_text_finish=myMsgs.drawFullScreenTextTransparent("Estas Jugando!");	
+				draw_text_finish=myMsgs.drawFullScreenTextScroll("Estas Jugando!",10);	
 			}
-			
+			myMsgs.drawButtomMenu(status_time ,status_level );
 			my_enemy.draw();
 			break;
 			
 		case 2: // lose
-			cout << "I lose";
-			
-			loser_img.draw(0,0);
-			if(timmer_pause==0){ //first time we start the timmer
-				timmer_pause=ofGetElapsedTimef();	
-			}
-			else if(ofGetElapsedTimef() - timmer_pause >=SCREEN_CHANGE_TIME){
+			//cout << "I lose";			
+			draw_text_finish=myMsgs.drawFullScreenText("Perdedor");
+			//loser_img.draw(0,0);
+
+			if(draw_text_finish){
 				status_game=0;
 				my_enemy.restart();
 				status_level=0;
-				timmer_pause=0;
 				status_time_init=ofGetElapsedTimef();
 			}
 			
 			break;
 			
 		case 3: // win
-			win_img.draw(0,0);
-			if(timmer_pause==0){ //first time we start the timmer
-				timmer_pause=ofGetElapsedTimef();	
-			}
-			else if(ofGetElapsedTimef() - timmer_pause >=SCREEN_CHANGE_TIME){
+			draw_text_finish=myMsgs.drawFullScreenText( "You Win! Next Level");
+			if (draw_text_finish){ //Cuando se cumple el tiempo
 				my_enemy.restart();
-				status_game=1;
+				status_game=4;
 				status_level>2 ? status_level=0 : status_level++;
-				timmer_pause=0;
+				status_time_init=ofGetElapsedTimef();
+			}			
+			break;
+
+		case 4: //draw level number
+			//kind of message----
+			if (status_level==0) { //All levels are finished
+				draw_text_finish=myMsgs.drawFullScreenText( "You've won \n Congratulations! ");
+			}
+			else {//Print next level
+				std::ostringstream oss;
+				oss << "Level " << status_level;
+				draw_text_finish=myMsgs.drawFullScreenText( oss.str() );
+			}	
+			
+			//---
+			if (draw_text_finish) {
+				status_level==0?status_game=0 : status_game=1;
+				draw_text_finish=false;
 				status_time_init=ofGetElapsedTimef();
 			}
-			
-			
+
 			break;
-			break;
+			
 		default:
 			break;
 	}
@@ -576,6 +601,7 @@ void testApp::keyPressed  (int key){
 			{	status_game=1;
 				status_time=TIME_WIN[status_level];
 				status_time_init=ofGetElapsedTimef();
+				draw_text_finish=false;
 				//=ofGetElapsedTimef();
 				
 			}
