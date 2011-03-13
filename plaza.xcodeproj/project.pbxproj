@@ -16,6 +16,7 @@
 		495745CD1311EA5E00B3CAFB /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 495745C71311EA5E00B3CAFB /* tinyxmlerror.cpp */; };
 		495745CE1311EA5E00B3CAFB /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 495745C81311EA5E00B3CAFB /* tinyxmlparser.cpp */; };
 		495745CF1311EA5E00B3CAFB /* ofxXmlSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 495745CA1311EA5E00B3CAFB /* ofxXmlSettings.cpp */; };
+		4977870013205AEE00325623 /* GameSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 497786FD13205AEE00325623 /* GameSprite.cpp */; };
 		49825F4412F4981000B22DE1 /* enemies.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49825F4212F4981000B22DE1 /* enemies.cpp */; };
 		E44667570F5B3E04005D0BF0 /* ofxCvColorImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E446667D0F5B3E04005D0BF0 /* ofxCvColorImage.cpp */; };
 		E44667580F5B3E04005D0BF0 /* ofxCvContourFinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E44666800F5B3E04005D0BF0 /* ofxCvContourFinder.cpp */; };
@@ -117,6 +118,8 @@
 		495745C81311EA5E00B3CAFB /* tinyxmlparser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinyxmlparser.cpp; path = libs/tinyxmlparser.cpp; sourceTree = "<group>"; };
 		495745CA1311EA5E00B3CAFB /* ofxXmlSettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ofxXmlSettings.cpp; path = src/ofxXmlSettings.cpp; sourceTree = "<group>"; };
 		495745CB1311EA5E00B3CAFB /* ofxXmlSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ofxXmlSettings.h; path = src/ofxXmlSettings.h; sourceTree = "<group>"; };
+		497786FD13205AEE00325623 /* GameSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameSprite.cpp; sourceTree = "<group>"; };
+		497786FE13205AEE00325623 /* GameSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSprite.h; sourceTree = "<group>"; };
 		49825F4212F4981000B22DE1 /* enemies.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = enemies.cpp; sourceTree = "<group>"; };
 		E446664F0F5B3E03005D0BF0 /* cv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cv.h; path = ../../../addons/ofxOpenCv/libs/opencv/include/cv.h; sourceTree = SOURCE_ROOT; };
 		E44666500F5B3E03005D0BF0 /* cv.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = cv.hpp; path = ../../../addons/ofxOpenCv/libs/opencv/include/cv.hpp; sourceTree = SOURCE_ROOT; };
@@ -588,6 +591,8 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				497786FD13205AEE00325623 /* GameSprite.cpp */,
+				497786FE13205AEE00325623 /* GameSprite.h */,
 				495745691311E79F00B3CAFB /* testApp.cpp */,
 				4957455E1311E6E000B3CAFB /* imageproc.cpp */,
 				4957455F1311E6E000B3CAFB /* imageproc.h */,
@@ -883,6 +888,7 @@
 				495745CD1311EA5E00B3CAFB /* tinyxmlerror.cpp in Sources */,
 				495745CE1311EA5E00B3CAFB /* tinyxmlparser.cpp in Sources */,
 				495745CF1311EA5E00B3CAFB /* ofxXmlSettings.cpp in Sources */,
+				4977870013205AEE00325623 /* GameSprite.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
