@@ -32,12 +32,10 @@ class testApp : public ofBaseApp{
 		void mouseReleased(int x, int y, int button);
 		void windowResized(int w, int h);
 		void resetMatrix();
-	void loadSettings(); 
-	void saveSettings(); 
+		void loadSettings(); 
+		void saveSettings(); 
 
 		ofxXmlSettings XML;
-	
-	
 	
 		int tileWidth;
 		int tileHeight;
@@ -53,10 +51,6 @@ class testApp : public ofBaseApp{
 		ofImage fondoImg; 
 
 
-
-	
-	
-
 		int tileWidthScreen;
 		int tileHeightScreen;
 
@@ -66,21 +60,21 @@ class testApp : public ofBaseApp{
 		imageproc mImageproc; 
 	
 
-	//GAME PARAMETERS
-	bool status_update;
-	int last_updated;
-	int status_game; // 0 waiting to run, 1 running,2 win or loose
-	int status_time;
-	enemies my_enemy;
-	int status_level;
-	//Imagenes
-	ofImage start_img;
-	ofImage loser_img;
-	ofImage win_img;
-	int loser_counter;	
-	int status_time_init;
-	int timmer_pause;
-	msgs myMsgs; 
+		//GAME PARAMETERS
+		bool status_update;
+		int last_updated;
+		int status_game; // 0 waiting to run, 1 running,2 win or loose
+		int status_time;
+		enemies my_enemy;
+		int status_level;
+		//Imagenes
+		ofImage start_img;
+		ofImage loser_img;
+		ofImage win_img;
+		int loser_counter;	
+		int status_time_init;
+		int timmer_pause;
+		msgs myMsgs; 
 	
 };
 

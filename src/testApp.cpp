@@ -61,7 +61,7 @@ void testApp::update(){
 
 					}
 
-					cout << ofGetElapsedTimef() << endl;
+					//cout << ofGetElapsedTimef() << endl;
 
 				//cout << i << " " << j << " :" << matrix[i][j] << endl;
 				}
@@ -241,46 +241,59 @@ void testApp::draw() {
 
 void testApp::loadSettings() { 
 	
+	
 	if( XML.loadFile("mySettings.xml") ){
-		//message = "mySettings.xml loaded!";
-	}else{
+		//message = "mySettings.xml loaded!"; 
+		
+		cout << "qq" << endl; 
+		mImageproc.boxInputMatrix.setTopLeftX(XML.getValue("CAPTUREREGION:r11:X", 0)); 
+		mImageproc.boxInputMatrix.setTopLeftY(XML.getValue("CAPTUREREGION:r11:Y", 0)); 
+		
+		mImageproc.boxInputMatrix.setBottomLeftX(XML.getValue("CAPTUREREGION:r12:X", 0)); 
+		mImageproc.boxInputMatrix.setBottomLeftY(XML.getValue("CAPTUREREGION:r12:Y", mImageproc.imgWidth)); 
+		
+		mImageproc.boxInputMatrix.setTopRightX(XML.getValue("CAPTUREREGION:r21:X", 0));  
+		mImageproc.boxInputMatrix.setTopRightY(XML.getValue("CAPTUREREGION:r21:Y", mImageproc.imgHeight));   
+		
+		mImageproc.boxInputMatrix.setBottomRightX(XML.getValue("CAPTUREREGION:r22:X", mImageproc.imgWidth)); 
+		mImageproc.boxInputMatrix.setBottomRightY(XML.getValue("CAPTUREREGION:r22:Y", mImageproc.imgHeight)); 
+		
+		mImageproc.threshold = XML.getValue("IMAGESETTINGS:THRESHOLD", 202); 
+		mImageproc.threshold = XML.getValue("IMAGESETTINGS:THRESHOLDDIFF", 102; 
+		mImageproc.blobMax = XML.getValue("IMAGESETTINGS:BLOBMAX", 1); 
+		mImageproc.blobMin = XML.getValue("IMAGESETTINGS:BLOBMIN", 22); 
+		
+	}else{ 
+		cout << "qq1" << endl; 
 		//message = "unable to load mySettings.xml check data/ folder";
 	}
 	
-	/* 
-	boxInputMatrix.setTopLeftX(XML.getValue("CAPTUREREGION:11:X", 0)); 
-	boxInputMatrix.setTopLeftY(XML.getValue("CAPTUREREGION:11:Y", 0)); 
-	
-	boxInputMatrix.setBottomLeftX(XML.getValue("CAPTUREREGION:12:X", 0)); 
-	boxInputMatrix.setBottomLeftY(XML.getValue("CAPTUREREGION:12:Y", imgWidth)); 
-	
-	boxInputMatrix.setTopRightX(XML.getValue("CAPTUREREGION:21:X", 0));  
-	boxInputMatrix.setTopRightY(XML.getValue("CAPTUREREGION:21:Y", imgHeight));   
-	
-	boxInputMatrix.setBottomRightX(XML.getValue("CAPTUREREGION:22:X", imgWidth)); 
-	boxInputMatrix.setBottomRightY(XML.getValue("CAPTUREREGION:22:Y", imgHeight)); 
-	*/ 
-	
+
 	
 	
 } 
 
 void testApp::saveSettings() { 
 	
-	/*
-	XML.setValue("CAPTUREREGION:11:X", boxInputMatrix.getTopLeftX()); 
-	XML.setValue("CAPTUREREGION:11:Y", boxInputMatrix.getTopLeftY()); 
+	XML.clear();
+	XML.setValue("CAPTUREREGION:r11:X", mImageproc.boxInputMatrix.getTopLeftX()); 
+	XML.setValue("CAPTUREREGION:r11:Y", mImageproc.boxInputMatrix.getTopLeftY()); 
 	
-	XML.setValue("CAPTUREREGION:12:X", boxInputMatrix.getBottomLeftX()); 
-	XML.setValue("CAPTUREREGION:12:Y", boxInputMatrix.getBottomLeftY()); 
+	XML.setValue("CAPTUREREGION:r12:X", mImageproc.boxInputMatrix.getBottomLeftX()); 
+	XML.setValue("CAPTUREREGION:r12:Y", mImageproc.boxInputMatrix.getBottomLeftY()); 
 	
-	XML.setValue("CAPTUREREGION:21:X", boxInputMatrix.getTopRightX()); 
-	XML.setValue("CAPTUREREGION:21:Y", boxInputMatrix.getTopRightY()); 
+	XML.setValue("CAPTUREREGION:r21:X", mImageproc.boxInputMatrix.getTopRightX()); 
+	XML.setValue("CAPTUREREGION:r21:Y", mImageproc.boxInputMatrix.getTopRightY()); 
 	
-	XML.setValue("CAPTUREREGION:22:X", boxInputMatrix.getBottomRightX()); 
-	XML.setValue("CAPTUREREGION:22:Y", boxInputMatrix.getBottomRightY()); 
+	XML.setValue("CAPTUREREGION:r22:X", mImageproc.boxInputMatrix.getBottomRightX()); 
+	XML.setValue("CAPTUREREGION:r22:Y", mImageproc.boxInputMatrix.getBottomRightY()); 
+	
+	XML.setValue("IMAGESETTINGS:THRESHOLD", mImageproc.threshold); 
+	XML.setValue("IMAGESETTINGS:THRESHOLDDIFF", mImageproc.thresholdDiff); 
+	XML.setValue("IMAGESETTINGS:BLOBMAX", mImageproc.blobMax); 
+	XML.setValue("IMAGESETTINGS:BLOBMIN", mImageproc.blobMin); 
+	
 	XML.saveFile("mySettings.xml"); 
-	*/ 
 	
 } 
 

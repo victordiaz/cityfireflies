@@ -65,10 +65,10 @@ public:
 	int blobMax;
 	
 	
-	int 				threshold;
-	int 				thresholdDiff;
+	int threshold;
+	int thresholdDiff;
 	
-	bool				bLearnBg;
+	bool bLearnBg;
 	
 	
 	
