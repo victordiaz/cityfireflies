@@ -34,12 +34,10 @@ class testApp : public ofBaseApp{
 		void mouseReleased(int x, int y, int button);
 		void windowResized(int w, int h);
 		void resetMatrix();
-	void loadSettings(); 
-	void saveSettings(); 
+		void loadSettings(); 
+		void saveSettings(); 
 
 		ofxXmlSettings XML;
-	
-	
 	
 		int tileWidth;
 		int tileHeight;
@@ -55,10 +53,6 @@ class testApp : public ofBaseApp{
 		ofImage fondoImg; 
 
 
-
-	
-	
-
 		int tileWidthScreen;
 		int tileHeightScreen;
 
@@ -67,6 +61,7 @@ class testApp : public ofBaseApp{
 	
 		imageproc mImageproc; 
 	
+
 
 	//GAME PARAMETERS
 	bool status_update;
@@ -90,6 +85,8 @@ class testApp : public ofBaseApp{
 	int time_intro_msgs;
 	bool drawing_text_finished_flag;
 	
+	//bool draw_text_finish;
+
 };
 
 #endif
