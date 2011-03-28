@@ -42,10 +42,8 @@ imageproc::imageproc(){
 	
 	//320, 240
 	//matrix
-	numCols = 16;
-	numRows = 10;
-	tileWidth = (int)(grayImg.width / numCols);
-	tileHeight = (int)(grayImg.height / numRows); 
+	tileWidth = (int)(grayImg.width / columnas);
+	tileHeight = (int)(grayImg.height / filas); 
 	
 	
 	//cout << tileWidth << " " << tileHeight << endl; 
@@ -134,8 +132,8 @@ void imageproc::update() {
 		
 		
 		//matriz de luz 
-		for (int i = 0; i < numCols; i++) {
-			for (int j = 0; j < numRows; j++) {
+		for (int i = 0; i < columnas; i++) {
+			for (int j = 0; j < filas; j++) {
 				amountActivity = grayImgT.countNonZeroInRegion(i * tileWidth, j * tileHeight, tileWidth, tileHeight);
 				
 				if (amountActivity > 1) {
@@ -188,8 +186,8 @@ void imageproc::drawFeedback() {
 	
 	//matriz de luz
 	ofPushMatrix(); 
-	for (int i = 0; i < numCols; i++) {
-		for (int j = 0; j < numRows; j++) {
+	for (int i = 0; i < columnas; i++) { 
+		for (int j = 0; j < filas; j++) {
 			//ofSetColor(200, 200, 200, 255);
 			ofFill();
 			ofSetColor(100, 100, ofMap(matrix[i][j], 100, 800, 100, 255, false), 200);
@@ -231,8 +229,8 @@ void imageproc::resetMatrix() {
 	
 	
 	//matriz de luz reset
-	for (int i = 0; i < numCols; i++) {
-		for (int j = 0; j < numRows; j++) {
+	for (int i = 0; i < columnas; i++) {
+		for (int j = 0; j < filas; j++) {
 			matrix[i][j] = 0; //amountActivity; 
 		}
 	} 
