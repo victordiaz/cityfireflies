@@ -259,7 +259,7 @@ void testApp::loadSettings() {
 		mImageproc.boxInputMatrix.setBottomRightY(XML.getValue("CAPTUREREGION:r22:Y", mImageproc.imgHeight)); 
 		
 		mImageproc.threshold = XML.getValue("IMAGESETTINGS:THRESHOLD", 202); 
-		mImageproc.threshold = XML.getValue("IMAGESETTINGS:THRESHOLDDIFF", 102; 
+		mImageproc.threshold = XML.getValue("IMAGESETTINGS:THRESHOLDDIFF", 102); 
 		mImageproc.blobMax = XML.getValue("IMAGESETTINGS:BLOBMAX", 1); 
 		mImageproc.blobMin = XML.getValue("IMAGESETTINGS:BLOBMIN", 22); 
 		
