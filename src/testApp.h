@@ -76,17 +76,20 @@ class testApp : public ofBaseApp{
 	int status_draw_msg1;
 	enemies my_enemy;
 	int status_level;
+	bool status_first_dead; // we 
 	//Imagenes
 	ofImage start_img;
 	ofImage loser_img;
 	ofImage win_img;
+	ofImage enemy_transition[2];
 	int loser_counter;	
 	int status_time_init;
 	int timmer_pause;
 
 	msgs myMsgs;
 	int time_intro_msgs;
-	bool draw_text_finish;
+	bool drawing_text_finished_flag;
+	
 };
 
 #endif

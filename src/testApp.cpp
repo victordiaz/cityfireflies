@@ -11,19 +11,11 @@ void testApp::setup(){
 
 	ofSetFrameRate(30);
 
-	loadSettings(); 
-	
-
-	
+	loadSettings(); 	
 	lastTimeMeasure = ofGetElapsedTimef();
 	//cout << tileWidth << " " << tileHeight << endl;
 
-
-	
-
 	fadeN = 0;
-
-	
 	start_img.loadImage("images/login.png");
 	loser_img.loadImage("images/loser.png");
 	win_img.loadImage("images/win.png");
@@ -44,8 +36,6 @@ void testApp::setup(){
 //--------------------------------------------------------------
 void testApp::update(){
 	ofBackground(0, 0, 0); 
-
-	
 	mImageproc.update(); 
 	
 		//si pasa un rato se restan los valores de la matriz
@@ -56,19 +46,19 @@ void testApp::update(){
 				for (int j = 0; j < filas; j++) { 
 
 					if (mImageproc.matrix[i][j] > 0) { 
-///////////////////MI CODIGO AQUI
-						my_enemy.cleanRegion(i,j); 
-
+						if(my_enemy.cleanRegion(i,j)==true){
+							if (status_first_dead==false && status_game==0 && ON_PC==false) {
+								status_first_dead=true;
+								status_time=TIME_WIN[status_level];
+								status_time_init=ofGetElapsedTimef();
+								drawing_text_finished_flag=false;								
+							}								
+						}
 						mImageproc.matrix[i][j] -= 1; //amountActivity; 
 
-					}
-
-				//	cout << ofGetElapsedTimef() << endl;
-
-				//cout << i << " " << j << " :" << matrix[i][j] << endl;
+					}				
 				}
 			}
-
 			if (fadeN > screenHeight) {
 				fadeN = 0;
 			} else {
@@ -76,9 +66,7 @@ void testApp::update(){
 			}
 
 			lastTimeMeasure = ofGetElapsedTimef();
-		}
-
-	
+		}	
 	
 	if (ofGetElapsedTimeMillis()-last_updated >= BORN_TIME[status_level]) {
 		status_update=true;
@@ -95,7 +83,6 @@ void testApp::update(){
 	
 	if(ofGetElapsedTimef()>time_intro_msgs){
 		status_draw_msg1=true;
-		cout << "status_draw_msg1=true;";
 	}
 	myMsgs.update();
 	
@@ -127,17 +114,20 @@ void testApp::draw() {
 	//JUEGO 
 	ofPushMatrix();
 	ofTranslate(0,32);
+	std::ostringstream oss2;
 	switch (status_game) {
-		case 0: // Waiting to start
+		case 0: // Waiting to start, nobody is playing and we show random messages inviting people.
+			if (status_first_dead==true) {
+				status_game=1;
+				status_first_dead=false;
+			}
 			ofSetColor(0xFFFFFF);
-			//start_img.draw(0,0);
 			if(status_update==true){ 
-				//cout << "update";
-				if(my_enemy.countEnemies()<10){
-					if (ofRandom(0,10)>6) 
+				if(my_enemy.countEnemies()<10){ // In this status we don't like to have many evil enemies around
+					if (ofRandom(0,10)>6)  //So sometimes I remove
 						my_enemy.removeRandomOne();
 					else{
-						my_enemy.newEnemy(ofRandom(0,columnas),ofRandom(0,filas),0); //creo bichos
+						my_enemy.newEnemy(ofRandom(0,columnas),ofRandom(0,filas),0); //and sometimes I make another one. 
 					}
 				}
 				else{
@@ -146,22 +136,14 @@ void testApp::draw() {
 				}
 			}
 			my_enemy.draw();
-
-			if(status_draw_msg1){
-				if(myMsgs.drawMsgIntro1() ){
-					time_intro_msgs=ofGetElapsedTimef()+30;
-					status_draw_msg1=false;
-				}
-			}
-			
 			break;
-		case 1: //running		
+
+		case 1: //running This is the gameplay state.		
 			if(status_update==true){ 
 				status_update=false;
 				while(!my_enemy.newEnemy(ofRandom(0,columnas),ofRandom(0,filas),0) ); 
 				int contador=my_enemy.countEnemies();
-				//printf("contador %i \n", contador);
-				if(contador>ENEMIES_WIN[0]){
+				if(contador>ENEMIES_WIN[status_level]){ //condicion para perder el juego
 					status_game=2;
 					break;
 				}
@@ -170,57 +152,65 @@ void testApp::draw() {
 				status_game=3;
 				break;
 			}					
-
-			if (!draw_text_finish && status_level==0) {
-				//draw_text_finish=myMsgs.drawFullScreenTextTransparent("Estas Jugando!");	
-				draw_text_finish=myMsgs.drawFullScreenTextScroll("Estas Jugando!",10);	
+			my_enemy.draw();
+			if (!drawing_text_finished_flag && status_level==0) {
+				drawing_text_finished_flag=myMsgs.initVideo();
 			}
 			myMsgs.drawButtomMenu(status_time ,status_level );
-			my_enemy.draw();
 			break;
 			
-		case 2: // lose
-			//cout << "I lose";			
-			draw_text_finish=myMsgs.drawFullScreenText("Perdedor");
-			//loser_img.draw(0,0);
-
-			if(draw_text_finish){
+		case 2: // you loose a level. Have to start again.
+			drawing_text_finished_flag=myMsgs.drawFullScreenText("Perdedor");
+			if(drawing_text_finished_flag){
 				status_game=0;
 				my_enemy.restart();
 				status_level=0;
 				status_time_init=ofGetElapsedTimef();
-			}
-			
+			}			
 			break;
 			
-		case 3: // win
-			draw_text_finish=myMsgs.drawFullScreenText( "You Win! Next Level");
-			if (draw_text_finish){ //Cuando se cumple el tiempo
+		case 3: // you win a level. Go to the next one.
+			oss2 << "Level " << status_level+1 <<"/2" ;
+			enemy_transition[0].loadImage("images/malo1_40px.png");
+			if(status_level>=MAX_LEVELS){ //if you win the level MAXLEVEL you already won the game so it is over.
+				status_level=0; //restart the level
+				status_game=4;	
+			}
+			else{
+				if(myMsgs.levelVideo(enemy_transition[0], start_img, oss2.str() )){
+					my_enemy.restart();
+					status_game=4;
+					status_level++;
+				}
+			}
+			status_time_init=ofGetElapsedTimef();
+
+			//drawing_text_finished_flag=myMsgs.drawFullScreenText( "You Win! Next Level");
+			/**if (drawing_text_finished_flag){ //Cuando se cumple el tiempo
 				my_enemy.restart();
 				status_game=4;
 				status_level>2 ? status_level=0 : status_level++;
 				status_time_init=ofGetElapsedTimef();
-			}			
-			break;
+			}		**/	
+		break;
 
-		case 4: //draw level number
+		case 4: //Prepare the game for the next level
 			//kind of message----
 			if (status_level==0) { //All levels are finished
-				draw_text_finish=myMsgs.drawFullScreenText( "You've won \n Congratulations! ");
+				drawing_text_finished_flag=myMsgs.drawFullScreenText( "You've won \n Congratulations!");
+				if (drawing_text_finished_flag) {
+					status_game=0;
+					my_enemy.restart();
+					drawing_text_finished_flag=false;
+				}
 			}
-			else {//Print next level
-				std::ostringstream oss;
-				oss << "Level " << status_level;
-				draw_text_finish=myMsgs.drawFullScreenText( oss.str() );
+			else {//set up next level
+				status_game=1;
+				my_enemy.restart();
+				my_enemy.newEnemies(ENEMIES_BY_LEVEL[status_level]);
 			}	
+			status_time_init=ofGetElapsedTimef();
 			
-			//---
-			if (draw_text_finish) {
-				status_level==0?status_game=0 : status_game=1;
-				draw_text_finish=false;
-				status_time_init=ofGetElapsedTimef();
-			}
-
 			break;
 			
 		default:
@@ -260,14 +250,6 @@ void testApp::draw() {
 	ofRect(screenWidth-bWidth*6, 0, bWidth*3, bHeight);
 	ofRect(screenWidth-bWidth*3, 0, bWidth*3, bHeight*2);
 	ofPopMatrix();
-
-
-	
-	
-	
-	
-
-
 } 
 
 
@@ -333,7 +315,7 @@ void testApp::keyPressed  (int key){
 			{	status_game=1;
 				status_time=TIME_WIN[status_level];
 				status_time_init=ofGetElapsedTimef();
-				draw_text_finish=false;
+				drawing_text_finished_flag=false;
 				//=ofGetElapsedTimef();
 				
 			}

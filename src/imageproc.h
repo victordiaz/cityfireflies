@@ -79,10 +79,7 @@ public:
 	//matrix de alineacion 
 	CBoxAligner         boxInputMatrix;
 	
-	
-	
-	int numCols;
-	int numRows;
+
 	int tileWidth;
 	int tileHeight; 
 	

@@ -90,47 +90,20 @@ void enemies::removeRandomOne(){
 
 
 //no funcionando (crea enemigos siguendo un patron circular) 
-bool enemies::newEnemy(){
-	int x,y;
-	int total_malos;
-	//calculamos posicion Rodeamos el punto central
-	float xx=ofRandomf();
-	if(xx>0.5){
-		x=round(ofRandom(current_iteration,columnas-current_iteration));
-		y=(current_iteration);
+bool enemies::newEnemies(int total){
+	int counter=0;
+	int max_tries=0;
+	while(true){
+		if(newEnemy(ofRandom(0,columnas),ofRandom(0,filas),0)==true){
+			counter++;
+			if(counter>=total)
+				break;
+		}
+		max_tries++;
+		if(max_tries>=250)
+			return false;
 	}
-	else if(xx>0 && xx < 0.5){
-		x=round(ofRandom(current_iteration,columnas-current_iteration));
-		y=(filas-current_iteration);
-	}
-	else if(xx < -0.5){
-		x=current_iteration;
-		y=round(ofRandom(current_iteration,filas-current_iteration));
-	}
-	else{
-		x=columnas-current_iteration;
-		y=round(ofRandom(current_iteration,filas-current_iteration));
-	}
-
-	malos_en_current_iteration++;
-	total_malos=((filas-(current_iteration*2))*2) + ((columnas-2-(current_iteration*2))*2);
-	if (malos_en_current_iteration>=total_malos){
-		malos_en_current_iteration=0;
-		current_iteration++;
-	}
-	if (current_iteration>7) {
-		current_iteration=0;
-	}
-
-	if(logic_map[x][y]==false)
-	{	logic_map[x][y]=true;
-		return true;
-	}
-	else return false;
-
-	//		}
-	//	}
-	return false;;
+	return true;
 }
 
 
@@ -159,16 +132,15 @@ bool enemies::newEnemy(){
 
 //Funcion para borrar enemigos
 bool enemies::cleanRegion(int x, int y){
-	if (logic_map[x][y]==true) {	
+	if (logic_map[x][y]==true) {
+		cout << "lalalalallalala" << endl; 
 		logic_map[x][y]=false;
 		counter_enemies--;
 		return true;
 	}
-	else {
+	else{
 		return false;
 	}
-
-	
 }
 
 
@@ -203,8 +175,6 @@ void enemies::draw() {
 		}
 	}
 }
-
-
 
 
 

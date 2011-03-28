@@ -12,7 +12,7 @@
 using namespace std;
 
 #define DEBUG_SPRITE
-#define FRAME_RATE 4
+#define FRAME_RATE 10
 
 class GameSprite: public ofBaseDraws, public ofBaseUpdates {
 

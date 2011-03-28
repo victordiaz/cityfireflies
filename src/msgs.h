@@ -12,7 +12,7 @@
 #include "ofMain.h"
 #include "constants.h"
 #include "GameSprite.h"
-
+#include "ofxFBOTexture.h"
 class msgs{
 public:
 	bool drawMsgIntro1();
@@ -23,6 +23,9 @@ public:
 	bool drawFullScreenText(string text);
 	bool drawFullScreenTextTransparent(string text);
 	bool drawFullScreenTextScroll(string texto,int tiempo);
+	bool levelVideo( ofImage status1_img, ofImage status2_img, string levelText );
+	bool drawPlayingImg();
+	
 	msgs();
 	ofTrueTypeFont font_bottom;
 	ofTrueTypeFont font_full_screen;
@@ -31,15 +34,36 @@ public:
 	int window_size_ani;
 	ofImage walking1;
 	ofImage walking2;
+	ofImage img_play1_es;
 	ofVideoPlayer walkingVid;
 	GameSprite sprites;
 	int position;
-	bool must_draw;
+	long counter;
+	bool must_draw_half;
+	bool must_draw_sec;
+	bool must_draw_milis;
+	bool must_draw_ocho;
+	bool draw_flag;
 	float frameTime;
 	int status_animation;
+	bool drawCoolExplosion();
+	string currentMovie;
+	bool initVideo();
 
 private:	
 	int timmer_pause;
 	int scroll_control;
+	ofxFBOTexture myFBO;
+	int x_exp, y_exp;
+	int explotionCounter;
+	struct screenSquare {
+		int x;
+		int y;
+		int color;
+	};
+	struct screenSquare myScreen[54];
+	int x1,y1; //used to draw the transition. 
+	int malpha;
+	int position_init_msg;
 };
 #endif

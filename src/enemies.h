@@ -21,8 +21,8 @@ public:
 	void draw();
 	bool logic_map [filas][columnas];
 	bool war_map [scr_width][scr_height];
-	bool newEnemy();
-	
+	bool newEnemies(int number);
+	ofImage* getEnemies();
 	int current_iteration; // de 1 a 7
 	int malos_en_current_iteration;
 	bool cleanRegion(int x, int y);	
