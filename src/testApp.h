@@ -10,6 +10,8 @@
 #include "imageproc.h" 
 #include "msgs.h"
 #include "ofxXmlSettings.h"
+#include <sstream>
+
 //#define _USE_LIVE_VIDEO		// uncomment this to use a live camera
 								// otherwise, we'll use a movie file
 
@@ -60,22 +62,27 @@ class testApp : public ofBaseApp{
 		imageproc mImageproc; 
 	
 
-		//GAME PARAMETERS
-		bool status_update;
-		int last_updated;
-		int status_game; // 0 waiting to run, 1 running,2 win or loose
-		int status_time;
-		enemies my_enemy;
-		int status_level;
-		//Imagenes
-		ofImage start_img;
-		ofImage loser_img;
-		ofImage win_img;
-		int loser_counter;	
-		int status_time_init;
-		int timmer_pause;
-		msgs myMsgs; 
-	
+
+	//GAME PARAMETERS
+	bool status_update;
+	int last_updated;
+	int status_game; // 0 waiting to run, 1 running,2 win or loose
+	int status_time;
+	int status_draw_msg1;
+	enemies my_enemy;
+	int status_level;
+	//Imagenes
+	ofImage start_img;
+	ofImage loser_img;
+	ofImage win_img;
+	int loser_counter;	
+	int status_time_init;
+	int timmer_pause;
+
+	msgs myMsgs;
+	int time_intro_msgs;
+	bool draw_text_finish;
+
 };
 
 #endif

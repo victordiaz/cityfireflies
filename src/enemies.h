@@ -31,7 +31,6 @@ public:
 	float tipo_dibujo;
 	int actualiza_dibujo;
 	int counter_enemies;
-
 	void restart();
 };
 
