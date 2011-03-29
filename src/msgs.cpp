@@ -125,6 +125,8 @@ bool msgs::initVideo(){
 		if (position_init_msg>35)
 		{
 			position_init_msg=0;
+			walkingVid.stop();
+			walkingVid.setPosition(0);
 			return true;
 		}
 		

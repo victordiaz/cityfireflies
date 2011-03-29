@@ -160,6 +160,8 @@ void enemies::draw() {
 					//actualiza_dibujo=0;
 				}
 				//actualiza_dibujo++;
+				
+				ofsetColor (255,255,255,150);
 				if(tipo_dibujo>=0){
 					malo1.draw(x*square_size, y*square_size);
 				}
