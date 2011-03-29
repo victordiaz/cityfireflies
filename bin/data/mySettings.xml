@@ -1,24 +1,24 @@
 <CAPTUREREGION>
     <r11>
-        <X>139.000000</X>
-        <Y>168.000000</Y>
+        <X>149.000000</X>
+        <Y>203.000000</Y>
     </r11>
     <r12>
-        <X>148.000000</X>
-        <Y>62.000000</Y>
+        <X>152.000000</X>
+        <Y>64.000000</Y>
     </r12>
     <r21>
-        <X>290.000000</X>
-        <Y>177.000000</Y>
+        <X>303.000000</X>
+        <Y>207.000000</Y>
     </r21>
     <r22>
-        <X>292.000000</X>
-        <Y>64.000000</Y>
+        <X>304.000000</X>
+        <Y>59.000000</Y>
     </r22>
 </CAPTUREREGION>
 <IMAGESETTINGS>
-    <THRESHOLD>102</THRESHOLD>
+    <THRESHOLD>202</THRESHOLD>
     <THRESHOLDDIFF>102</THRESHOLDDIFF>
-    <BLOBMAX>1</BLOBMAX>
-    <BLOBMIN>22</BLOBMIN>
+    <BLOBMAX>22</BLOBMAX>
+    <BLOBMIN>1</BLOBMIN>
 </IMAGESETTINGS>

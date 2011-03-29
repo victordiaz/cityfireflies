@@ -36,6 +36,10 @@ public:
 	ofImage walking2;
 	ofImage img_play1_es;
 	ofVideoPlayer walkingVid;
+	ofVideoPlayer finMovie;
+	ofVideoPlayer tryMovie;
+	ofVideoPlayer idleMovie_en;
+	ofVideoPlayer idleMovie_es;
 	GameSprite sprites;
 	int position;
 	long counter;
@@ -49,7 +53,11 @@ public:
 	bool drawCoolExplosion();
 	string currentMovie;
 	bool initVideo();
-
+	bool looseVideo();
+	bool finVideo();
+	bool idleVideo_es();
+	bool idleVideo_en();	
+	
 private:	
 	int timmer_pause;
 	int scroll_control;

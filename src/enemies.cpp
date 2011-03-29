@@ -55,17 +55,16 @@ void enemies::restart(){
 // if the enmy was created, returns true, if not because all the screen  is full or because that part is already full, returns false
 bool enemies::newEnemy(int m_x,int m_y, int type){
 
-	if (counter_enemies<= filas*columnas)
-		counter_enemies++;
-	else{
-		return false;	
-	}
+	if (counter_enemies>= filas*columnas)
+		return true;	
+	
 	if(logic_map[m_x][m_y]==false)
 	{	
 		logic_map[m_x][m_y]=true;
+		counter_enemies++;
 		return true;
 	}
-	else return false;
+
 
 	return false;
 }
@@ -151,10 +150,14 @@ int enemies::countEnemies(){
 
 //This function reads the logic_map variable and draw an enemy where there is supposed to be one.
 void enemies::draw() {
+	ofEnableAlphaBlending();
+	malo1.setImageType(OF_IMAGE_COLOR_ALPHA);
+	malo2.setImageType(OF_IMAGE_COLOR_ALPHA);
+	ofSetColor(255,255,255,200);
 	for (int x=0; x<columnas; x+=1) {
 		for(int y=0;y<filas;y+=1){
 			if(logic_map[x][y]==true){
-				ofSetColor(255,255,255);
+
 				if(ofGetFrameNum()%30==0){
 					tipo_dibujo=ofRandomf();
 					//actualiza_dibujo=0;
@@ -173,6 +176,7 @@ void enemies::draw() {
 				//ofSetColor(200,0,0);
 				//ofRect(x*square_size,y*square_size,x+square_size,y+square_size);
 			}
+			ofDisableAlphaBlending();
 
 		}
 	}

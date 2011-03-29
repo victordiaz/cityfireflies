@@ -49,7 +49,17 @@ void msgs::setup(){
 	malpha=0;
 	currentMovie="";
 	position_init_msg=0;
-};
+	finMovie.loadMovie("images/fin_ok.gif");
+	finMovie.setLoopState(OF_LOOP_NONE);
+	tryMovie.loadMovie("images/tryAgain.gif");
+	tryMovie.setLoopState(OF_LOOP_NONE);
+	
+	idleMovie_es.loadMovie("images/movil_es.gif");
+	idleMovie_es.setLoopState(OF_LOOP_NONE);
+	
+	idleMovie_en.loadMovie("images/movil_en.gif");
+	idleMovie_es.setLoopState(OF_LOOP_NONE);
+}
 
 void msgs::update(){
 	sprites.update();
@@ -67,8 +77,12 @@ void msgs::update(){
 		must_draw_milis=false;
 	}
 	walkingVid.idleMovie();
-}
+	finMovie.idleMovie();
+	tryMovie.idleMovie();
+	idleMovie_es.idleMovie();
+	idleMovie_en.idleMovie();
 
+}
 
 bool msgs::levelVideo( ofImage status1_img, ofImage status2_img, string levelText ){
 	string levelMovie="images/level_animation.gif";
@@ -78,10 +92,7 @@ bool msgs::levelVideo( ofImage status1_img, ofImage status2_img, string levelTex
 	}
 	walkingVid.play(); 
 	ofSetColor(0xFFFFFF);
-		
-	//status1_img.draw(80, 33);
 
-	
 	if(walkingVid.getIsMovieDone()){
 		//return 	drawCoolExplosion();
 		malpha-=20;
@@ -107,6 +118,66 @@ bool msgs::levelVideo( ofImage status1_img, ofImage status2_img, string levelTex
 		
 	}
 	return false;
+}
+
+
+bool msgs::finVideo(){
+
+	finMovie.play(); 
+	ofSetColor(0xFFFFFF);
+	if(finMovie.getIsMovieDone()){
+		finMovie.stop();
+		finMovie.setPosition(0);
+		return true;
+	}	
+	else{		
+		finMovie.draw(0,0);	
+	}
+	return false;	
+}
+
+bool msgs::looseVideo(){	
+	tryMovie.play(); 
+	ofSetColor(0xFFFFFF);
+	if(tryMovie.getIsMovieDone()){
+		tryMovie.stop();
+		tryMovie.setPosition(0);
+		return true;
+	}
+	
+	else{		
+		ofSetColor(255, 255, 255);
+		tryMovie.draw(0,0);	
+	}
+	return false;	
+}
+
+bool msgs::idleVideo_es(){	
+	idleMovie_es.play(); 
+	ofSetColor(0xFFFFFF);
+	if(idleMovie_es.getIsMovieDone()){
+		idleMovie_es.stop();
+		idleMovie_es.setPosition(0);
+		return true;
+	}	
+	else{		
+		idleMovie_es.draw(0,0);	
+	}
+	return false;	
+}
+
+bool msgs::idleVideo_en(){	
+	idleMovie_en.play(); 
+	ofSetColor(0xFFFFFF);
+	if(idleMovie_en.getIsMovieDone()){
+		idleMovie_en.stop();
+		idleMovie_en.setPosition(0);
+		return true;
+	}	
+	else{		
+		idleMovie_en.draw(0,0);	
+	}
+	return false;	
 }
 
 

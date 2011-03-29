@@ -160,7 +160,8 @@ void testApp::draw() {
 			break;
 			
 		case 2: // you loose a level. Have to start again.
-			drawing_text_finished_flag=myMsgs.drawFullScreenText("Perdedor");
+			drawing_text_finished_flag=myMsgs.looseVideo(); // drawFullScreenText("Perdedor");
+			
 			if(drawing_text_finished_flag){
 				status_game=0;
 				my_enemy.restart();
@@ -197,7 +198,7 @@ void testApp::draw() {
 		case 4: //Prepare the game for the next level
 			//kind of message----
 			if (status_level==0) { //All levels are finished
-				drawing_text_finished_flag=myMsgs.drawFullScreenText( "You've won \n Congratulations!");
+				drawing_text_finished_flag=myMsgs.finVideo(); //myMsgs.drawFullScreenText( "You've won \n Congratulations!");
 				if (drawing_text_finished_flag) {
 					status_game=0;
 					my_enemy.restart();
