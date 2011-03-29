@@ -57,8 +57,6 @@ void testApp::update(){
 						mImageproc.matrix[i][j] -= 1; //amountActivity; 
 
 					}				
-					
-				//cout << i << " " << j << " :" << matrix[i][j] << endl; >>>>>>> dd189bb71cda497f998e2a90b6ca9f0f7abd5bc2
 				}
 			}
 			if (fadeN > screenHeight) {

@@ -216,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>495B23EB13415778003F7428</string>
+						<string>495B240013415925003F7428</string>
 						<key>history</key>
 						<array>
 							<string>49D3B030134073300027AFF3</string>
@@ -256,7 +256,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>495B23EC13415778003F7428</string>
+						<string>495B240113415925003F7428</string>
 						<key>history</key>
 						<array>
 							<string>49D3B031134073300027AFF3</string>
@@ -354,7 +354,7 @@
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
 							<array>
 								<array>
-									<integer>17</integer>
+									<integer>8</integer>
 									<integer>3</integer>
 									<integer>0</integer>
 								</array>
@@ -407,7 +407,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>495B23E913415778003F7428</string>
+										<string>495B23FE13415925003F7428</string>
 										<key>history</key>
 										<array>
 											<string>49E628F6130FE034001F38F7</string>
@@ -453,7 +453,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CE0B20306471E060097A5F4</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>enemies.cpp</string>
+								<string>testApp.cpp</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -461,11 +461,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>1CE0B20406471E060097A5F4</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>enemies.cpp</string>
+										<string>testApp.cpp</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>495B23EA13415778003F7428</string>
+										<string>495B23FF13415925003F7428</string>
 										<key>history</key>
 										<array>
 											<string>49E628F6130FE034001F38F7</string>
@@ -488,9 +488,9 @@
 											<string>495B239013414F72003F7428</string>
 											<string>495B23B6134154D2003F7428</string>
 											<string>495B23BD134155D0003F7428</string>
-											<string>495B23E113415757003F7428</string>
 											<string>495B23E213415757003F7428</string>
-											<string>495B23E313415757003F7428</string>
+											<string>495B23F2134158F8003F7428</string>
+											<string>495B23F3134158F8003F7428</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -694,10 +694,10 @@
 		<string>495B238313411E33003F7428</string>
 		<string>1C78EAAD065D492600B07095</string>
 		<string>1CD10A99069EF8BA00B06720</string>
-		<string>4908E5D212F496360017D6DE</string>
 		<string>49A02695133D312F00DDBE8F</string>
 		<string>49A02692133D312F00DDBE8F</string>
 		<string>/Users/sergio/MultimediaProgramming/ofFAT/ofFat/apps/gamejam/plaza/plaza.xcodeproj</string>
+		<string>4908E5D212F496360017D6DE</string>
 	</array>
 	<key>WindowString</key>
 	<string>0 59 1440 819 0 0 1440 878 </string>
@@ -723,7 +723,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>1CD0528F0623707200166675</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>testApp.cpp</string>
+								<string>enemies.cpp</string>
 								<key>StatusBarVisibility</key>
 								<true/>
 							</dict>
@@ -792,7 +792,7 @@
 			<key>WindowToolGUID</key>
 			<string>4908E5D212F496360017D6DE</string>
 			<key>WindowToolIsVisible</key>
-			<false/>
+			<true/>
 		</dict>
 		<dict>
 			<key>FirstTimeWindowDisplayed</key>
