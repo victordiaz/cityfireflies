@@ -8,11 +8,11 @@
  */
 #ifndef CONSTANTS
 #define CONSTANTS
-const bool ON_PC=true;
+const bool ON_PC=false;
 const int MAX_LEVELS=2;
 const int scr_width=192;
 const int scr_height=157;
-const int TIME_WIN[3]={7,1,100};
+const int TIME_WIN[3]={20,20,100}; //Tiempo por niveles (el nivel 0 en realidad no funciona)
 const int ENEMIES_WIN[3]={12,40,144};
 const int ENEMIES_BY_LEVEL[3]={10,20,80};
 const int square_size=12;

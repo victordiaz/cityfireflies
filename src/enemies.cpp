@@ -142,6 +142,22 @@ bool enemies::cleanRegion(int x, int y){
 	}
 }
 
+void enemies::cleanOne(){
+	int max_tries=0;
+	while(true){
+		if(cleanRegion(ofRandom(0,columnas),ofRandom(0,filas))==false){
+			max_tries++;
+			if(max_tries>=100)
+				return;
+		}
+		else {
+			return;
+		}
+
+	}
+	return;
+	
+}
 
 
 int enemies::countEnemies(){

@@ -123,15 +123,15 @@ void testApp::draw() {
 			}
 			ofSetColor(0xFFFFFF);
 			if(status_update==true){ 
-				if(my_enemy.countEnemies()<10){ // In this status we don't like to have many evil enemies around
-					if (ofRandom(0,10)>6)  //So sometimes I remove
+				if(my_enemy.countEnemies()<15){ // In this status we don't like to have many evil enemies around
+					if (ofRandom(0,10)>7)  //So sometimes I remove
 						my_enemy.removeRandomOne();
 					else{
 						my_enemy.newEnemy(ofRandom(0,columnas),ofRandom(0,filas),0); //and sometimes I make another one. 
 					}
 				}
 				else{
-					if (ofRandom(0,10)>3) 
+					if (ofRandom(0,10)>9) 
 						my_enemy.removeRandomOne();
 				}
 			}
@@ -143,12 +143,26 @@ void testApp::draw() {
 				status_update=false;
 				while(!my_enemy.newEnemy(ofRandom(0,columnas),ofRandom(0,filas),0) ); 
 				int contador=my_enemy.countEnemies();
-				if(contador>ENEMIES_WIN[status_level]){ //condicion para perder el juego
-					status_game=2;
-					break;
+				if(ON_PC){	//probando en el ordenador				
+					if(contador>ENEMIES_WIN[status_level]){ //condicion para perder el juego
+						status_game=2;
+						break;
+					}
+				}
+				else{ //jugando en la pantalla gigante y no en el ordenador
+					cout << "Número de bichos" << contador << endl; 
+					if(contador==1){
+						status_game=3;
+						break;
+					}
+					else if(status_time<=0){
+						status_game=2;
+						break;
+					}
+					
 				}
 			}
-			if(status_time<=0){ //Cuando termina el tiempo gana;
+			if(status_time<=0 && ON_PC){ //Cuando termina el tiempo gana;
 				status_game=3;
 				break;
 			}					
@@ -375,6 +389,7 @@ void testApp::mouseDragged(int x, int y, int button) {
 
 //--------------------------------------------------------------
 void testApp::mousePressed(int x, int y, int button){
+	my_enemy.cleanOne();
 }
 
 //--------------------------------------------------------------

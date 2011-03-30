@@ -19,6 +19,7 @@ public:
 	void removeRandomOne();
 	enemies();
 	void draw();
+	void cleanOne();
 	bool logic_map [filas][columnas];
 	bool war_map [scr_width][scr_height];
 	bool newEnemies(int number);
