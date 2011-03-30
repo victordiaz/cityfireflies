@@ -166,9 +166,8 @@ int enemies::countEnemies(){
 
 //This function reads the logic_map variable and draw an enemy where there is supposed to be one.
 void enemies::draw() {
-	ofEnableAlphaBlending();
-	malo1.setImageType(OF_IMAGE_COLOR_ALPHA);
-	malo2.setImageType(OF_IMAGE_COLOR_ALPHA);
+
+	
 	ofSetColor(255,255,255,200);
 	for (int x=0; x<columnas; x+=1) {
 		for(int y=0;y<filas;y+=1){
@@ -179,21 +178,26 @@ void enemies::draw() {
 					//actualiza_dibujo=0;
 				}
 				//actualiza_dibujo++;
-				ofSetColor(255, 255, 255);
-				//ofsetColor (255,255,255);
-				if(tipo_dibujo>=0){
+				//ofSetColor(255, 255, 255);
+				//ofsetColor (255,255,255); 
+				ofPushStyle(); 
+				ofSetColor(255, 255, 255, ofMap(counter_enemies, 0, maxMalos, 225, 92)); 
+				//ofSetColor(255, 255, 255, 25); 
+				
+				if(tipo_dibujo>=0) { 
 					malo1.draw(x*square_size, y*square_size);
 				}
 				else {
 					malo2.draw(x*square_size, y*square_size);
-				}
+				} 
+				ofPopStyle(); 
 			}
 			else {
 				//ofSetColor(200,0,0);
 				//ofRect(x*square_size,y*square_size,x+square_size,y+square_size);
 			}
-			ofDisableAlphaBlending();
 
+			
 		}
 	}
 }
