@@ -156,14 +156,23 @@ bool msgs::idleVideo_es(){
 	idleMovie_es.play(); 
 	ofSetColor(0xFFFFFF);
 	if(idleMovie_es.getIsMovieDone()){
-		idleMovie_es.stop();
-		idleMovie_es.setPosition(0);
-		return true;
-	}	
-	else{		
-		idleMovie_es.draw(0,0);	
+		position_init_msg!=41?position_init_msg+=4:position_init_msg=0;
+		idleMovie_es.draw(0,67+position_init_msg);	
+		if (position_init_msg>35)
+		{
+			position_init_msg=0;
+			idleMovie_es.stop();
+			idleMovie_es.setPosition(0);
+			return true;
+		}
+		
 	}
-	return false;	
+	else{		
+		position_init_msg<40?position_init_msg+=4:position_init_msg=41;
+		ofSetColor(255, 255, 255);
+		idleMovie_es.draw(0,107-position_init_msg);	
+	}
+	return false;
 }
 
 bool msgs::idleVideo_en(){	
