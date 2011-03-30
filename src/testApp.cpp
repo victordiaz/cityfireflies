@@ -361,16 +361,43 @@ void testApp::keyPressed  (int key){
 				status_time=TIME_WIN[status_level];
 				status_time_init=ofGetElapsedTimef();
 				drawing_text_finished_flag=false;
-				//=ofGetElapsedTimef();
-				
+				//=ofGetElapsedTimef();				
 			}
-			if(status_game==2 || status_game==3)  // press s to start when waiting in winner screen
+		/**if(status_game==2 || status_game==3)  // press s to start when waiting in winner screen
 			{	status_game=0;
 				status_time=TIME_WIN[status_level];
 				status_time_init=ofGetElapsedTimef();
 				//=ofGetElapsedTimef();
 				my_enemy.restart();
-			}
+			}**/
+		break;
+			
+		case '2':
+			status_game=2;
+			status_time=TIME_WIN[status_level];
+			status_time_init=ofGetElapsedTimef();
+			//=ofGetElapsedTimef();
+			my_enemy.restart();
+			
+			break;
+			
+		case '3':
+			status_game=3;
+			status_time=TIME_WIN[status_level];
+			status_time_init=ofGetElapsedTimef();
+			//=ofGetElapsedTimef();
+			my_enemy.restart();			
+		break;	
+			
+		case '4':
+			status_game=3;
+			status_level=2;
+			status_time=TIME_WIN[status_level];
+			status_time_init=ofGetElapsedTimef();
+			//=ofGetElapsedTimef();
+			my_enemy.restart();			
+		break;
+			
 			
 		case 'k': 
 			saveSettings(); 
