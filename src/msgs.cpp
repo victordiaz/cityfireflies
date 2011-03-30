@@ -58,7 +58,7 @@ void msgs::setup(){
 	idleMovie_es.setLoopState(OF_LOOP_NONE);
 	
 	idleMovie_en.loadMovie("images/movil_en.gif");
-	idleMovie_es.setLoopState(OF_LOOP_NONE);
+	idleMovie_en.setLoopState(OF_LOOP_NONE);
 }
 
 void msgs::update(){
@@ -157,7 +157,7 @@ bool msgs::idleVideo_es(){
 	ofSetColor(0xFFFFFF);
 	if(idleMovie_es.getIsMovieDone()){
 		position_init_msg!=41?position_init_msg+=4:position_init_msg=0;
-		idleMovie_es.draw(0,67+position_init_msg);	
+		idleMovie_es.draw(0,81+position_init_msg);	
 		if (position_init_msg>35)
 		{
 			position_init_msg=0;
@@ -170,7 +170,7 @@ bool msgs::idleVideo_es(){
 	else{		
 		position_init_msg<40?position_init_msg+=4:position_init_msg=41;
 		ofSetColor(255, 255, 255);
-		idleMovie_es.draw(0,107-position_init_msg);	
+		idleMovie_es.draw(0,125-position_init_msg);	
 	}
 	return false;
 }
@@ -179,14 +179,23 @@ bool msgs::idleVideo_en(){
 	idleMovie_en.play(); 
 	ofSetColor(0xFFFFFF);
 	if(idleMovie_en.getIsMovieDone()){
-		idleMovie_en.stop();
-		idleMovie_en.setPosition(0);
-		return true;
-	}	
-	else{		
-		idleMovie_en.draw(0,0);	
+		position_init_msg!=41?position_init_msg+=4:position_init_msg=0;
+		idleMovie_en.draw(0,81+position_init_msg);	
+		if (position_init_msg>35)
+		{
+			position_init_msg=0;
+			idleMovie_en.stop();
+			idleMovie_en.setPosition(0);
+			return true;
+		}
+		
 	}
-	return false;	
+	else{		
+		position_init_msg<40?position_init_msg+=4:position_init_msg=41;
+		ofSetColor(255, 255, 255);
+		idleMovie_en.draw(0,125-position_init_msg);	
+	}
+	return false;
 }
 
 

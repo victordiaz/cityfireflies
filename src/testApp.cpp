@@ -136,6 +136,23 @@ void testApp::draw() {
 				}
 			}
 			my_enemy.draw();
+			if(status_draw_msg1 && time_intro_msgs%2==0){
+				if(myMsgs.idleVideo_es() ){
+					time_intro_msgs=ofGetElapsedTimef()+30;
+					status_draw_msg1=false;
+				}
+			}
+			else if (status_draw_msg1 && time_intro_msgs%2==1)
+			{
+				if(myMsgs.idleVideo_en() ){
+					time_intro_msgs=ofGetElapsedTimef()+30;
+					status_draw_msg1=false;
+				}				
+			}
+			
+
+			
+			
 			break;
 
 		case 1: //running This is the gameplay state.		
