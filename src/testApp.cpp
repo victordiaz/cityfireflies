@@ -354,7 +354,7 @@ void testApp::keyPressed  (int key){
 	mImageproc.keyPressed(key); //le paso a image proc lo que se ha pulsado 
 	
 	switch (key) { 
-	
+			
 		case 'c':
 			//my_enemy.cleanRegion(ofRandom(0,columnas),ofRandom(0,filas),20,0);
 			break;

@@ -12,9 +12,6 @@
 #include "ofxXmlSettings.h"
 #include <sstream>
 
-//#define _USE_LIVE_VIDEO		// uncomment this to use a live camera
-								// otherwise, we'll use a movie file
-
 #define MX 10;
 #define MY 10;
 

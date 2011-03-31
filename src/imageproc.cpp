@@ -136,7 +136,7 @@ void imageproc::update() {
 			for (int j = 0; j < filas; j++) {
 				amountActivity = grayImgT.countNonZeroInRegion(i * tileWidth, j * tileHeight, tileWidth, tileHeight);
 				
-				if (amountActivity > 1) {
+				if (amountActivity > 1 && amountActivity < 20) { 
 					matrix[i][j] += 1; //amountActivity;
 				}
 			}
@@ -155,7 +155,7 @@ void imageproc::drawGameCamera() {
 	
 	//imagen de la camara en el juego 
 	ofSetColor(0xFFFFFF);
-	grayImgW.draw(0, 0, screenWidth, screenHeight);
+	grayImgW.draw(0, 32, screenWidth, 125); 
 	
 } 
 
@@ -201,18 +201,34 @@ void imageproc::drawFeedback() {
 				int qi = i;
 				int qj = j;
 				
-				ofSetColor(200, 200, 200);
+				ofPushStyle(); 
+				energy = ofMap(matrix[i][j], 0, 7, 0, 255, true); 
+				ofSetColor(55, 205, 242, energy);  
 				ofFill();
 				ofPushMatrix(); 
 				//TODO 
-				glTranslated(40, 40 + 32, 0);
-				ofRect(i * square_size, j * square_size, square_size, square_size);
-				ofPopMatrix();
-				
+				glTranslated(40, 40 + 32, 0); 
+				ofRect(i * square_size, j * square_size, square_size, square_size); 
+				ofPopMatrix(); 
+				ofPopStyle(); 
+			
 			}
-		}
+		} 
 	}
 	ofPopMatrix(); 
+	
+	
+	
+	//sprintf(t, "Adjust threshold using U and I keys"); 
+	sprintf(tD, "threshold:  %d", threshold); 
+
+
+	ofPushStyle(); 
+	ofSetColor(0, 0, 0); 
+	//myfont.drawString(t, 200, 500); 
+	myfont.drawString(tD, 200, 520); 
+	ofPopStyle(); 
+
 	
 	//warp handles
     ofFill();
@@ -259,14 +275,24 @@ void imageproc::resetMatrix() {
 				
 				
 				break;
-			case '+':
+			case 'u':
+				threshold++;
+				if (threshold > 255) threshold = 255;
+				break;
+			case 'i':
+				threshold--;
+				if (threshold < 0) threshold = 0;
+				break; 
+				
+			case 'o':
 				thresholdDiff++;
 				if (threshold > 255) threshold = 255;
 				break;
-			case '-':
+			case 'p':
 				thresholdDiff--;
 				if (threshold < 0) threshold = 0;
-				break;
+				break; 
+				
 				
 		
 		}  
