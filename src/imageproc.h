@@ -17,6 +17,9 @@
 #include <math.h> 
 #include "ofMath.h" 
 
+//#define _USE_LIVE_VIDEO		// uncomment this to use a live camera otherwise, we'll use a movie file
+
+
 
 class imageproc { 
 public:
@@ -88,12 +91,17 @@ public:
 	
 	
 	float matrix[15][15];
-	char tileval[255];
+	char tileval[255]; 
+	char t[255]; 
+	char tD[255]; 
+
 	float amountActivity;
 
 	
 	int tileWidthScreen;
-	int tileHeightScreen;
+	int tileHeightScreen; 
+	
+	float energy; 
 	
 	
 };
