@@ -117,9 +117,12 @@ void testApp::draw() {
 	std::ostringstream oss2;
 	switch (status_game) {
 		case 0: // Waiting to start, nobody is playing and we show random messages inviting people.
-			if (status_first_dead==true) {
+			if (status_first_dead==true) {				
 				status_game=1;
+				my_enemy.newEnemy(ofRandom(0,columnas),ofRandom(0,filas),0);
+				my_enemy.newEnemy(ofRandom(0,columnas),ofRandom(0,filas),0);
 				status_first_dead=false;
+				break;
 			}
 			ofSetColor(0xFFFFFF);
 			if(status_update==true){ 
@@ -167,7 +170,7 @@ void testApp::draw() {
 					}
 				}
 				else{ //jugando en la pantalla gigante y no en el ordenador
-					cout << "Número de bichos" << contador << endl; 
+					//cout << "Número de bichos" << contador << endl; 
 					if(contador==1){
 						status_game=3;
 						break;
@@ -175,8 +178,7 @@ void testApp::draw() {
 					else if(status_time<=0){
 						status_game=2;
 						break;
-					}
-					
+					}					
 				}
 			}
 			if(status_time<=0 && ON_PC){ //Cuando termina el tiempo gana;
@@ -185,7 +187,8 @@ void testApp::draw() {
 			}					
 			my_enemy.draw();
 			if (!drawing_text_finished_flag && status_level==0) {
-				drawing_text_finished_flag=myMsgs.initVideo();
+				//drawing_text_finished_flag=myMsgs.initVideo();
+				drawing_text_finished_flag=myMsgs.drawFullScreenBlink();
 			}
 			myMsgs.drawButtomMenu(status_time ,status_level );
 			break;
@@ -358,11 +361,13 @@ void testApp::keyPressed  (int key){
 		case 's':
 			if(status_game==0 ) //press s to start when waiting in main screen
 			{	status_game=1;
+				my_enemy.newEnemy(ofRandom(0,columnas),ofRandom(0,filas),0);
+				my_enemy.newEnemy(ofRandom(0,columnas),ofRandom(0,filas),0);
 				status_time=TIME_WIN[status_level];
 				status_time_init=ofGetElapsedTimef();
 				drawing_text_finished_flag=false;
-				//=ofGetElapsedTimef();				
 			}
+			
 		/**if(status_game==2 || status_game==3)  // press s to start when waiting in winner screen
 			{	status_game=0;
 				status_time=TIME_WIN[status_level];
@@ -378,7 +383,8 @@ void testApp::keyPressed  (int key){
 			status_time_init=ofGetElapsedTimef();
 			//=ofGetElapsedTimef();
 			my_enemy.restart();
-			
+			drawing_text_finished_flag=false;
+
 			break;
 			
 		case '3':
@@ -386,7 +392,9 @@ void testApp::keyPressed  (int key){
 			status_time=TIME_WIN[status_level];
 			status_time_init=ofGetElapsedTimef();
 			//=ofGetElapsedTimef();
-			my_enemy.restart();			
+			my_enemy.restart();	
+			drawing_text_finished_flag=false;
+
 		break;	
 			
 		case '4':
@@ -395,7 +403,9 @@ void testApp::keyPressed  (int key){
 			status_time=TIME_WIN[status_level];
 			status_time_init=ofGetElapsedTimef();
 			//=ofGetElapsedTimef();
-			my_enemy.restart();			
+			my_enemy.restart();		
+			drawing_text_finished_flag=false;
+
 		break;
 			
 			

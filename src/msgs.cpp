@@ -23,6 +23,8 @@ void msgs::setup(){
 
 	font_bottom.loadFont("visitor1.ttf", 7);
 	font_full_screen.loadFont("visitor1.ttf",16);
+	font_big.loadFont("visitor1.ttf",42);
+
 	walkingVid.setLoopState(OF_LOOP_NONE); 
 	sprites.setup();
 	sprites.load("images/walking");
@@ -59,6 +61,8 @@ void msgs::setup(){
 	
 	idleMovie_en.loadMovie("images/movil_en.gif");
 	idleMovie_en.setLoopState(OF_LOOP_NONE);
+	
+	blinkCounter=0;
 }
 
 void msgs::update(){
@@ -69,7 +73,7 @@ void msgs::update(){
 		counter++;
 		counter%5==0?must_draw_half=true:must_draw_half=false;
 		counter%10==0?must_draw_sec=true:must_draw_sec=false;
-		counter%8==0?must_draw_ocho=true:must_draw_ocho=false;
+		counter%6==0?must_draw_ocho=true:must_draw_ocho=false;
 
 		frameTime += 1.0 / FRAME_RATE;
 	}
@@ -402,7 +406,7 @@ bool msgs::drawFullScreenTextScroll(string texto,int tiempo){
 	ofSetColor(255,255,255);
 	ofPushMatrix();
 	ofTranslate(10,0);
-		font_full_screen.drawString(texto, 192-scroll_control, 50);
+		font_full_screen.drawString(texto, 192-scroll_control, 118);
 		if(must_draw_milis) scroll_control+=10;
 	ofPopMatrix();
 	if(timmer_pause==0){ //first time we start the timmer
@@ -414,8 +418,31 @@ bool msgs::drawFullScreenTextScroll(string texto,int tiempo){
 		return true;	
 	}
 	return false;
-	
 }
+
+bool msgs::drawFullScreenBlink(){
+	
+	if(must_draw_ocho==true && must_draw_milis==true){ 
+		draw_flag=!draw_flag;
+		must_draw_ocho=false;
+		blinkCounter++;
+		//cout << "mierda";
+	}
+	ofSetColor(0xd2007d);
+	if(draw_flag==true){
+		font_big.drawString("Play!", 20, 60);
+		cout << "dibujando";
+	}
+	if(blinkCounter>=6){
+		blinkCounter=0;
+		cout << "blink counter" ;
+		return true;
+	}
+	return false;
+}
+
+
+
 
 void msgs::drawButtomMenu(int time, int level ){
 	ofPushMatrix();
@@ -429,7 +456,7 @@ void msgs::drawButtomMenu(int time, int level ){
 	oss << "Level " << level; // << "  Time " << time;
 	font_bottom.drawString(oss.str(), 135, 8);
 
-	if(level!=0){
+	//if(level!=0){
 		ofSetColor(0x30F030);
 		
 		ofNoFill();
@@ -444,7 +471,7 @@ void msgs::drawButtomMenu(int time, int level ){
 		//std::ostringstream oss2;
 		//oss2 << time;
 		font_bottom.drawString(fpsStr , 44, 8);	
-	}
+	//}
 	ofPopMatrix();
 
 }
