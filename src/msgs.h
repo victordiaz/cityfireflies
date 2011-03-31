@@ -29,7 +29,7 @@ public:
 	msgs();
 	ofTrueTypeFont font_bottom;
 	ofTrueTypeFont font_full_screen;
-	
+	ofTrueTypeFont font_big;
 	void update();
 	int window_size_ani;
 	ofImage walking1;
@@ -56,9 +56,11 @@ public:
 	bool looseVideo();
 	bool finVideo();
 	bool idleVideo_es();
-	bool idleVideo_en();	
+	bool idleVideo_en();
+	bool drawFullScreenBlink();
 	
 private:	
+	int blinkCounter;
 	int timmer_pause;
 	int scroll_control;
 	ofxFBOTexture myFBO;
