@@ -136,8 +136,10 @@ void imageproc::update() {
 			for (int j = 0; j < filas; j++) {
 				amountActivity = grayImgT.countNonZeroInRegion(i * tileWidth, j * tileHeight, tileWidth, tileHeight);
 				
-				if (amountActivity > 1 && amountActivity < 20) { 
-					matrix[i][j] += 1; //amountActivity;
+				if (amountActivity > 1) { 
+					if (matrix[i][j] < 15) { 
+						matrix[i][j] += 1; //amountActivity; 
+					} 
 				}
 			}
 		} 

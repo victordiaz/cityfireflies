@@ -273,8 +273,8 @@ void testApp::draw() {
 		char fpsStr[40]; // an array of chars			
 		sprintf(fpsStr, "%i",status_time );
 		backCountFont.drawString(fpsStr, 90, 10);
-	}
-
+	} 
+	
 
 	//informacion de juego
 	//ofSetColor(0xFF0000);
@@ -288,7 +288,7 @@ void testApp::draw() {
 	ofRect(bWidth*3 - 1, 0, bWidth*3 - 2, bHeight);	
 	ofRect(screenWidth-bWidth*6, 0, bWidth*3, bHeight);
 	ofRect(screenWidth-bWidth*3, 0, bWidth*3, bHeight*2);
-	ofPopMatrix();
+	ofPopMatrix(); 
 } 
 
 
