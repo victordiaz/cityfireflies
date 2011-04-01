@@ -99,7 +99,11 @@ void testApp::draw() {
 	ofTranslate(topOffset, leftOffset, 0); 
 	
 	//la camara que sale en el juego 
+	
 	mImageproc.drawGameCamera(); 
+	ofSetColor(0,0,0);
+	ofRect(72, 0, 48, 16); //rectangulo negro
+	
 	ofPopMatrix(); 
 	
 		
@@ -261,7 +265,7 @@ void testApp::draw() {
 	ofSetColor(0x000000);
 	ofRect(0, 16, screenWidth, 16);
 	ofSetColor(0xFFFFFF);
-	myfont.drawString("CITY FIREFLIES", 52, 25); 
+	myfont.drawString("CITYFIREFLIES . COM", 40, 25); //estaba a 52, 25 
 	//ofPopMatrix(); 
 
 
@@ -281,7 +285,7 @@ void testApp::draw() {
 	//unsused areas
 	ofSetColor(0xFFFFFF);
 	ofRect(0, 0, bWidth*3 - 1, bHeight*2);
-	ofRect(bWidth*3 - 1, 0, bWidth*3 - 2, bHeight);
+	ofRect(bWidth*3 - 1, 0, bWidth*3 - 2, bHeight);	
 	ofRect(screenWidth-bWidth*6, 0, bWidth*3, bHeight);
 	ofRect(screenWidth-bWidth*3, 0, bWidth*3, bHeight*2);
 	ofPopMatrix();

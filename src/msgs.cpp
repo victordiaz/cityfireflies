@@ -81,11 +81,14 @@ void msgs::update(){
 		must_draw_milis=false;
 	}
 	walkingVid.idleMovie();
+	
 	finMovie.idleMovie();
+	finMovie.setSpeed(0.7);	
 	tryMovie.idleMovie();
 	idleMovie_es.idleMovie();
+	idleMovie_es.setSpeed(0.7);	
 	idleMovie_en.idleMovie();
-
+	idleMovie_es.setSpeed(0.7);
 }
 
 bool msgs::levelVideo( ofImage status1_img, ofImage status2_img, string levelText ){
