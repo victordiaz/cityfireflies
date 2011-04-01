@@ -62,6 +62,13 @@ void msgs::setup(){
 	idleMovie_en.loadMovie("images/movil_en.gif");
 	idleMovie_en.setLoopState(OF_LOOP_NONE);
 	
+	tryMovie.setSpeed(0.7);	
+	finMovie.setSpeed(0.7);	
+	idleMovie_es.setSpeed(0.7);	
+	idleMovie_en.setSpeed(0.7);
+
+	
+	
 	blinkCounter=0;
 }
 
@@ -80,15 +87,11 @@ void msgs::update(){
 	else{
 		must_draw_milis=false;
 	}
-	walkingVid.idleMovie();
-	
+	walkingVid.idleMovie();	
 	finMovie.idleMovie();
-	finMovie.setSpeed(0.7);	
 	tryMovie.idleMovie();
 	idleMovie_es.idleMovie();
-	idleMovie_es.setSpeed(0.7);	
 	idleMovie_en.idleMovie();
-	idleMovie_es.setSpeed(0.7);
 }
 
 bool msgs::levelVideo( ofImage status1_img, ofImage status2_img, string levelText ){
@@ -433,7 +436,7 @@ bool msgs::drawFullScreenBlink(){
 	}
 	ofSetColor(0xd2007d);
 	if(draw_flag==true){
-		font_big.drawString("Play!", 20, 60);
+		font_big.drawString("Play!", 24, 60);
 		cout << "dibujando";
 	}
 	if(blinkCounter>=6){

@@ -102,7 +102,7 @@ void testApp::draw() {
 	
 	mImageproc.drawGameCamera(); 
 	ofSetColor(0,0,0);
-	ofRect(72, 0, 48, 16); //rectangulo negro
+	ofRect(68, 0, 52, 16); //rectangulo negro
 	
 	ofPopMatrix(); 
 	
