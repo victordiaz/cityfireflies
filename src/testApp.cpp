@@ -29,7 +29,8 @@ void testApp::setup(){
 	timmer_pause=0;
 	myMsgs.setup();
 	time_intro_msgs=0;
-	status_draw_msg1=true;
+	status_draw_msg1=true; 
+	msg_type = 0; 
 
 }
 
@@ -143,19 +144,22 @@ void testApp::draw() {
 				}
 			}
 			my_enemy.draw();
-			if(status_draw_msg1 && time_intro_msgs%2==0){
+			if(status_draw_msg1 && msg_type % 2==0){
 				if(myMsgs.idleVideo_es() ){
 					time_intro_msgs=ofGetElapsedTimef()+30;
-					status_draw_msg1=false;
+					status_draw_msg1=false; 
+					msg_type = msg_type + 1; 
 				}
 			}
-			else if (status_draw_msg1 && time_intro_msgs%2==1)
+			else if (status_draw_msg1 && msg_type % 2==1)
 			{
 				if(myMsgs.idleVideo_en() ){
 					time_intro_msgs=ofGetElapsedTimef()+30;
-					status_draw_msg1=false;
+					status_draw_msg1=false; 
+					msg_type = msg_type + 1; 
 				}				
 			}
+			
 			
 
 			
@@ -269,11 +273,13 @@ void testApp::draw() {
 	//ofPopMatrix(); 
 
 
+	/* 
 	if(status_game==1){
 		char fpsStr[40]; // an array of chars			
 		sprintf(fpsStr, "%i",status_time );
 		backCountFont.drawString(fpsStr, 90, 10);
 	} 
+	*/ 
 	
 
 	//informacion de juego

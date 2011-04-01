@@ -78,9 +78,10 @@ class testApp : public ofBaseApp{
 	int status_time_init;
 	int timmer_pause;
 
-	msgs myMsgs;
-	int time_intro_msgs;
-	bool drawing_text_finished_flag;
+	msgs myMsgs; 
+	int time_intro_msgs; 
+	bool drawing_text_finished_flag; 
+	int msg_type; 
 	
 	//bool draw_text_finish;
 
