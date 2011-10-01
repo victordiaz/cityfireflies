@@ -25,6 +25,7 @@ void ParticleSourceHandler::update(){
 	for (emitterList::iterator em= myEmitters.begin();  em!= myEmitters.end(); em++){
 		(*em)->update();
 		if ((*em)->isEmpty()) {
+			delete *em;
 			myEmitters.remove((*em));
 		}
 	}

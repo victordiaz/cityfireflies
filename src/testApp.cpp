@@ -12,7 +12,7 @@ void testApp::setup(){
 
 	ofSetFrameRate(30);
 
-	loadSettings(); 	
+		
 	lastTimeMeasure = ofGetElapsedTimef();
 	//cout << tileWidth << " " << tileHeight << endl;
 
@@ -32,8 +32,12 @@ void testApp::setup(){
 	time_intro_msgs=0;
 	status_draw_msg1=true; 
 	msg_type = 0; 
+	
+//settings
+	//BORN_TIME={1500,1000,700};
+	with_explosions=true;
 	//mparticles.setup();
-
+	loadSettings(); 
 }
 
 //--------------------------------------------------------------
@@ -56,7 +60,7 @@ void testApp::update(){
 								status_time_init=ofGetElapsedTimef();
 								drawing_text_finished_flag=false;								
 							}	
-							mparticles.addEmitter(i*square_size+6,j*square_size+6);
+							if(with_explosions) mparticles.addEmitter(i*square_size+6,j*square_size+6);
 						}
 						mImageproc.matrix[i][j] -= 1; //amountActivity; 
 
@@ -135,7 +139,10 @@ void testApp::draw() {
 			}
 			ofSetColor(0xFFFFFF);
 			if(status_update==true){ 
-				if(my_enemy.countEnemies()<15){ // In this status we don't like to have many evil enemies around
+				if (my_enemy.countEnemies()>0 && my_enemy.countEnemies()<10) { // with less than 10 we just make
+					my_enemy.newEnemy(ofRandom(0,columnas),ofRandom(0,filas),0);
+				}
+				else if(my_enemy.countEnemies()<17){ // In this status we don't like to have many evil enemies around so between 10 and 17 we create and remove randomly
 					if (ofRandom(0,10)>7)  //So sometimes I remove
 						my_enemy.removeRandomOne();
 					else{
@@ -143,7 +150,7 @@ void testApp::draw() {
 					}
 				}
 				else{
-					if (ofRandom(0,10)>9) 
+					if (ofRandom(0,10)>9)  //with more than 17 we only delete
 						my_enemy.removeRandomOne();
 				}
 			}
@@ -303,7 +310,7 @@ void testApp::loadSettings() {
 	if( XML.loadFile("mySettings.xml") ){
 		//message = "mySettings.xml loaded!"; 
 		
-		cout << "qq" << endl; 
+		
 		mImageproc.boxInputMatrix.setTopLeftX(XML.getValue("CAPTUREREGION:r11:X", 0)); 
 		mImageproc.boxInputMatrix.setTopLeftY(XML.getValue("CAPTUREREGION:r11:Y", 0)); 
 		
@@ -320,9 +327,13 @@ void testApp::loadSettings() {
 		mImageproc.thresholdDiff = XML.getValue("IMAGESETTINGS:THRESHOLDDIFF", 102); 
 		mImageproc.blobMax = XML.getValue("IMAGESETTINGS:BLOBMAX", 1); 
 		mImageproc.blobMin = XML.getValue("IMAGESETTINGS:BLOBMIN", 22); 
+		with_explosions = XML.getValue("GAMESETTINGS:EXPLOSION",true);
+		BORN_TIME[0]=XML.getValue("GAMESETTINGS:HOW_FAST0", 1500); 
+		BORN_TIME[1]=XML.getValue("GAMESETTINGS:HOW_FAST1", 1000); 
+		BORN_TIME[2]=XML.getValue("GAMESETTINGS:HOW_FAST2", 700); 
 		
 	}else{ 
-		cout << "qq1" << endl; 
+
 		//message = "unable to load mySettings.xml check data/ folder";
 	}
 	
@@ -351,6 +362,10 @@ void testApp::saveSettings() {
 	XML.setValue("IMAGESETTINGS:BLOBMAX", mImageproc.blobMax); 
 	XML.setValue("IMAGESETTINGS:BLOBMIN", mImageproc.blobMin); 
 	
+	XML.setValue("GAMESETTINGS:EXPLOSION", with_explosions); 
+	XML.setValue("GAMESETTINGS:HOW_FAST0", BORN_TIME[0]); 
+	XML.setValue("GAMESETTINGS:HOW_FAST1", BORN_TIME[1]); 
+	XML.setValue("GAMESETTINGS:HOW_FAST2", BORN_TIME[2]); 
 	XML.saveFile("mySettings.xml"); 
 	
 } 

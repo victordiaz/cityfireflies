@@ -15,13 +15,13 @@ const int scr_height=157;
 
 const int TIME_WIN[3]={80,120,120}; //Tiempo por niveles 
 
-const int ENEMIES_WIN[3]={12,40,144};
+//const int ENEMIES_WIN[3]={12,40,144};
 const int ENEMIES_BY_LEVEL[3]={10,20,70};
 const int square_size=12;
 const int filas=9;
 const int columnas=16; 
 const int maxMalos = 144; 
-const int BORN_TIME[3]={1500,1000,700};
+//int BORN_TIME[3];//={1500,1000,700};
 const int SCREEN_CHANGE_TIME=5; 
 const int LONG_COLA_ANIMATION=20;
 //mask

@@ -19,6 +19,10 @@
 		49597B59133ACB5000302CF4 /* ofxFBOTexture.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49597B57133ACB5000302CF4 /* ofxFBOTexture.cpp */; };
 		4977870013205AEE00325623 /* GameSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 497786FD13205AEE00325623 /* GameSprite.cpp */; };
 		49825F4412F4981000B22DE1 /* enemies.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49825F4212F4981000B22DE1 /* enemies.cpp */; };
+		4990AAFA1434C7320002D74E /* particles.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4990AAF91434C7320002D74E /* particles.cpp */; };
+		49C469C914367FB8001AD532 /* Particle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49C469C714367FB8001AD532 /* Particle.cpp */; };
+		49C469CA14367FB8001AD532 /* ParticleEmitter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49C469C814367FB8001AD532 /* ParticleEmitter.cpp */; };
+		49C46A72143692E7001AD532 /* particleSourceHandler.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49C46A71143692E7001AD532 /* particleSourceHandler.cpp */; };
 		E44667570F5B3E04005D0BF0 /* ofxCvColorImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E446667D0F5B3E04005D0BF0 /* ofxCvColorImage.cpp */; };
 		E44667580F5B3E04005D0BF0 /* ofxCvContourFinder.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E44666800F5B3E04005D0BF0 /* ofxCvContourFinder.cpp */; };
 		E44667590F5B3E04005D0BF0 /* ofxCvFloatImage.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E44666820F5B3E04005D0BF0 /* ofxCvFloatImage.cpp */; };
@@ -124,6 +128,14 @@
 		497786FD13205AEE00325623 /* GameSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameSprite.cpp; sourceTree = "<group>"; };
 		497786FE13205AEE00325623 /* GameSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSprite.h; sourceTree = "<group>"; };
 		49825F4212F4981000B22DE1 /* enemies.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = enemies.cpp; sourceTree = "<group>"; };
+		4990AAF81434C7320002D74E /* particles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = particles.h; sourceTree = "<group>"; };
+		4990AAF91434C7320002D74E /* particles.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = particles.cpp; sourceTree = "<group>"; };
+		49C469C514367FB8001AD532 /* Particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Particle.h; sourceTree = "<group>"; };
+		49C469C614367FB8001AD532 /* ParticleEmitter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParticleEmitter.h; sourceTree = "<group>"; };
+		49C469C714367FB8001AD532 /* Particle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Particle.cpp; sourceTree = "<group>"; };
+		49C469C814367FB8001AD532 /* ParticleEmitter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ParticleEmitter.cpp; sourceTree = "<group>"; };
+		49C46A70143692E7001AD532 /* particleSourceHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = particleSourceHandler.h; sourceTree = "<group>"; };
+		49C46A71143692E7001AD532 /* particleSourceHandler.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = particleSourceHandler.cpp; sourceTree = "<group>"; };
 		E446664F0F5B3E03005D0BF0 /* cv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cv.h; path = ../../../addons/ofxOpenCv/libs/opencv/include/cv.h; sourceTree = SOURCE_ROOT; };
 		E44666500F5B3E03005D0BF0 /* cv.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = cv.hpp; path = ../../../addons/ofxOpenCv/libs/opencv/include/cv.hpp; sourceTree = SOURCE_ROOT; };
 		E44666510F5B3E03005D0BF0 /* cvaux.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cvaux.h; path = ../../../addons/ofxOpenCv/libs/opencv/include/cvaux.h; sourceTree = SOURCE_ROOT; };
@@ -286,6 +298,19 @@
 			children = (
 			);
 			path = src;
+			sourceTree = "<group>";
+		};
+		49C469C014367FAC001AD532 /* particles */ = {
+			isa = PBXGroup;
+			children = (
+				49C469C514367FB8001AD532 /* Particle.h */,
+				49C469C614367FB8001AD532 /* ParticleEmitter.h */,
+				49C469C714367FB8001AD532 /* Particle.cpp */,
+				49C469C814367FB8001AD532 /* ParticleEmitter.cpp */,
+				49C46A70143692E7001AD532 /* particleSourceHandler.h */,
+				49C46A71143692E7001AD532 /* particleSourceHandler.cpp */,
+			);
+			name = particles;
 			sourceTree = "<group>";
 		};
 		E44665C70F5B3E03005D0BF0 /* addons */ = {
@@ -594,6 +619,8 @@
 		E4B69E1C0A3A1BDC003C02F2 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				49C469C014367FAC001AD532 /* particles */,
+				4990AAF81434C7320002D74E /* particles.h */,
 				49597B57133ACB5000302CF4 /* ofxFBOTexture.cpp */,
 				49597B58133ACB5000302CF4 /* ofxFBOTexture.h */,
 				497786FD13205AEE00325623 /* GameSprite.cpp */,
@@ -614,6 +641,7 @@
 				E4B69E1F0A3A1BDC003C02F2 /* testApp.h */,
 				495744A91311D6BA00B3CAFB /* msgs.h */,
 				495744AA1311D6BA00B3CAFB /* msgs.cpp */,
+				4990AAF91434C7320002D74E /* particles.cpp */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -817,7 +845,6 @@
 			isa = PBXProject;
 			buildConfigurationList = E4B69B4D0A3A1720003C02F2 /* Build configuration list for PBXProject "plaza" */;
 			compatibilityVersion = "Xcode 2.4";
-			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				English,
@@ -896,6 +923,10 @@
 				495745CF1311EA5E00B3CAFB /* ofxXmlSettings.cpp in Sources */,
 				4977870013205AEE00325623 /* GameSprite.cpp in Sources */,
 				49597B59133ACB5000302CF4 /* ofxFBOTexture.cpp in Sources */,
+				4990AAFA1434C7320002D74E /* particles.cpp in Sources */,
+				49C469C914367FB8001AD532 /* Particle.cpp in Sources */,
+				49C469CA14367FB8001AD532 /* ParticleEmitter.cpp in Sources */,
+				49C46A72143692E7001AD532 /* particleSourceHandler.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

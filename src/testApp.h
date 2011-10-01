@@ -60,6 +60,7 @@ class testApp : public ofBaseApp{
 
 
 	//GAME PARAMETERS
+	int BORN_TIME[3];
 	bool status_update;
 	int last_updated;
 	int status_game; // 0 waiting to run, 1 running,2 win or loose
@@ -81,7 +82,7 @@ class testApp : public ofBaseApp{
 	int time_intro_msgs; 
 	bool drawing_text_finished_flag; 
 	int msg_type; 
-	
+	bool with_explosions;
 	//bool draw_text_finish;
 
 };

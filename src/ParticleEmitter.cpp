@@ -17,8 +17,9 @@ void ParticleEmitter::update(){
 	for (particleList::iterator pp= particles.begin();  pp!= particles.end(); pp++){
 		(*pp)->update();
 		if ((*pp)->dead==true) {
-			
+			delete *pp;
 			particles.remove((*pp));
+			
 			//p[i] = new Particle();
 		} 
 	}
