@@ -10,6 +10,7 @@
 #include "imageproc.h" 
 #include "msgs.h"
 #include "ofxXmlSettings.h"
+#include "particleSourceHandler.h"
 #include <sstream>
 
 #define MX 10;
@@ -53,11 +54,9 @@ class testApp : public ofBaseApp{
 		int tileWidthScreen;
 		int tileHeightScreen;
 
-		int fadeN;
-
-	
+		int fadeN;	
 		imageproc mImageproc; 
-	
+		ParticleSourceHandler mparticles;
 
 
 	//GAME PARAMETERS

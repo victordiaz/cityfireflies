@@ -1,9 +1,10 @@
 #include "testApp.h"
 #include "constants.h"
 
+
 //--------------------------------------------------------------
 void testApp::setup(){
-
+	ofEnableSmoothing();
 	myfont.loadFont("visitor1.ttf", 7); 
 	backCountFont.loadFont("visitor1.ttf", 12);
 	fondoImg.loadImage("images/juegofondo.png"); 
@@ -19,7 +20,7 @@ void testApp::setup(){
 	start_img.loadImage("images/login.png");
 	loser_img.loadImage("images/loser.png");
 	win_img.loadImage("images/win.png");
-
+	
 	// game status
 
 	status_game=0;
@@ -31,6 +32,7 @@ void testApp::setup(){
 	time_intro_msgs=0;
 	status_draw_msg1=true; 
 	msg_type = 0; 
+	//mparticles.setup();
 
 }
 
@@ -48,12 +50,13 @@ void testApp::update(){
 
 					if (mImageproc.matrix[i][j] > 0) { 
 						if(my_enemy.cleanRegion(i,j)==true){
-							if (status_first_dead==false && status_game==0 && ON_PC==false) {
+							if (status_first_dead==false && status_game==0 /** && ON_PC==false **/) { //set the game to the level0 status
 								status_first_dead=true;
 								status_time=TIME_WIN[status_level];
 								status_time_init=ofGetElapsedTimef();
 								drawing_text_finished_flag=false;								
-							}								
+							}	
+							mparticles.addEmitter(i*square_size+6,j*square_size+6);
 						}
 						mImageproc.matrix[i][j] -= 1; //amountActivity; 
 
@@ -86,6 +89,7 @@ void testApp::update(){
 		status_draw_msg1=true;
 	}
 	myMsgs.update();
+	mparticles.update();
 	
 }
 
@@ -143,7 +147,7 @@ void testApp::draw() {
 						my_enemy.removeRandomOne();
 				}
 			}
-			my_enemy.draw();
+			my_enemy.draw(status_level);
 			if(status_draw_msg1 && msg_type % 2==0){
 				if(myMsgs.idleVideo_es() ){
 					time_intro_msgs=ofGetElapsedTimef()+30;
@@ -158,26 +162,22 @@ void testApp::draw() {
 					status_draw_msg1=false; 
 					msg_type = msg_type + 1; 
 				}				
-			}
-			
-			
-
-			
+			}		
 			
 			break;
 
-		case 1: //running This is the gameplay state.		
+		case 1: //running: This is the gameplay state.		
 			if(status_update==true){ 
 				status_update=false;
 				while(!my_enemy.newEnemy(ofRandom(0,columnas),ofRandom(0,filas),0) ); 
 				int contador=my_enemy.countEnemies();
-				if(ON_PC){	//probando en el ordenador				
+				/**if(ON_PC){	//probando en el ordenador				
 					if(contador>ENEMIES_WIN[status_level]){ //condicion para perder el juego
 						status_game=2;
 						break;
 					}
-				}
-				else{ //jugando en la pantalla gigante y no en el ordenador
+				}**/
+				//else{ //jugando en la pantalla gigante y no en el ordenador
 					//cout << "Número de bichos" << contador << endl; 
 					if(contador==1){
 						status_game=3;
@@ -187,13 +187,14 @@ void testApp::draw() {
 						status_game=2;
 						break;
 					}					
-				}
+				//}
 			}
-			if(status_time<=0 && ON_PC){ //Cuando termina el tiempo gana;
+			/**if(status_time<=0 && ON_PC){ //Cuando termina el tiempo gana;
 				status_game=3;
 				break;
-			}					
-			my_enemy.draw();
+			}**/					
+			my_enemy.draw(status_level);
+			mparticles.draw();
 			if (!drawing_text_finished_flag && status_level==0) {
 				//drawing_text_finished_flag=myMsgs.initVideo();
 				drawing_text_finished_flag=myMsgs.drawFullScreenBlink();
@@ -228,13 +229,7 @@ void testApp::draw() {
 			}
 			status_time_init=ofGetElapsedTimef();
 
-			//drawing_text_finished_flag=myMsgs.drawFullScreenText( "You Win! Next Level");
-			/**if (drawing_text_finished_flag){ //Cuando se cumple el tiempo
-				my_enemy.restart();
-				status_game=4;
-				status_level>2 ? status_level=0 : status_level++;
-				status_time_init=ofGetElapsedTimef();
-			}		**/	
+
 		break;
 
 		case 4: //Prepare the game for the next level
@@ -251,7 +246,7 @@ void testApp::draw() {
 				status_game=1;
 				my_enemy.restart();
 				my_enemy.newEnemies(ENEMIES_BY_LEVEL[status_level]);
-			}	
+			}
 			status_time_init=ofGetElapsedTimef();
 			
 			break;
@@ -295,6 +290,10 @@ void testApp::draw() {
 	ofRect(screenWidth-bWidth*6, 0, bWidth*3, bHeight);
 	ofRect(screenWidth-bWidth*3, 0, bWidth*3, bHeight*2);
 	ofPopMatrix(); 
+	ofPushMatrix();
+	ofTranslate(topOffset, leftOffset, 0); 
+		
+	ofPopMatrix();
 } 
 
 
@@ -387,7 +386,7 @@ void testApp::keyPressed  (int key){
 			}**/
 		break;
 			
-		case '2':
+		case '2': // press 2 to go to the next level
 			status_game=2;
 			status_time=TIME_WIN[status_level];
 			status_time_init=ofGetElapsedTimef();
@@ -398,7 +397,7 @@ void testApp::keyPressed  (int key){
 			break;
 			
 		case '3':
-			status_game=3;
+			status_game=3; //press 3 to lose the current level and restart the game
 			status_time=TIME_WIN[status_level];
 			status_time_init=ofGetElapsedTimef();
 			//=ofGetElapsedTimef();
@@ -454,6 +453,7 @@ void testApp::mouseDragged(int x, int y, int button) {
 //--------------------------------------------------------------
 void testApp::mousePressed(int x, int y, int button){
 	my_enemy.cleanOne();
+	//mparticles.addEmitter(x,y);
 }
 
 //--------------------------------------------------------------

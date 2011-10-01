@@ -62,12 +62,12 @@ imageproc::imageproc(){
 	blobMin = 1;
 	blobMax = 22;
 	
-	threshold = 202; 
+	threshold = 202	; 
 	thresholdDiff = 102; 
 	
 	resetMatrix(); 
 	
-	cout << "hola2" << endl; 
+	//cout << "hola2" << endl; 
 	
 }
 
@@ -158,6 +158,8 @@ void imageproc::drawGameCamera() {
 	//imagen de la camara en el juego 
 	ofSetColor(0xFFFFFF);
 	grayImgW.draw(0, 32, screenWidth, 125); 
+	ofSetColor(0, 0, 0,100); //We tint the image in black a little to avoid too much bright on the screen
+	ofRect(0, 32, screenWidth, 125);
 	
 } 
 

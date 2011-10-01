@@ -10,6 +10,16 @@
 #include "enemies.h"
 #include <math.h>
 #include "ofMath.h"
+#include "Poco/String.h"
+#include "Poco/Format.h"
+#include "Poco/Path.h"
+#include "Poco/File.h"
+#include "Poco/NumberFormatter.h"
+
+using Poco::NumberFormatter;
+using Poco::Path;
+using Poco::format;
+using Poco::File;
 //Constructor
 enemies::enemies(){
 	for (int x=0; x<columnas; x++) {
@@ -24,13 +34,34 @@ enemies::enemies(){
 		}
 	current_iteration=0; // de 1 a 7
 	malos_en_current_iteration=0;
-
-	malo1.loadImage("images/malo1.png");
-	malo2.loadImage("images/malo2.png");
+	loadImages();
+	// malo1.loadImage("images/malo1.png");
+	// malo2.loadImage("images/malo2.png");
 	tipo_dibujo=0;
 	actualiza_dibujo=0;
 }
 
+/**void enemies::setExplosionHandler( ParticleSourceHandler *psh){
+	explosions = psh;
+}**/
+
+void enemies::loadImages(){	
+	std::string s;
+	
+	for (int level=0; level<= MAX_LEVELS; level++){
+		total_drawings[level] = countDrawings(NumberFormatter::format(level) );
+		total_drawings[level] = (int) total_drawings[level]/2;
+		for (int n=0; n<total_drawings[level]; n++) {
+			s=format( "images/malos/%d/malo_%d_a.png", level,n);
+			malos[level][n][0].loadImage(s);
+			s=format( "images/malos/%d/malo_%d_b.png", level,n);
+			cout << s << "\n";
+			malos[level][n][1].loadImage(s);	
+		}
+	}
+//	malos[0][0].loadImage("images/malos/malo1.png");
+//	malos[0][1].loadImage("images/malos/malo2.png");
+}
 
 void enemies::restart(){
 	tipo_dibujo=0;
@@ -106,34 +137,11 @@ bool enemies::newEnemies(int total){
 }
 
 
-
-//How the enemies move:
-
-/**bool enemies::updatePosition(){
-	for (int x=0; x<=columnas; x+=1) {
-		for(int y=0;y<filas;y+=1){
-			if(logic_map[x][y]==true)
-				counter_enemies++;
-		}
-	}
-
-}**/
-//
-//void enemies::cleanRegion(int m_x,int m_y, int size, int type){
-	//for (int x=m_x; x<m_x+size; x++) {
-//		for (int y=m_y; y<m_y+size;y++){
-//			war_map[m_x][m_y]=false;
-//		}
-//	}
-//	return;
-//}
-
-
 //Funcion para borrar enemigos
 bool enemies::cleanRegion(int x, int y){
 	if (logic_map[x][y]==true) {
-		cout << "lalalalallalala" << endl; 
 		logic_map[x][y]=false;
+	//	explosions->addEmitter(x*square_size,y*square_size);
 		counter_enemies--;
 		return true;
 	}
@@ -164,14 +172,38 @@ int enemies::countEnemies(){
 	return counter_enemies;
 }
 
+
+int enemies::countDrawings(std::string mdir){
+	
+	Poco::Path path(Path::current() + "../../../data/images/malos/"+mdir , Path::PATH_UNIX);
+	cout << path.toString();
+	cout << "\n";
+	//cout << path.toString();
+	File tmpDir(path);
+	
+	std::vector<std::string> files;
+	tmpDir.list(files);
+	std::vector<std::string>::iterator it = files.begin();
+	int total_drawings1=0;
+	for (; it != files.end(); ++it)
+	{
+		total_drawings1++;
+	}
+	cout << total_drawings1;
+	return total_drawings1;
+	
+	//tmpDir.remove(true);
+	
+}
+
 //This function reads the logic_map variable and draw an enemy where there is supposed to be one.
-void enemies::draw() {
+void enemies::draw(int current_level) {
 
 	
 	ofSetColor(255,255,255,200);
 	for (int x=0; x<columnas; x+=1) {
 		for(int y=0;y<filas;y+=1){
-			if(logic_map[x][y]==true){
+			if(logic_map[x][y]==true){ //draw the enemy
 
 				if(ofGetFrameNum()%30==0){
 					tipo_dibujo=ofRandomf();
@@ -183,18 +215,17 @@ void enemies::draw() {
 				ofPushStyle(); 
 				ofSetColor(255, 255, 255, ofMap(counter_enemies, 0, maxMalos, 225, 92)); 
 				//ofSetColor(255, 255, 255, 25); 
-				
-				if(tipo_dibujo>=0) { 
-					malo1.draw(x*square_size, y*square_size);
+				int number_drawing_symbol=(x+y) % total_drawings[current_level];
+				if(tipo_dibujo >= 0) { 
+					malos[current_level][number_drawing_symbol][0].draw(x*square_size, y*square_size);
 				}
 				else {
-					malo2.draw(x*square_size, y*square_size);
+					malos[current_level][number_drawing_symbol][1].draw(x*square_size, y*square_size);
 				} 
 				ofPopStyle(); 
 			}
-			else {
-				//ofSetColor(200,0,0);
-				//ofRect(x*square_size,y*square_size,x+square_size,y+square_size);
+			else { //don't draw the eneny
+
 			}
 
 			
