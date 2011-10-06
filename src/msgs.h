@@ -11,8 +11,8 @@
 #define _MSGS_ 
 #include "ofMain.h"
 #include "constants.h"
-#include "GameSprite.h"
-#include "ofxFBOTexture.h"
+//#include "GameSprite.h"
+//#include "ofxFBOTexture.h"
 class msgs{
 public:
 	bool drawMsgIntro1();
@@ -40,7 +40,7 @@ public:
 	ofVideoPlayer tryMovie;
 	ofVideoPlayer idleMovie_en;
 	ofVideoPlayer idleMovie_es;
-	GameSprite sprites;
+	//GameSprite sprites;
 	int position;
 	long counter;
 	bool must_draw_half;
@@ -59,11 +59,15 @@ public:
 	bool idleVideo_en();
 	bool drawFullScreenBlink();
 	
+    float idleVideo_speed;
+    float finVideo_speed;
+    float looseVideo_speed;
+    
 private:	
 	int blinkCounter;
 	int timmer_pause;
 	int scroll_control;
-	ofxFBOTexture myFBO;
+	//ofxFBOTexture myFBO;
 	int x_exp, y_exp;
 	int explotionCounter;
 	struct screenSquare {

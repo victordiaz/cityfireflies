@@ -1,0 +1,284 @@
+Testing FileChannel
+2011-10-01 18:47:24.750 Testing FileChannel
+2011-10-01 18:53:05.058 Starting game
+2011-10-01 18:53:34.664 Starting game
+2011-10-01 18:53:34.664 Starting game22
+2011-10-01 19:00:22.809 Running
+2011-10-01 19:00:30.824 New user: Starting Game
+2011-10-01 19:01:54.600 End game in level: 0
+2011-10-01 19:02:34.327 New user: Starting Game
+2011-10-01 19:03:57.879 End game in level: 0
+2011-10-01 19:04:42.399 New user: Starting Game
+2011-10-01 19:06:05.818 End game in level: 0
+2011-10-01 19:06:21.570 New user: Starting Game
+2011-10-01 19:07:44.648 End game in level: 0
+2011-10-01 19:08:03.304 New user: Starting Game
+2011-10-01 19:09:26.663 End game in level: 0
+2011-10-01 19:10:06.864 New user: Starting Game
+2011-10-01 19:11:29.902 End game in level: 0
+2011-10-01 19:11:47.615 New user: Starting Game
+2011-10-01 19:13:11.843 End game in level: 0
+2011-10-01 19:14:16.455 New user: Starting Game
+2011-10-01 19:15:39.434 End game in level: 0
+2011-10-01 19:16:09.309 New user: Starting Game
+2011-10-01 19:17:32.041 End game in level: 0
+2011-10-01 19:18:10.183 New user: Starting Game
+2011-10-01 19:19:33.805 End game in level: 0
+2011-10-01 19:19:58.248 New user: Starting Game
+2011-10-01 19:21:21.798 End game in level: 0
+2011-10-01 19:21:31.506 New user: Starting Game
+2011-10-01 19:28:35.578 Running
+2011-10-01 19:31:33.449 Running
+2011-10-01 19:40:56.115 Running
+2011-10-01 19:54:08.613 Running
+2011-10-01 19:54:45.656 End game in level: 0 length: 37.29899979
+2011-10-01 19:55:04.243 New user: Starting Game
+2011-10-01 19:55:14.634 End game in level: 0 length: 10.39199829
+2011-10-01 19:55:24.851 New user: Starting Game
+2011-10-01 19:55:35.874 End game in level: 0 length: 11.022995
+2011-10-01 19:56:09.083 New user: Starting Game
+2011-10-01 19:56:44.121 Running
+2011-10-01 19:57:05.771 End game in level: 1 length: 21.87299919
+2011-10-01 19:58:03.541 Win game length: 79.64299774
+2011-10-01 20:04:09.608 Running
+2011-10-01 20:04:33.178 New user: Starting Game
+2011-10-01 20:05:56.708 End game in level: 0 length: 83.52999878
+2011-10-01 20:09:26.198 Running
+2011-10-01 20:09:48.914 Running
+2011-10-01 20:09:59.952 New user: Starting Game
+2011-10-01 23:41:19.757 Running
+2011-10-01 23:43:34.733 Running
+2011-10-01 23:46:06.400 Running
+2011-10-01 23:55:30.931 Running
+2011-10-01 23:56:01.901 Running
+2011-10-01 23:58:47.368 Running
+2011-10-01 23:59:41.582 Running
+2011-10-02 00:02:38.496 Running
+2011-10-02 00:05:57.954 Running
+2011-10-02 00:07:19.147 Running
+2011-10-02 00:09:24.926 Running
+2011-10-02 00:10:33.404 Running
+2011-10-02 00:10:49.917 Running
+2011-10-02 00:12:05.809 Running
+2011-10-02 00:14:23.639 Running
+2011-10-02 00:16:57.735 Running
+2011-10-02 00:17:10.069 Running
+2011-10-02 00:17:10.540 Running
+2011-10-02 00:18:08.082 Running
+2011-10-02 00:18:31.909 Running
+2011-10-02 00:19:52.127 Running
+2011-10-02 00:22:48.494 Running
+2011-10-02 00:25:34.898 Running
+2011-10-02 00:27:10.461 Running
+2011-10-02 00:28:23.867 Running
+2011-10-02 00:30:02.940 Running
+2011-10-02 00:30:47.241 Running
+2011-10-02 00:38:11.659 Running
+2011-10-02 00:42:46.519 Running
+2011-10-02 00:42:54.930 New user: Starting Game
+2011-10-02 00:47:35.515 Running
+2011-10-02 00:48:22.607 Running
+2011-10-02 00:49:17.083 Running
+2011-10-02 00:50:51.547 End game in level: 0enemies:33 length: 84.003998
+2011-10-02 00:58:01.231 Running
+2011-10-02 01:01:52.389 Running
+2011-10-02 01:02:06.025 New user: Starting Game
+2011-10-02 01:03:29.857 End game in level: 0enemies:38 length: 83.832001
+2011-10-02 01:03:55.069 New user: Starting Game
+2011-10-02 01:05:17.925 End game in level: 0enemies:41 length: 82.855995
+2011-10-02 01:05:46.382 New user: Starting Game
+2011-10-02 01:07:09.176 End game in level: 0enemies:42 length: 82.794006
+2011-10-02 01:07:37.645 New user: Starting Game
+2011-10-02 01:09:00.451 End game in level: 0enemies:38 length: 82.806
+2011-10-02 01:09:17.679 Running
+2011-10-02 01:09:54.985 Running
+2011-10-02 01:11:20.878 Running
+2011-10-02 02:05:11.474 Running
+2011-10-02 02:05:28.727 New user: Starting Game
+2011-10-02 02:06:51.224 End game in level: 0enemies:40 length: 82.497002
+2011-10-02 02:07:30.589 Running
+2011-10-02 02:09:13.250 Running
+2011-10-02 02:09:35.787 Running
+2011-10-02 02:11:14.177 Running
+2011-10-02 02:12:41.026 Running
+2011-10-02 02:12:58.470 End game in level: 0enemies:0 length: -9.5825747e+30
+2011-10-02 02:13:33.791 Running
+2011-10-02 02:14:09.350 Running
+2011-10-02 02:16:05.760 Running
+2011-10-02 02:17:40.429 End game in level: 0enemies:34 length: 83.382004
+2011-10-02 02:17:42.735 New user: Starting Game
+2011-10-02 02:19:05.716 End game in level: 0enemies:32 length: 82.980995
+2011-10-02 02:19:21.496 New user: Starting Game
+2011-10-02 02:20:44.580 End game in level: 0enemies:36 length: 83.084015
+2011-10-02 02:20:59.792 New user: Starting Game
+2011-10-02 02:26:18.741 Running
+2011-10-02 02:27:07.449 Running
+2011-10-02 02:28:11.606 Running
+2011-10-02 02:28:34.222 Running
+2011-10-02 02:29:03.792 New user: Starting Game
+2011-10-02 02:29:14.961 Running
+2011-10-02 02:29:32.990 New user: Starting Game
+2011-10-02 02:30:55.452 End game in level: 0enemies:33 length: 82.461998
+2011-10-02 02:34:08.377 Running
+2011-10-02 02:34:36.734 Running
+2011-10-02 02:39:24.560 Running
+2011-10-02 02:40:50.341 Running
+2011-10-02 02:43:05.685 Running
+2011-10-02 02:43:49.852 Running
+2011-10-02 02:44:09.264 New user: Starting Game
+2011-10-02 02:45:12.480 Running
+2011-10-02 02:45:29.801 End game in level: 0enemies:0 length: 17.954
+2011-10-02 02:45:57.896 Running
+2011-10-02 02:47:26.893 Running
+2011-10-02 03:07:10.584 Running
+2011-10-02 03:09:17.212 Running
+2011-10-02 03:09:25.414 New user: Starting Game
+2011-10-02 03:18:04.139 Running
+2011-10-02 03:18:07.133 Win game length: 4.605
+2011-10-02 03:18:49.358 Running
+2011-10-02 03:19:33.103 Running
+2011-10-02 03:19:57.295 Running
+2011-10-02 03:21:14.633 Running
+2011-10-02 03:21:34.480 New user: Starting Game
+2011-10-02 03:27:40.608 Running
+2011-10-02 03:27:50.951 New user: Starting Game
+2011-10-02 03:29:57.573 Running
+2011-10-02 03:30:05.831 New user: Starting Game
+2011-10-02 03:31:22.710 Running
+2011-10-02 03:32:15.268 Running
+2011-10-02 03:32:26.091 Running
+2011-10-02 03:33:13.843 Running
+2011-10-02 03:33:33.841 Running
+2011-10-02 03:35:30.726 Running
+2011-10-02 03:36:15.040 Running
+2011-10-02 03:39:11.182 Running
+2011-10-02 03:39:21.396 New user: Starting Game
+2011-10-02 03:39:51.614 Running
+2011-10-02 03:40:18.756 New user: Starting Game
+2011-10-02 03:41:12.424 Running
+2011-10-02 03:44:11.327 Running
+2011-10-02 03:45:09.807 Running
+2011-10-02 03:45:55.543 Running
+2011-10-02 03:46:29.990 Running
+2011-10-02 03:56:56.184 Running
+2011-10-02 03:57:04.230 New user: Starting Game
+2011-10-02 03:57:55.880 Running
+2011-10-02 03:58:03.771 New user: Starting Game
+2011-10-02 04:00:18.206 Running
+2011-10-02 04:00:44.890 New user: Starting Game
+2011-10-02 04:01:57.701 Running
+2011-10-02 04:02:03.388 New user: Starting Game
+2011-10-02 04:02:39.484 Running
+2011-10-02 04:14:01.431 Running
+2011-10-02 04:14:06.971 New user: Starting Game
+2011-10-02 04:17:57.742 Running
+2011-10-02 04:18:14.809 New user: Starting Game
+2011-10-02 04:20:44.910 Running
+2011-10-02 04:20:56.041 New user: Starting Game
+2011-10-02 04:21:44.271 Running
+2011-10-02 04:21:55.418 Running
+2011-10-02 04:22:12.636 Running
+2011-10-02 04:22:20.788 New user: Starting Game
+2011-10-02 04:27:23.941 Running
+2011-10-02 04:27:43.728 New user: Starting Game
+2011-10-02 04:35:42.383 Running
+2011-10-02 04:36:08.058 New user: Starting Game
+2011-10-02 04:36:12.568 Running
+2011-10-02 04:37:35.341 Running
+2011-10-02 04:37:53.563 New user: Starting Game
+2011-10-02 04:39:40.433 Running
+2011-10-02 04:39:59.723 New user: Starting Game
+2011-10-02 04:41:58.575 Running
+2011-10-02 04:42:15.341 New user: Starting Game
+2011-10-02 04:44:54.549 Running
+2011-10-02 04:46:13.050 Running
+2011-10-02 04:48:23.461 Running
+2011-10-02 04:49:35.783 Running
+2011-10-02 04:49:45.379 Running
+2011-10-02 04:49:51.086 Running
+2011-10-02 04:49:55.393 Running
+2011-10-02 04:49:59.479 Running
+2011-10-02 04:50:03.505 Running
+2011-10-02 04:53:48.070 Running
+2011-10-02 04:54:40.982 Running
+2011-10-02 04:56:33.458 Running
+2011-10-02 05:01:42.669 Running
+2011-10-02 05:02:57.961 Running
+2011-10-02 05:03:16.996 New user: Starting Game
+2011-10-02 05:04:23.417 Running
+2011-10-02 05:05:45.637 End game in level: 0enemies:16908 length: -7.4992252e+28
+2011-10-02 05:06:30.052 Running
+2011-10-02 05:12:54.002 Running
+2011-10-02 05:13:26.109 Running
+2011-10-02 05:13:39.718 End game in level: 0enemies:0 length: 10.206
+2011-10-02 05:13:57.915 Running
+2011-10-02 05:14:30.747 Running
+2011-10-02 05:14:45.133 End game in level: 0enemies:0 length: 10.959
+2011-10-02 05:16:47.543 Running
+2011-10-02 05:26:50.148 Running
+2011-10-02 05:28:20.951 Running
+2011-10-02 05:29:42.981 Win game length: 79.663002
+2011-10-02 05:33:05.144 Running
+2011-10-02 05:45:16.910 Running
+2011-10-02 05:47:00.644 Running
+2011-10-02 05:47:22.813 New user: Starting Game
+2011-10-02 05:48:06.879 Running
+2011-10-02 05:52:15.817 Running
+2011-10-02 05:52:21.406 New user: Starting Game
+2011-10-02 05:53:44.315 End game in level: 0enemies:33 length: 82.909004
+2011-10-02 05:54:34.767 New user: Starting Game
+2011-10-02 05:56:11.791 Win game length: 97.022995
+2011-10-02 05:56:42.337 New user: Starting Game
+2011-10-02 05:58:05.379 End game in level: 0enemies:46 length: 83.041992
+2011-10-02 05:58:23.716 New user: Starting Game
+2011-10-02 05:58:53.398 Running
+2011-10-02 05:59:02.758 New user: Starting Game
+2011-10-02 06:00:26.332 End game in level: 0enemies:35 length: 83.574005
+2011-10-02 06:05:05.900 Running
+2011-10-02 06:05:55.624 New user: Starting Game
+2011-10-02 06:07:00.711 Win game length: 65.086998
+2011-10-02 06:08:05.390 New user: Starting Game
+2011-10-02 06:08:48.555 Win game length: 43.164993
+2011-10-02 06:11:42.002 Running
+2011-10-02 06:12:14.336 Running
+2011-10-02 06:13:16.732 Running
+2011-10-02 06:13:34.773 End game in level: 0enemies:0 length: 9.8969994
+2011-10-02 06:14:55.636 Running
+2011-10-02 06:20:45.303 Running
+2011-10-03 21:07:54.545 Running
+2011-10-03 21:08:07.192 New user: Starting Game
+
+
+---------------------------------------  2011-10-04-01-24-46-543
+
+
+---------------------------------------  2011-10-06-18-05-24-567
+OF: OF_LOG_NOTICE: :data:start:: 6 : 10 : 18 : 18 : 6 : 35 New user: Starting Game 
+
+
+---------------------------------------  2011-10-06-18-18-08-806
+OF: OF_LOG_NOTICE: :data:start:: 6 : 10 : 18 : 18 : 18 : 35 New user: Starting Game 
+OF: OF_LOG_NOTICE: :data:end: 41 : 0 : 6 : 10 : 18 : 18 : 19 : 59 End game 
+OF: OF_LOG_NOTICE: :data:start:: 6 : 10 : 18 : 18 : 20 : 7 New user: Starting Game 
+OF: OF_LOG_NOTICE: :data:end: 33 : 0 : 6 : 10 : 18 : 18 : 21 : 30 End game 
+OF: OF_LOG_NOTICE: :data:start:: 6 : 10 : 18 : 18 : 21 : 34 New user: Starting Game 
+
+
+---------------------------------------  2011-10-06-18-23-43-062
+OF: OF_LOG_NOTICE: :data:start:: 6 : 10 : 18 : 18 : 24 : 2 New user: Starting Game 
+
+
+---------------------------------------  2011-10-06-18-24-26-750
+OF: OF_LOG_NOTICE: :data:start:: 6 : 10 : 18 : 18 : 24 : 59 New user: Starting Game 
+
+
+---------------------------------------  2011-10-06-18-25-14-714
+
+
+---------------------------------------  2011-10-06-18-26-38-269
+OF: OF_LOG_NOTICE: :data:start:: 6 : 10 : 18 : 18 : 26 : 48 New user: Starting Game 
+OF: OF_LOG_NOTICE: :data:end: 35 : 0 : 6 : 10 : 18 : 18 : 28 : 12 End game 
+OF: OF_LOG_NOTICE: :data:start:: 6 : 10 : 18 : 18 : 28 : 49 New user: Starting Game 
+
+
+---------------------------------------  2011-10-06-19-23-23-425

@@ -8,12 +8,14 @@
  */
 #ifndef CONSTANTS
 #define CONSTANTS
+
+//#define WINDOWS
 const bool ON_PC=false;
 const int MAX_LEVELS=2;
 const int scr_width=192;
 const int scr_height=157;
 
-const int TIME_WIN[3]={80,120,120}; //Tiempo por niveles 
+const int TIME_WIN[3]={80,120,120}; //Tiempo por niveles 80 120 120
 
 //const int ENEMIES_WIN[3]={12,40,144};
 const int ENEMIES_BY_LEVEL[3]={10,20,70};

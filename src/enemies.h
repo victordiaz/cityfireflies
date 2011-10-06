@@ -22,7 +22,7 @@ public:
 	//void cleanRegion(int m_x,int m_y, int size, int type);
 	int	countEnemies();
 	void removeRandomOne();
-	enemies();
+	void setup();
 	void loadImages();
 	void draw(int );
 	void cleanOne();

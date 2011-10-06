@@ -14,9 +14,9 @@
 
 
 //Constructor
-imageproc::imageproc(){
+void imageproc::setup(){
 
-	myfont.loadFont("visitor1.ttf", 7); 
+	myfont.loadFont("visitor1.ttf", 7,false,false,false); 
 	
 	camWidth = 320;
 	camHeight = 240;
@@ -64,7 +64,7 @@ imageproc::imageproc(){
 	
 	threshold = 202	; 
 	thresholdDiff = 102; 
-	
+	darken_value=100;
 	resetMatrix(); 
 	
 	//cout << "hola2" << endl; 
@@ -156,10 +156,13 @@ void imageproc::update() {
 void imageproc::drawGameCamera() {
 	
 	//imagen de la camara en el juego 
-	ofSetColor(0xFFFFFF);
+	ofSetHexColor(0xFFFFFF);
 	grayImgW.draw(0, 32, screenWidth, 125); 
-	ofSetColor(0, 0, 0,100); //We tint the image in black a little to avoid too much bright on the screen
+    ofPushStyle();
+    ofEnableAlphaBlending();
+	ofSetColor(0, 0, 0,darken_value); //We tint the image in black a little to avoid too much bright on the screen
 	ofRect(0, 32, screenWidth, 125);
+    ofPopStyle();
 	
 } 
 
@@ -170,7 +173,7 @@ void imageproc::drawFeedback() {
 	
 	
 	//feedback del procesado 
-	ofSetColor(0xFFFFFF);
+	ofSetHexColor(0xFFFFFF);
 	grayImg.draw(360,20);
 	grayImgW.draw(700,20);
 	contourFinder.draw(700,20);
@@ -183,6 +186,7 @@ void imageproc::drawFeedback() {
 	
 	for (int i = 0; i < contourFinder.nBlobs; i++) {
         contourFinder.blobs[i].draw(0,0);
+        cout << "blobs size: "<< contourFinder.blobs[i].area << "\n";
 		ofCircle(contourFinder.blobs[i].centroid.x, contourFinder.blobs[i].centroid.y, 20);
     }
 	ofPopMatrix();
@@ -228,9 +232,9 @@ void imageproc::drawFeedback() {
 
 
 	ofPushStyle(); 
-	ofSetColor(0, 0, 0); 
+	ofSetColor(255, 255, 255); 
 	//myfont.drawString(t, 200, 500); 
-	myfont.drawString(tD, 200, 520); 
+	//myfont.drawString(tD, 200, 320); 
 	ofPopStyle(); 
 
 	

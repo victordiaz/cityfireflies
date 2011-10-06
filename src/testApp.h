@@ -12,9 +12,19 @@
 #include "ofxXmlSettings.h"
 #include "particleSourceHandler.h"
 #include <sstream>
+#include "ofxSimpleGuiToo.h"
+#include <Poco/Logger.h>
+#include <Poco/AutoPtr.h>
+#include <Poco/FileChannel.h>
+#include <Poco/LocalDateTime.h>
+#include <Poco/DateTimeFormatter.h>
 
 #define MX 10;
 #define MY 10;
+
+
+using Poco::Logger;
+
 
 
 class testApp : public ofBaseApp{
@@ -57,7 +67,9 @@ class testApp : public ofBaseApp{
 		int fadeN;	
 		imageproc mImageproc; 
 		ParticleSourceHandler mparticles;
-
+		Logger *mlogger;
+		float gameStartTime;
+		
 
 	//GAME PARAMETERS
 	int BORN_TIME[3];
@@ -84,6 +96,7 @@ class testApp : public ofBaseApp{
 	int msg_type; 
 	bool with_explosions;
 	//bool draw_text_finish;
+    bool	saveButton;
 
 };
 

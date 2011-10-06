@@ -23,7 +23,7 @@
 
 class imageproc { 
 public:
-	imageproc(); 
+	void setup(); 
 
 	void restart(); 
 	void update(); 
@@ -74,7 +74,7 @@ public:
 	bool bLearnBg;
 	
 	
-	
+	int darken_value;
 	ofPoint dstPts[4]; 
 	
 	

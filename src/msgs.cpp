@@ -12,22 +12,23 @@
 
 msgs::msgs(){
 	window_size_ani=0;
-	walking1.loadImage("images/walking1.png");
-	walking1.loadImage("images/walking2.png");
+	//walking1.loadImage("images/walking1.png");
+	//walking1.loadImage("images/walking2.png");
 	position=192;
+    idleVideo_speed=finVideo_speed=looseVideo_speed=0.7;
 }
 
 void msgs::setup(){
 	img_play1_es.loadImage("images/play1_es.png");
 	//img_play1_en.loadImage("images/play1_en.png");
 
-	font_bottom.loadFont("visitor1.ttf", 7);
-	font_full_screen.loadFont("visitor1.ttf",16);
-	font_big.loadFont("visitor1.ttf",42);
+	font_bottom.loadFont("visitor1.ttf", 7,false,false);
+	font_full_screen.loadFont("visitor1.ttf",16,false,false,false);
+	font_big.loadFont("visitor1.ttf",42,false,false,false);
 
-	walkingVid.setLoopState(OF_LOOP_NONE); 
-	sprites.setup();
-	sprites.load("images/walking");
+	
+	//sprites.setup();
+	//sprites.load("images/walking");
 	frameTime=ofGetElapsedTimef();
 	must_draw_milis=false;
 	must_draw_half=false;
@@ -40,7 +41,7 @@ void msgs::setup(){
 	draw_flag=false;
 	
 	
-	myFBO.allocate(192, 125, false);
+	//myFBO.allocate(192, 125, false);
 	x1=y1=explotionCounter=0;
 	x_exp=y_exp=0;
 	for(int i=0; i<LONG_COLA_ANIMATION; i++){
@@ -48,24 +49,29 @@ void msgs::setup(){
 		myScreen[i].y=0;
 		myScreen[i].color=0x000000;
 	}
+    
+    walkingVid.setLoopState(OF_LOOP_NONE); 
 	malpha=0;
 	currentMovie="";
 	position_init_msg=0;
 	finMovie.loadMovie("images/fin_ok.gif");
 	finMovie.setLoopState(OF_LOOP_NONE);
+    finMovie.play(); finMovie.stop();
+    
 	tryMovie.loadMovie("images/tryAgain.gif");
 	tryMovie.setLoopState(OF_LOOP_NONE);
-	
+	tryMovie.play(); tryMovie.stop();
+    
 	idleMovie_es.loadMovie("images/movil_es.gif");
 	idleMovie_es.setLoopState(OF_LOOP_NONE);
 	
 	idleMovie_en.loadMovie("images/movil_en.gif");
 	idleMovie_en.setLoopState(OF_LOOP_NONE);
 	
-	tryMovie.setSpeed(0.7);	
-	finMovie.setSpeed(0.7);	
-	idleMovie_es.setSpeed(0.7);	
-	idleMovie_en.setSpeed(0.7);
+	tryMovie.setSpeed(looseVideo_speed);	
+	finMovie.setSpeed(finVideo_speed);	
+	idleMovie_es.setSpeed(idleVideo_speed);	
+	idleMovie_en.setSpeed(idleVideo_speed);
 
 	
 	
@@ -73,7 +79,7 @@ void msgs::setup(){
 }
 
 void msgs::update(){
-	sprites.update();
+//	sprites.update();
 	
 	if (ofGetElapsedTimef() > frameTime) {
 		must_draw_milis=true;
@@ -82,7 +88,7 @@ void msgs::update(){
 		counter%10==0?must_draw_sec=true:must_draw_sec=false;
 		counter%6==0?must_draw_ocho=true:must_draw_ocho=false;
 
-		frameTime += 1.0 / FRAME_RATE;
+		//frameTime += 1.0 / FRAME_RATE;
 	}
 	else{
 		must_draw_milis=false;
@@ -94,14 +100,16 @@ void msgs::update(){
 	idleMovie_en.idleMovie();
 }
 
+//esta funcion se usa
 bool msgs::levelVideo( ofImage status1_img, ofImage status2_img, string levelText ){
 	string levelMovie="images/level_animation.gif";
 	if (currentMovie!=levelMovie) {
 		walkingVid.loadMovie(levelMovie);
+        walkingVid.setLoopState(OF_LOOP_NONE); 
 		currentMovie=levelMovie;
 	}
 	walkingVid.play(); 
-	ofSetColor(0xFFFFFF);
+	ofSetHexColor(0xFFFFFF);
 
 	if(walkingVid.getIsMovieDone()){
 		//return 	drawCoolExplosion();
@@ -120,12 +128,10 @@ bool msgs::levelVideo( ofImage status1_img, ofImage status2_img, string levelTex
 	}
 	else{
 		malpha<235?malpha+=20:malpha=255;
-		
 		ofSetColor(255, 255, 255,malpha);
 		walkingVid.draw(0,0);	
 		status1_img.draw(5, 40);
-		font_full_screen.drawString(levelText, 70, 92);
-		
+		font_full_screen.drawString(levelText, 70, 92);		
 	}
 	return false;
 }
@@ -134,7 +140,7 @@ bool msgs::levelVideo( ofImage status1_img, ofImage status2_img, string levelTex
 bool msgs::finVideo(){
 
 	finMovie.play(); 
-	ofSetColor(0xFFFFFF);
+	ofSetHexColor(0xFFFFFF);
 	if(finMovie.getIsMovieDone()){
 		finMovie.stop();
 		finMovie.setPosition(0);
@@ -148,7 +154,7 @@ bool msgs::finVideo(){
 
 bool msgs::looseVideo(){	
 	tryMovie.play(); 
-	ofSetColor(0xFFFFFF);
+	ofSetHexColor(0xFFFFFF);
 	if(tryMovie.getIsMovieDone()){
 		tryMovie.stop();
 		tryMovie.setPosition(0);
@@ -164,7 +170,7 @@ bool msgs::looseVideo(){
 
 bool msgs::idleVideo_es(){	
 	idleMovie_es.play(); 
-	ofSetColor(0xFFFFFF);
+	ofSetHexColor(0xFFFFFF);
 	if(idleMovie_es.getIsMovieDone()){
 		position_init_msg!=41?position_init_msg+=4:position_init_msg=0;
 		idleMovie_es.draw(0,81+position_init_msg);	
@@ -187,7 +193,7 @@ bool msgs::idleVideo_es(){
 
 bool msgs::idleVideo_en(){	
 	idleMovie_en.play(); 
-	ofSetColor(0xFFFFFF);
+	ofSetHexColor(0xFFFFFF);
 	if(idleMovie_en.getIsMovieDone()){
 		position_init_msg!=41?position_init_msg+=4:position_init_msg=0;
 		idleMovie_en.draw(0,81+position_init_msg);	
@@ -217,7 +223,7 @@ bool msgs::initVideo(){
 	}	
 
 	walkingVid.play(); 
-	ofSetColor(0xFFFFFF);
+	ofSetHexColor(0xFFFFFF);
 	if(walkingVid.getIsMovieDone()){
 		position_init_msg!=41?position_init_msg+=4:position_init_msg=0;
 		walkingVid.draw(0,67+position_init_msg);	
@@ -288,7 +294,7 @@ bool msgs::drawCoolExplosion(){
 	return false;
 	
 }
-bool msgs::drawMsgIntro1(){
+/**bool msgs::drawMsgIntro1(){
 	if(status_animation==0){
 		ofSetColor(0,0,0);
 		ofRect(0, 125-window_size_ani, 192, window_size_ani); // I draw the bottom rectangle two points below.
@@ -302,7 +308,7 @@ bool msgs::drawMsgIntro1(){
 
 		font_bottom.drawString("Enciende la pantalla de tu teléfono \n  y apunta hacia los bichos", 0, 80);
 		//walking1.draw(190-4*counter,92);
-		sprites.draw(position,92);
+//		sprites.draw(position,92);
 
 		if(must_draw_half){
 			cout << position << "\n";
@@ -316,7 +322,7 @@ bool msgs::drawMsgIntro1(){
 	else if(status_animation==2){
 		ofSetColor(0,0,0);
 		ofRect(0, 125-window_size_ani, 192, window_size_ani);
-		sprites.draw(position,92);
+//		sprites.draw(position,92);
 		status_animation=3;
 
 	}	
@@ -337,7 +343,7 @@ bool msgs::drawMsgIntro1(){
 	//this means that the animation hasn't finished
 	return false;
 		
-};
+}; **/
 /**
 void msgs::drawFullScreenText(string texto){
 	ofSetColor(0,0,0);
@@ -377,7 +383,7 @@ bool msgs::drawPlayingImg(){
 	ofSetColor(0,0,0,50);
 	ofFill();
 	ofRect(0, 0, 192, 108);
-	ofSetColor(0xffffff);
+	ofSetHexColor(0xffffff);
 
 	img_play1_es.draw(0,0);
 	
@@ -434,14 +440,12 @@ bool msgs::drawFullScreenBlink(){
 		blinkCounter++;
 		//cout << "mierda";
 	}
-	ofSetColor(0xd2007d);
+	ofSetHexColor(0xd2007d);
 	if(draw_flag==true){
 		font_big.drawString("Play!", 24, 60);
-		cout << "dibujando";
 	}
 	if(blinkCounter>=6){
 		blinkCounter=0;
-		cout << "blink counter" ;
 		return true;
 	}
 	return false;
@@ -460,23 +464,23 @@ void msgs::drawButtomMenu(int time, int level ){
 
 	std::ostringstream oss;
 	oss << "Level " << level; // << "  Time " << time;
-	font_bottom.drawString(oss.str(), 135, 8);
+	font_bottom.drawString(oss.str(), 135, 10);
 
 	//if(level!=0){
-		ofSetColor(0x30F030);
+		ofSetHexColor(0x30F030);
 		
 		ofNoFill();
 		ofRect(10, 3, 70, 9);
 		ofFill();
-		ofSetColor(0xD2007D);
+		ofSetHexColor(0xD2007D);
 		int porcentaje=(int) (70*time)/TIME_WIN[level];
 		ofRect(10,4, porcentaje, 8);
-		ofSetColor(0xffffff);
+		ofSetHexColor(0xffffff);
 		char fpsStr[255]; // an array of chars		
 		sprintf(fpsStr, " %i", time);
 		//std::ostringstream oss2;
 		//oss2 << time;
-		font_bottom.drawString(fpsStr , 44, 8);	
+		font_bottom.drawString(fpsStr , 30, 10);	
 	//}
 	ofPopMatrix();
 

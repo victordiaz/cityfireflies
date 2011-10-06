@@ -22,18 +22,26 @@ void ParticleSourceHandler::draw(){
 }
 
 void ParticleSourceHandler::update(){
-	for (emitterList::iterator em= myEmitters.begin();  em!= myEmitters.end(); em++){
+	/**for (emitterList::iterator em= myEmitters.begin();  em!= myEmitters.end(); em++){
 		(*em)->update();
 		if ((*em)->isEmpty()) {
 			delete *em;
 			myEmitters.remove((*em));
 		}
-	}
+	}**/
+    
+
+    for(emitterList::iterator itr=  myEmitters.begin(); itr != myEmitters.end();){
+        (*itr)->update();
+        if ((*itr)->isEmpty()) {
+			delete *itr;
+            itr=myEmitters.erase(itr);
+		} 
+        else
+            ++itr;
+    }
+    
 }
 
 
-void ParticleSourceHandler::removeEmitters(ParticleEmitter pe){
-
-	
-}
  

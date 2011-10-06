@@ -14,15 +14,27 @@ void ParticleEmitter::setup(int x1,int y1){
 //--------------------------------------------------------------
 void ParticleEmitter::update(){
 	
-	for (particleList::iterator pp= particles.begin();  pp!= particles.end(); pp++){
+	/**for (particleList::iterator pp= particles.begin();  pp!= particles.end(); pp++){
 		(*pp)->update();
 		if ((*pp)->dead==true) {
 			delete *pp;
-			particles.remove((*pp));
+			//particles.remove((*pp));
+            itr=listA.erase(itr);
 			
 			//p[i] = new Particle();
 		} 
-	}
+	}**/
+    particleList::iterator itr;
+    for(itr = particles.begin(); itr != particles.end();){
+        (*itr)->update();
+        if ((*itr)->dead==true) {
+			delete *itr;
+            itr=particles.erase(itr);;
+		} 
+        else
+            ++itr;
+    }
+
 	rotation+=.05;
 }
 

@@ -1,0 +1,30 @@
+<controls>
+    <SliderInt_Threshold_(230_rec)>
+        <name>Threshold (230 rec)</name>
+        <value>224</value>
+    </SliderInt_Threshold_(230_rec)>
+    <SliderInt_Darken_feedback_Img>
+        <name>Darken feedback Img</name>
+        <value>100</value>
+    </SliderInt_Darken_feedback_Img>
+    <SliderInt_Min_Area_light>
+        <name>Min Area light</name>
+        <value>1</value>
+    </SliderInt_Min_Area_light>
+    <SliderInt_Max_Area_light>
+        <name>Max Area light</name>
+        <value>15</value>
+    </SliderInt_Max_Area_light>
+    <Toggle_explosions>
+        <name>explosions</name>
+        <value>1</value>
+    </Toggle_explosions>
+    <Button_Save_Settings_
+_(including_playfield_
+_borders)>
+        <name>Save Settings &#x0A; (including playfield &#x0A; borders)</name>
+        <value>0</value>
+    </Button_Save_Settings_
+_(including_playfield_
+_borders)>
+</controls>

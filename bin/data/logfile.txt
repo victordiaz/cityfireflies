@@ -1,0 +1,70 @@
+
+
+---------------------------------------  2011-10-03-21-39-08-305
+
+
+---------------------------------------  2011-10-03-22-40-39-740
+OF: OF_LOG_WARNING: ofBaseVideoPlayer::setPixelFormat not implemented
+
+
+---------------------------------------  2011-10-03-22-42-36-826
+OF: OF_LOG_NOTICE: 3 : 10 : 22 : 22 : 42 : 39 :data:start;  New user: Starting Game 
+OF: OF_LOG_WARNING: ofBaseVideoPlayer::setPixelFormat not implemented
+
+
+---------------------------------------  2011-10-03-22-44-13-418
+OF: OF_LOG_NOTICE: 3 : 10 : 22 : 22 : 44 : 13 :data:start;  Nkkkkkke 
+
+
+---------------------------------------  2011-10-03-22-48-37-609
+OF: OF_LOG_NOTICE: :data:start; 3 : 10 : 22 : 22 : 48 : 37 Nkkkkkk e 
+OF: OF_LOG_NOTICE: :data:start; 3 : 10 : 22 : 22 : 48 : 46 New user: Starting Game 
+OF: OF_LOG_WARNING: ofBaseVideoPlayer::setPixelFormat not implemented
+OF: OF_LOG_NOTICE: :data:win: 43.577 ; 3 : 10 : 22 : 22 : 49 : 29 End game 
+OF: OF_LOG_NOTICE: :data:start; 3 : 10 : 22 : 22 : 49 : 49 New user: Starting Game 
+OF: OF_LOG_NOTICE: :data:end: 0 ; 3 : 10 : 22 : 22 : 50 : 5 End game 
+
+
+---------------------------------------  2011-10-03-23-08-12-163
+OF: OF_LOG_NOTICE: :data:start; 3 : 10 : 23 : 23 : 8 : 12 Nkkkkkk e 
+
+
+---------------------------------------  2011-10-03-23-15-50-829
+OF: OF_LOG_NOTICE: :data:start; 3 : 10 : 23 : 23 : 15 : 50 Nkkkkkk e 
+OF: OF_LOG_NOTICE: :data:start; 3 : 10 : 23 : 23 : 15 : 58 New user: Starting Game 
+OF: OF_LOG_WARNING: ofBaseVideoPlayer::setPixelFormat not implemented
+
+
+---------------------------------------  2011-10-04-00-12-25-575
+OF: OF_LOG_NOTICE: :data:start; 4 : 10 : 0 : 0 : 12 : 25 Nkkkkkk e 
+
+
+---------------------------------------  2011-10-04-00-12-40-636
+OF: OF_LOG_NOTICE: :data:start; 4 : 10 : 0 : 0 : 12 : 40 Nkkkkkk e 
+OF: OF_LOG_NOTICE: :data:start; 4 : 10 : 0 : 0 : 13 : 0 New user: Starting Game 
+OF: OF_LOG_WARNING: ofBaseVideoPlayer::setPixelFormat not implemented
+
+
+---------------------------------------  2011-10-04-00-19-04-355
+OF: OF_LOG_NOTICE: :data:start; 4 : 10 : 0 : 0 : 19 : 4 Nkkkkkk e 
+OF: OF_LOG_NOTICE: :data:start; 4 : 10 : 0 : 0 : 19 : 13 New user: Starting Game 
+OF: OF_LOG_WARNING: ofBaseVideoPlayer::setPixelFormat not implemented
+
+
+---------------------------------------  2011-10-04-00-27-09-182
+OF: OF_LOG_NOTICE: :data:start; 4 : 10 : 0 : 0 : 27 : 9 Nkkkkkk e 
+
+
+---------------------------------------  2011-10-04-00-38-54-348
+OF: OF_LOG_NOTICE: :data:start; 4 : 10 : 0 : 0 : 38 : 54 Nkkkkkk e 
+
+
+---------------------------------------  2011-10-04-00-39-20-869
+OF: OF_LOG_NOTICE: :data:start; 4 : 10 : 0 : 0 : 39 : 20 Nkkkkkk e 
+
+
+---------------------------------------  2011-10-04-00-39-52-453
+OF: OF_LOG_NOTICE: :data:start; 4 : 10 : 0 : 0 : 39 : 52 Nkkkkkk e 
+
+
+---------------------------------------  2011-10-04-01-23-50-214
