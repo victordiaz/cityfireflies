@@ -68,8 +68,10 @@ void testApp::setup(){
     //
     gui.addSlider("Threshold (230 rec)", mImageproc.threshold, 210, 255);	
     gui.addSlider("Darken feedback Img", mImageproc.darken_value, 50, 200);	
-    gui.addSlider("Min Area light", mImageproc.blobMin, 1, 5);	
-    gui.addSlider("Max Area light", mImageproc.blobMax, 2, 25);	
+    //gui.addSlider("Min Area light", mImageproc.blobMin, 0, 4);	
+    gui.addSlider("Max Area light", mImageproc.minPuntos, 0, 10);
+    gui.addSlider("Max Area light", mImageproc.maxPuntos, 1, 40);
+	//gui.addSlider("Max Area light", mImageproc.blobMax, 1, 30);
     gui.addToggle("explosions", with_explosions);
     gui.addButton("Save Settings \n (including playfield \n borders)",saveButton );
     gui.addFPSCounter();
@@ -214,7 +216,7 @@ void testApp::draw() {
 			my_enemy.draw(status_level);
 			if(status_draw_msg1 && msg_type % 2==0){
 				if(myMsgs.idleVideo_es() ){
-					time_intro_msgs=ofGetElapsedTimef()+30;
+					time_intro_msgs=ofGetElapsedTimef()+20;
 					status_draw_msg1=false; 
 					msg_type = msg_type + 1; 
 				}
@@ -235,14 +237,6 @@ void testApp::draw() {
 				status_update=false;
 				while(!my_enemy.newEnemy(ofRandom(0,columnas),ofRandom(0,filas),0) ); 
 				int contador=my_enemy.countEnemies();
-				/**if(ON_PC){	//probando en el ordenador				
-					if(contador>ENEMIES_WIN[status_level]){ //condicion para perder el juego
-						status_game=2;
-						break;
-					}
-				}**/
-				//else{ //jugando en la pantalla gigante y no en el ordenador
-					//cout << "Número de bichos" << contador << endl; 
 					if(contador==1){ //¿pq es 1 y no 0 misterios de la vida?
 						status_game=3;
 						break;
@@ -338,7 +332,7 @@ void testApp::draw() {
 	ofSetHexColor(0x000000);
 	ofRect(0, 16, screenWidth, 16);
 	ofSetHexColor(0xFFFFFF);
-	myfont.drawString("CITYFIREFLIES . COM", 50, 27); //estaba a 52, 25 
+	myfont.drawString("CITYFIREFLIES.COM", 35, 27); //estaba a 52, 25 
 	//ofPopMatrix(); 
 
 

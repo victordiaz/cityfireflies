@@ -44,6 +44,7 @@
 		49A75DA11437A8510039CBE5 /* ofxSimpleGuiToo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49A75D8E1437A8510039CBE5 /* ofxSimpleGuiToo.cpp */; };
 		49A75DA21437A8510039CBE5 /* ofxSimpleGuiValueControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49A75D901437A8510039CBE5 /* ofxSimpleGuiValueControl.cpp */; };
 		49A75DB41437A85E0039CBE5 /* ofxMSAInteractiveObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49A75DB01437A85E0039CBE5 /* ofxMSAInteractiveObject.cpp */; };
+		49FAA8BF145F113D00B3C857 /* ranking.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 49FAA8BD145F113D00B3C857 /* ranking.cpp */; };
 		BBAB23CB13894F3D00AA2426 /* GLUT.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		E4328149138ABC9F0047C5CB /* openFrameworksDebug.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E4328148138ABC890047C5CB /* openFrameworksDebug.a */; };
 		E45BE97B0E8CC7DD009D7055 /* AGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E45BE9710E8CC7DD009D7055 /* AGL.framework */; };
@@ -182,6 +183,8 @@
 		49A75DB01437A85E0039CBE5 /* ofxMSAInteractiveObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxMSAInteractiveObject.cpp; sourceTree = "<group>"; };
 		49A75DB11437A85E0039CBE5 /* ofxMSAInteractiveObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxMSAInteractiveObject.h; sourceTree = "<group>"; };
 		49A75DB51437BF2C0039CBE5 /* CityFirefliesDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CityFirefliesDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49FAA8BD145F113D00B3C857 /* ranking.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ranking.cpp; sourceTree = "<group>"; };
+		49FAA8BE145F113D00B3C857 /* ranking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ranking.h; sourceTree = "<group>"; };
 		BBAB23BE13894E4700AA2426 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = ../../../libs/glut/lib/osx/GLUT.framework; sourceTree = "<group>"; };
 		E4328143138ABC890047C5CB /* openFrameworksLib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = openFrameworksLib.xcodeproj; path = ../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj; sourceTree = SOURCE_ROOT; };
 		E45BE9710E8CC7DD009D7055 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
@@ -474,6 +477,8 @@
 				49A75D431437A7CA0039CBE5 /* testApp.cpp */,
 				49A75D441437A7CA0039CBE5 /* testApp.h */,
 				E4B69E1D0A3A1BDC003C02F2 /* main.cpp */,
+				49FAA8BD145F113D00B3C857 /* ranking.cpp */,
+				49FAA8BE145F113D00B3C857 /* ranking.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -609,6 +614,7 @@
 				49A75DA11437A8510039CBE5 /* ofxSimpleGuiToo.cpp in Sources */,
 				49A75DA21437A8510039CBE5 /* ofxSimpleGuiValueControl.cpp in Sources */,
 				49A75DB41437A85E0039CBE5 /* ofxMSAInteractiveObject.cpp in Sources */,
+				49FAA8BF145F113D00B3C857 /* ranking.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

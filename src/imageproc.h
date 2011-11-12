@@ -63,7 +63,8 @@ public:
 	
 	ofxCvContourFinder 	contourFinder;
 	
-	
+	int maxPuntos;
+    int minPuntos;
 	int blobMin;
 	int blobMax;
 	

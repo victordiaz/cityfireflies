@@ -29,7 +29,7 @@ void imageproc::setup(){
 		vidGrabber.setVerbose(true);
 		vidGrabber.initGrabber(camWidth, camHeight); 
 	#else
-		vidPlayer.loadMovie("output.mov");
+        vidPlayer.loadMovie ("convertido.mov"); //("output.mov"); //
 		vidPlayer.play();
 	#endif
 	
@@ -61,7 +61,8 @@ void imageproc::setup(){
 	
 	blobMin = 1;
 	blobMax = 22;
-	
+	maxPuntos = 10;
+    minPuntos= 1;
 	threshold = 202	; 
 	thresholdDiff = 102; 
 	darken_value=100;
@@ -129,14 +130,28 @@ void imageproc::update() {
 		grayImgT.threshold(threshold);
 		
 		contourFinder.findContours(grayImgT, blobMin, blobMax, 100, false);	// find holes
-		
+
 		
 		//matriz de luz 
+        int index_i=0;
+        int index_j=0;
+        /** blobs based detection
+         for (int i = 0; i < contourFinder.nBlobs; i++) {
+            index_i=((int)contourFinder.blobs[i].centroid.x/tileWidth);
+            index_j=((int)contourFinder.blobs[i].centroid.y/tileHeight);
+            cout << "puntos" << contourFinder.blobs[i].nPts << "\n";
+            if (matrix[index_i][index_j] < 15) {
+                if(matrix[index_i][index_j]<2) matrix[index_i][index_j]+= 3;
+                else matrix[index_i][index_j]+=1;
+            }
+        }**/ 
+        
+        //no black based detection
 		for (int i = 0; i < columnas; i++) {
 			for (int j = 0; j < filas; j++) {
 				amountActivity = grayImgT.countNonZeroInRegion(i * tileWidth, j * tileHeight, tileWidth, tileHeight);
-				
-				if (amountActivity > 1) { 
+				if (amountActivity > 1) { 				
+                    if (amountActivity>maxPuntos && amountActivity>minPuntos)    continue;
 					if (matrix[i][j] < 15) { 
 						matrix[i][j] += 1; //amountActivity; 
 					} 
@@ -186,7 +201,7 @@ void imageproc::drawFeedback() {
 	
 	for (int i = 0; i < contourFinder.nBlobs; i++) {
         contourFinder.blobs[i].draw(0,0);
-        cout << "blobs size: "<< contourFinder.blobs[i].area << "\n";
+        //cout << "blobs size: "<< contourFinder.blobs[i].area<< "     length: " << contourFinder.blobs[i].length<< "   hole: " << contourFinder.blobs[i].hole << "npts : " << contourFinder.blobs[i].nPts <<   "\n";
 		ofCircle(contourFinder.blobs[i].centroid.x, contourFinder.blobs[i].centroid.y, 20);
     }
 	ofPopMatrix();

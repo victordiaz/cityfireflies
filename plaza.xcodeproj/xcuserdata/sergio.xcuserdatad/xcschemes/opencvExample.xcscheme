@@ -14,8 +14,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "E4B69B5A0A3A1756003C02F2"
-               BuildableName = "opencvExampleDebug.app"
-               BlueprintName = "opencvExample"
+               BuildableName = "CityFirefliesDebug.app"
+               BlueprintName = "CityFireflies"
                ReferencedContainer = "container:plaza.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
