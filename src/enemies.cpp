@@ -10,18 +10,9 @@
 #include "enemies.h"
 #include <math.h>
 #include "ofMath.h"
-#include "Poco/String.h"
-#include "Poco/Format.h"
-#include "Poco/Path.h"
-#include "Poco/File.h"
-#include "Poco/NumberFormatter.h"
 
-using Poco::NumberFormatter;
-using Poco::Path;
-using Poco::format;
-using Poco::File;
 //Constructor
-enemies::enemies(){
+void enemies::setup(){
 	for (int x=0; x<columnas; x++) {
 		for(int y=0;y<filas;y++){
 			logic_map[x][y]=false;
@@ -46,16 +37,16 @@ enemies::enemies(){
 }**/
 
 void enemies::loadImages(){	
-	std::string s;
+	string s;
 	
 	for (int level=0; level<= MAX_LEVELS; level++){
-		total_drawings[level] = countDrawings(NumberFormatter::format(level) );
+		total_drawings[level] = countDrawings(ofToString(level) );
 		total_drawings[level] = (int) total_drawings[level]/2;
 		for (int n=0; n<total_drawings[level]; n++) {
-			s=format( "images/malos/%d/malo_%d_a.png", level,n);
+			s="images/malos/"+ofToString(level)+"/malo_"+ofToString(n)+"_a.png";
 			malos[level][n][0].loadImage(s);
-			s=format( "images/malos/%d/malo_%d_b.png", level,n);
-			cout << s << "\n";
+			s="images/malos/"+ofToString(level)+"/malo_"+ofToString(n)+"_b.png";
+			//cout << s << "\n";
 			malos[level][n][1].loadImage(s);	
 		}
 	}
@@ -174,10 +165,10 @@ int enemies::countEnemies(){
 
 
 int enemies::countDrawings(std::string mdir){
-	
-	Poco::Path path(Path::current() + "../../../data/images/malos/"+mdir , Path::PATH_UNIX);
-	cout << path.toString();
-	cout << "\n";
+	return 10;
+	/**Poco::Path path(Path::current() + "../../../data/images/malos/"+mdir , Path::PATH_UNIX);
+	//cout << path.toString();
+	//cout << "\n";
 	//cout << path.toString();
 	File tmpDir(path);
 	
@@ -189,10 +180,10 @@ int enemies::countDrawings(std::string mdir){
 	{
 		total_drawings1++;
 	}
-	cout << total_drawings1;
+	//cout << total_drawings1;
 	return total_drawings1;
 	
-	//tmpDir.remove(true);
+	//tmpDir.remove(true);**/
 	
 }
 

@@ -10,7 +10,7 @@
 #ifndef PARTICLE
 #define PARTICLE
 
-#import "ofMain.h"
+#include  "ofMain.h"
 #define MAXTIME 25
 #define MINTIME 10
 class Particle {

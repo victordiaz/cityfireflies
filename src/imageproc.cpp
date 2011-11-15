@@ -14,9 +14,9 @@
 
 
 //Constructor
-imageproc::imageproc(){
+void imageproc::setup(){
 
-	myfont.loadFont("visitor1.ttf", 7); 
+	myfont.loadFont("visitor1.ttf", 7,false,false,false); 
 	
 	camWidth = 320;
 	camHeight = 240;
@@ -29,7 +29,7 @@ imageproc::imageproc(){
 		vidGrabber.setVerbose(true);
 		vidGrabber.initGrabber(camWidth, camHeight); 
 	#else
-		vidPlayer.loadMovie("output.mov");
+	vidPlayer.loadMovie("output.mov"); //("convertido.mov"); //("output.mov"); //
 		vidPlayer.play();
 	#endif
 	
@@ -61,10 +61,11 @@ imageproc::imageproc(){
 	
 	blobMin = 1;
 	blobMax = 22;
-	
+	maxPuntos = 10;
+    minPuntos= 1;
 	threshold = 202	; 
 	thresholdDiff = 102; 
-	
+	darken_value=100;
 	resetMatrix(); 
 	
 	//cout << "hola2" << endl; 
@@ -129,14 +130,28 @@ void imageproc::update() {
 		grayImgT.threshold(threshold);
 		
 		contourFinder.findContours(grayImgT, blobMin, blobMax, 100, false);	// find holes
-		
+
 		
 		//matriz de luz 
+        int index_i=0;
+        int index_j=0;
+        /** blobs based detection
+         for (int i = 0; i < contourFinder.nBlobs; i++) {
+            index_i=((int)contourFinder.blobs[i].centroid.x/tileWidth);
+            index_j=((int)contourFinder.blobs[i].centroid.y/tileHeight);
+            cout << "puntos" << contourFinder.blobs[i].nPts << "\n";
+            if (matrix[index_i][index_j] < 15) {
+                if(matrix[index_i][index_j]<2) matrix[index_i][index_j]+= 3;
+                else matrix[index_i][index_j]+=1;
+            }
+        }**/ 
+        
+        //no black based detection
 		for (int i = 0; i < columnas; i++) {
 			for (int j = 0; j < filas; j++) {
 				amountActivity = grayImgT.countNonZeroInRegion(i * tileWidth, j * tileHeight, tileWidth, tileHeight);
-				
-				if (amountActivity > 1) { 
+				if (amountActivity > 1) { 				
+                    if (amountActivity>maxPuntos && amountActivity>minPuntos)    continue;
 					if (matrix[i][j] < 15) { 
 						matrix[i][j] += 1; //amountActivity; 
 					} 
@@ -156,12 +171,55 @@ void imageproc::update() {
 void imageproc::drawGameCamera() {
 	
 	//imagen de la camara en el juego 
-	ofSetColor(0xFFFFFF);
+	ofSetHexColor(0xFFFFFF);
 	grayImgW.draw(0, 32, screenWidth, 125); 
-	ofSetColor(0, 0, 0,100); //We tint the image in black a little to avoid too much bright on the screen
+    ofPushStyle();
+    ofEnableAlphaBlending();
+	ofSetColor(0, 0, 0,darken_value); //We tint the image in black a little to avoid too much bright on the screen
 	ofRect(0, 32, screenWidth, 125);
+    ofPopStyle();
 	
 } 
+
+
+//--------------------------------------------------------------
+void imageproc::drawLitlesquares() {  
+	
+    
+	//matriz de luz
+	ofPushMatrix(); 
+	for (int i = 0; i < columnas; i++) { 
+		for (int j = 0; j < filas; j++) {
+			//ofSetColor(200, 200, 200, 255);
+			ofFill();
+			
+            ofEnableAlphaBlending();
+            
+            
+			if(matrix[i][j] > 1) {
+				int qi = i;
+				int qj = j;
+				
+				ofPushStyle(); 
+				energy = ofMap(matrix[i][j], 0, 7, 0, 255, true); 
+				ofSetColor(55, 205, 242, energy);  
+				ofFill();
+				ofPushMatrix(); 
+				//TODO 
+				glTranslated(0, 32, 0); 
+				ofRect(i * square_size, j * square_size, square_size, square_size); 
+				ofPopMatrix(); 
+				ofPopStyle(); 
+                
+			}
+		} 
+	}
+	ofPopMatrix(); 
+	
+	
+    
+} 
+
 
 
 //--------------------------------------------------------------
@@ -170,7 +228,7 @@ void imageproc::drawFeedback() {
 	
 	
 	//feedback del procesado 
-	ofSetColor(0xFFFFFF);
+	ofSetHexColor(0xFFFFFF);
 	grayImg.draw(360,20);
 	grayImgW.draw(700,20);
 	contourFinder.draw(700,20);
@@ -183,6 +241,7 @@ void imageproc::drawFeedback() {
 	
 	for (int i = 0; i < contourFinder.nBlobs; i++) {
         contourFinder.blobs[i].draw(0,0);
+        //cout << "blobs size: "<< contourFinder.blobs[i].area<< "     length: " << contourFinder.blobs[i].length<< "   hole: " << contourFinder.blobs[i].hole << "npts : " << contourFinder.blobs[i].nPts <<   "\n";
 		ofCircle(contourFinder.blobs[i].centroid.x, contourFinder.blobs[i].centroid.y, 20);
     }
 	ofPopMatrix();
@@ -200,23 +259,9 @@ void imageproc::drawFeedback() {
 			sprintf(tileval, "%d", (int)matrix[i][j]);
 			ofSetColor(0, 0, 255, 255);
 			myfont.drawString(tileval, 710 + i * tileWidth, 30 + j * tileHeight);
-			
-			if(matrix[i][j] > 1) {
-				int qi = i;
-				int qj = j;
-				
-				ofPushStyle(); 
-				energy = ofMap(matrix[i][j], 0, 7, 0, 255, true); 
-				ofSetColor(55, 205, 242, energy);  
-				ofFill();
-				ofPushMatrix(); 
-				//TODO 
-				glTranslated(40, 40 + 32, 0); 
-				ofRect(i * square_size, j * square_size, square_size, square_size); 
-				ofPopMatrix(); 
-				ofPopStyle(); 
-			
-			}
+		
+            
+            
 		} 
 	}
 	ofPopMatrix(); 
@@ -228,9 +273,9 @@ void imageproc::drawFeedback() {
 
 
 	ofPushStyle(); 
-	ofSetColor(0, 0, 0); 
+	ofSetColor(255, 255, 255); 
 	//myfont.drawString(t, 200, 500); 
-	myfont.drawString(tD, 200, 520); 
+	//myfont.drawString(tD, 200, 320); 
 	ofPopStyle(); 
 
 	

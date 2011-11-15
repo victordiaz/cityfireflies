@@ -23,8 +23,8 @@
 
 class imageproc { 
 public:
-	imageproc(); 
-
+	void setup(); 
+    void drawLitlesquares();
 	void restart(); 
 	void update(); 
 	void drawGameCamera(); 
@@ -63,7 +63,8 @@ public:
 	
 	ofxCvContourFinder 	contourFinder;
 	
-	
+	int maxPuntos;
+    int minPuntos;
 	int blobMin;
 	int blobMax;
 	
@@ -74,7 +75,7 @@ public:
 	bool bLearnBg;
 	
 	
-	
+	int darken_value;
 	ofPoint dstPts[4]; 
 	
 	
