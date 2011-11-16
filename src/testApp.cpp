@@ -13,8 +13,8 @@ void testApp::setup(){
 	//ofEnableSmoothing();
     //ofDisableDataPath();
 
-	myfont.loadFont("visitor1.ttf", 7, false,false,false); 
-	backCountFont.loadFont("visitor1.ttf", 12, false,false,false);
+	myfont.loadFont("visitor2.ttf", 12, false,false,false); 
+	backCountFont.loadFont("visitor2.ttf", 18, false,false,false);
 	fondoImg.loadImage("images/juegofondo.png"); 
 	//ofSetBackgroundAuto(true); 
 
@@ -22,6 +22,7 @@ void testApp::setup(){
 
     mImageproc.setup();
     my_enemy.setup();
+    myRanking.setup();
 	lastTimeMeasure = ofGetElapsedTimef();
 	//cout << tileWidth << " " << tileHeight << endl;
 
@@ -84,11 +85,23 @@ void testApp::setup(){
    // ofLog() << ":data:start::" <<ofGetDay()<<":"<<ofGetMonth()<<":"<< ofGetHours()<<":"<<ofGetHours()<<":"<<ofGetMinutes()<<":"<<ofGetSeconds() <<  "New Game " ;
 
   //  ofLogToFile("logfile3.txt",true) ;
+    
+    
+    
+    
+    fullscreen = false; 
+    //myOfxFBOTextureCenter.allocate( 192, 157 , GL_RGB);  
+    
+    myOfxFBOTextureCenter.allocate(192, 157 ,GL_RGB);
+    myPerfectPixelsRescale.setSize(5, 5, myOfxFBOTextureCenter.getWidth(), myOfxFBOTextureCenter.getHeight());
+    buffer2= (unsigned char* )calloc(sizeof(unsigned char), ofGetWidth()*ofGetHeight()*16);
+
+
 
 }
 
 //--------------------------------------------------------------
-void testApp::update(){
+void testApp::update(){ 
 	ofBackground(0, 0, 0); 
 	mImageproc.update(); 
 	
@@ -157,8 +170,7 @@ void testApp::update(){
 //--------------------------------------------------------------
 void testApp::draw() { 
 
-	ofSetHexColor(0xffffff); //fondo 
-	fondoImg.draw(0, 0); //fondo bonito 
+	//fondoImg.draw(0, 0); //fondo bonito 
 
 
 	//mask
@@ -166,25 +178,42 @@ void testApp::draw() {
 	ofPushMatrix();
 	ofTranslate(topOffset, leftOffset, 0); 
 	
+	
 	//la camara que sale en el juego 
 	
-	mImageproc.drawGameCamera(); 
 	ofSetColor(0,0,0);
 	ofRect(68, 0, 52, 16); //rectangulo negro
 	
 	ofPopMatrix(); 
 	
-		
+    
 	
 	//muestra las imagenes procesadas  
-	mImageproc.drawFeedback(); 
-
+	//mImageproc.drawFeedback(); 
+    
 	//mask
 	ofPushMatrix();
 	ofTranslate(topOffset, leftOffset, 0); 
-	
+    
+    
 	//JUEGO 
-	ofPushMatrix();
+	ofPushMatrix(); 
+    
+    
+    
+  //  myOfxFBOTextureCenter.clear();  //*************** 
+    
+    myOfxFBOTextureCenter.begin(); //*************** 
+    ofClear(0,0,0);
+	ofSetHexColor(0x000000); 
+	ofRect(0, 16, screenWidth, 16);
+	
+    ofSetHexColor(0xFFFFFF); 
+	myfont.drawString("CITYFIREFLIES.COM", 40, 25); //estaba a 52, 25 
+    
+    mImageproc.drawGameCamera(); 
+    mImageproc.drawLitlesquares(); 
+    
 	ofTranslate(0,32);
 	std::ostringstream oss2;
 	switch (status_game) {
@@ -261,22 +290,29 @@ void testApp::draw() {
 			break;
 			
 		case 2: // you loose a level. Have to start again.
-			drawing_text_finished_flag=myMsgs.looseVideo(); // drawFullScreenText("Perdedor");
-			
-			if(drawing_text_finished_flag){
+            if(      drawing_text_finished_flag == false)
+                drawing_text_finished_flag=myMsgs.looseVideo(); // drawFullScreenText("Perdedor");
+            
+			if(drawing_text_finished_flag && !drawing_ranking_finished_flag){                
+                drawing_ranking_finished_flag=myRanking.draw();                
+            }
+            if(drawing_text_finished_flag && drawing_ranking_finished_flag){
+                
 				//Poco::LocalDateTime now;
-				float diferencia= ofGetElapsedTimef()- gameStartTime;
+				float diferencia= ofGetElapsedTimef() - gameStartTime;
 				//mlogger->information(Poco::DateTimeFormatter::format(now, s_dateAndTimeFormat) + " " + "End game in level: " + NumberFormatter::format(status_level)+ "enemies:"+ NumberFormatter::format(my_enemy.countEnemies() )+ " length: " + NumberFormatter::format(diferencia) );
                 ofLog() << ":data:end:" << my_enemy.countEnemies()<< ":"<< status_level << ":" <<ofGetDay()<<":"<<ofGetMonth()<<":"<< ofGetHours()<<":"<<ofGetHours()<<":"<<ofGetMinutes()<<":"<<ofGetSeconds() << "End game" ;
 				status_game=0;
 				my_enemy.restart();
 				status_level=0;
-				status_time_init=ofGetElapsedTimef();
+                drawing_ranking_finished_flag=false;
+                drawing_text_finished_flag=false;
+                status_time_init=ofGetElapsedTimef();
 			}			
 			break;
 			
 		case 3: // you win a level. Go to the next one.
-			oss2 << "Level " << status_level+1 <<"/2" ;
+			oss2 << "Level " << status_level+1 << "/2" ;
 			enemy_transition[0].loadImage("images/malo1_40px.png");
 			if(status_level>=MAX_LEVELS){ //if you win the level MAXLEVEL you already won the game so it is over.
 				status_level=0; //restart the level
@@ -285,6 +321,7 @@ void testApp::draw() {
 					float diferencia= ofGetElapsedTimef() - gameStartTime;
 					//mlogger->information(Poco::DateTimeFormatter::format(now, s_dateAndTimeFormat) + " " + "Win game length: " + NumberFormatter::format(diferencia) );
                 ofLog() << ":data:win:" << diferencia<< ":" <<ofGetDay()<<":"<<ofGetMonth()<<":"<< ofGetHours()<<":"<<ofGetHours()<<":"<<ofGetMinutes()<<":"<<ofGetSeconds() << "End game" ;
+                    rankingPosition=myRanking.addTime(diferencia);
 
 			}
 			else{
@@ -303,11 +340,22 @@ void testApp::draw() {
 		case 4: //Prepare the game for the next level
 			//kind of message----
 			if (status_level==0) { //All levels are finished
-				drawing_text_finished_flag=myMsgs.finVideo(); //myMsgs.drawFullScreenText( "You've won \n Congratulations!");
-				if (drawing_text_finished_flag) {
+                if(drawing_text_finished_flag == false ){
+                    drawing_text_finished_flag=myMsgs.finVideo(); //myMsgs.drawFullScreenText( "You've won \n Congratulations!");
+                }
+                if( drawing_text_finished_flag && ! drawing_ranking_finished_flag ) {
+                    if(rankingPosition>4){
+                       drawing_ranking_finished_flag=myRanking.draw(); 
+                    }else{
+                        drawing_ranking_finished_flag=myRanking.drawCongrats(rankingPosition); 
+                    }
+                }                
+				if (drawing_text_finished_flag && drawing_ranking_finished_flag) {
 					status_game=0;
 					my_enemy.restart();
-					drawing_text_finished_flag=false;
+                    drawing_ranking_finished_flag=false;
+                    drawing_text_finished_flag=false;
+                    rankingPosition=6;
 				}
 			}
 			else {//set up next level
@@ -329,10 +377,6 @@ void testApp::draw() {
 	ofPopMatrix();
 
 
-	ofSetHexColor(0x000000);
-	ofRect(0, 16, screenWidth, 16);
-	ofSetHexColor(0xFFFFFF);
-	myfont.drawString("CITYFIREFLIES.COM", 35, 27); //estaba a 52, 25 
 	//ofPopMatrix(); 
 
 
@@ -352,20 +396,55 @@ void testApp::draw() {
 
 
 	//unsused areas
-	ofSetHexColor(0xFFFFFF);
+/**	ofSetHexColor(0xFFFFFF);
 	ofRect(0, 0, bWidth*3 - 1, bHeight*2);
 	ofRect(bWidth*3 - 1, 0, bWidth*3 - 2, bHeight);	
 	ofRect(screenWidth-bWidth*6, 0, bWidth*3, bHeight);
-	ofRect(screenWidth-bWidth*3, 0, bWidth*3, bHeight*2);
+	ofRect(screenWidth-bWidth*3, 0, bWidth*3, bHeight*2);**/
 	ofPopMatrix(); 
-	ofPushMatrix();
-	ofTranslate(topOffset, leftOffset, 0); 
-		
-	ofPopMatrix();
+	
     ofPushMatrix();
+	ofTranslate(topOffset, leftOffset, 0); 
+		myOfxFBOTextureCenter.end();
+
     //ofTranslate(300, 200);  
-    gui.draw();
-    ofPopMatrix();
+    
+    ofPopMatrix(); 
+    
+    
+    
+    
+    if (fullscreen) { 
+        ofFill(); 
+        ofSetColor(0, 0, 0); 
+        ofRect(0, 0, ofGetWidth(), ofGetHeight()); 
+        ofPixels mpiksels;
+        //mpiksels.allocate(192,157,3);  
+        
+        myOfxFBOTextureCenter.readToPixels(mpiksels);
+        
+       // myPerfectPixelsRescale.resample( (unsigned char *)myOfxFBOTextureCenter.getPixels(3,buffer2) );  //*************** 
+        myPerfectPixelsRescale.resample( (unsigned char *)mpiksels.getPixels() );
+        myPerfectPixelsRescale.getImage();  //*************** 
+        ofPushMatrix();
+        ofRotateX(180);
+        ofTranslate(0, -800);
+        ofSetColor(255, 255, 255);
+        myPerfectPixelsRescale.draw(0, 0);  //*************** 
+
+        ofPopMatrix();
+
+    } else { 
+        //mImageproc.drawGameCamera(); 
+        ofSetHexColor(0xffffff); 
+		fondoImg.draw(0, 0); //fondo bonito 
+        ofSetHexColor(0xFFFFFF); 
+        myOfxFBOTextureCenter.draw(topOffset, leftOffset, 192, 157);  //*************** 
+        mImageproc.drawFeedback(); //esto dibuja las otras cámaras
+        gui.draw();
+    } 
+    
+
 
 } 
 
@@ -511,8 +590,17 @@ void testApp::keyPressed  (int key){
 			
 		case 'l':
 			loadSettings(); 
+			break; 
+        
+            
+		case 'f': 
+            fullscreen = true; 
+            break; 
+			
+		case 'w':
+            fullscreen = false; 
 			break;
-
+            
 
 	}  
 

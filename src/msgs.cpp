@@ -22,7 +22,7 @@ void msgs::setup(){
 	img_play1_es.loadImage("images/play1_es.png");
 	//img_play1_en.loadImage("images/play1_en.png");
 
-	font_bottom.loadFont("visitor1.ttf", 7,false,false);
+	font_bottom.loadFont("visitor2.ttf", 10,false,false);
 	font_full_screen.loadFont("visitor1.ttf",16,false,false,false);
 	font_big.loadFont("visitor1.ttf",42,false,false,false);
 
@@ -474,7 +474,7 @@ void msgs::drawButtomMenu(int time, int level ){
 		ofFill();
 		ofSetHexColor(0xD2007D);
 		int porcentaje=(int) (70*time)/TIME_WIN[level];
-		ofRect(10,4, porcentaje, 8);
+		ofRect(10,3, porcentaje, 8);
 		ofSetHexColor(0xffffff);
 		char fpsStr[255]; // an array of chars		
 		sprintf(fpsStr, " %i", time);

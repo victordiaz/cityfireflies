@@ -29,7 +29,7 @@ void imageproc::setup(){
 		vidGrabber.setVerbose(true);
 		vidGrabber.initGrabber(camWidth, camHeight); 
 	#else
-        vidPlayer.loadMovie ("convertido.mov"); //("output.mov"); //
+        vidPlayer.loadMovie("output.mov");// ("convertido.mov"); //("output.mov"); //
 		vidPlayer.play();
 	#endif
 	
@@ -183,6 +183,46 @@ void imageproc::drawGameCamera() {
 
 
 //--------------------------------------------------------------
+void imageproc::drawLitlesquares() {  
+	
+    
+	//matriz de luz
+	ofPushMatrix(); 
+	for (int i = 0; i < columnas; i++) { 
+		for (int j = 0; j < filas; j++) {
+			//ofSetColor(200, 200, 200, 255);
+			ofFill();
+			
+            ofEnableAlphaBlending();
+            
+            
+			if(matrix[i][j] > 1) {
+				int qi = i;
+				int qj = j;
+				
+				ofPushStyle(); 
+				energy = ofMap(matrix[i][j], 0, 7, 0, 255, true); 
+				ofSetColor(55, 205, 242, energy);  
+				ofFill();
+				ofPushMatrix(); 
+				//TODO 
+				glTranslated(0, 32, 0); 
+				ofRect(i * square_size, j * square_size, square_size, square_size); 
+				ofPopMatrix(); 
+				ofPopStyle(); 
+                
+			}
+		} 
+	}
+	ofPopMatrix(); 
+	
+	
+    
+} 
+
+
+
+//--------------------------------------------------------------
 void imageproc::drawFeedback() {  
 	
 	
@@ -219,23 +259,9 @@ void imageproc::drawFeedback() {
 			sprintf(tileval, "%d", (int)matrix[i][j]);
 			ofSetColor(0, 0, 255, 255);
 			myfont.drawString(tileval, 710 + i * tileWidth, 30 + j * tileHeight);
-			
-			if(matrix[i][j] > 1) {
-				int qi = i;
-				int qj = j;
-				
-				ofPushStyle(); 
-				energy = ofMap(matrix[i][j], 0, 7, 0, 255, true); 
-				ofSetColor(55, 205, 242, energy);  
-				ofFill();
-				ofPushMatrix(); 
-				//TODO 
-				glTranslated(40, 40 + 32, 0); 
-				ofRect(i * square_size, j * square_size, square_size, square_size); 
-				ofPopMatrix(); 
-				ofPopStyle(); 
-			
-			}
+		
+            
+            
 		} 
 	}
 	ofPopMatrix(); 

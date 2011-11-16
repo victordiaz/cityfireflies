@@ -7,6 +7,7 @@
 
 #include "enemies.h"
 #include "constants.h" 
+#include "ranking.h"
 #include "imageproc.h" 
 #include "msgs.h"
 #include "ofxXmlSettings.h"
@@ -18,7 +19,9 @@
 #include <Poco/FileChannel.h>
 #include <Poco/LocalDateTime.h>
 #include <Poco/DateTimeFormatter.h>
-
+#include "perfectPixelsRescale.h" 
+#include "ofxFBOTexture.h"
+#include "ofFbo.h"
 #define MX 10;
 #define MY 10;
 
@@ -28,9 +31,15 @@ using Poco::Logger;
 
 
 class testApp : public ofBaseApp{
-
-	public:
-
+    private:    
+        bool drawing_text_finished_flag; 
+        bool drawing_ranking_finished_flag;
+        ranking myRanking;
+        int rankingPosition;
+	
+    public:
+        
+        testApp(): drawing_text_finished_flag(false), drawing_ranking_finished_flag(false),rankingPosition(6){};
 		void setup();
 		void update();
 		void draw();
@@ -92,12 +101,19 @@ class testApp : public ofBaseApp{
 
 	msgs myMsgs; 
 	int time_intro_msgs; 
-	bool drawing_text_finished_flag; 
+	
 	int msg_type; 
 	bool with_explosions;
 	//bool draw_text_finish;
     bool	saveButton;
-
+    
+    
+    //// Bergen
+ //   ofxFBOTexture myOfxFBOTextureCenter; 
+    perfectPixelsRescale myPerfectPixelsRescale; ;
+    bool fullscreen;
+    ofFbo myOfxFBOTextureCenter;
+    unsigned char* buffer2;
 };
 
 #endif

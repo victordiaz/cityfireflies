@@ -24,7 +24,7 @@
 class imageproc { 
 public:
 	void setup(); 
-
+    void drawLitlesquares();
 	void restart(); 
 	void update(); 
 	void drawGameCamera(); 
